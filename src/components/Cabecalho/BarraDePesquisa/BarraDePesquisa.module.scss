@@ -1,20 +1,59 @@
 @use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
 
 .barra {
-    background: $fundo-terciario url('assets/icons/lupa.svg') top 8px right 16px / 24px no-repeat;
-    border-radius: 1.25rem;
-    color: $cor-texto-secundaria;
-    font-size: $tamanho-fonte-pequeno;
-    height: 40px;
-    line-height: 1rem;
-    padding: 0.5rem 1rem;
-    width: 393px;
-
-    &::placeholder {
-        color: $cor-texto-terciaria;
+    .input {
+        display: none;
     }
 
-    &::-webkit-search-cancel-button {
-        -webkit-appearance: none;
+    .lupa {
+        background-image: url('assets/icons/lupa-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 24px;
+        color: $cor-texto-secundaria;
+        display: block;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@include breakpoint(tablet) {
+    .barra {
+        order: 2;
+        position: relative;
+        width: 272px;
+
+        .input {
+            background-color: $fundo-terciario;
+            border-radius: 1.25rem;
+            color: $cor-texto-secundaria;
+            display: block;
+            font-size: $tamanho-fonte-pequeno;
+            height: 40px;
+            line-height: 1rem;
+            padding: 0.5rem 1rem;
+            width: 100%;
+
+            &::placeholder {
+                color: $cor-texto-terciaria;
+            }
+
+            &::-webkit-search-cancel-button {
+                -webkit-appearance: none;
+            }
+        }
+
+        .lupa {
+            background-image: url('assets/icons/lupa.svg');
+            position: absolute;
+            right: 16px;
+            top: 8px;
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .barra {
+        width: 393px;
     }
 }
