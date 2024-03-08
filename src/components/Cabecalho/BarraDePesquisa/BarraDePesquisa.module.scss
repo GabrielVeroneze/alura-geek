@@ -1,0 +1,20 @@
+@use '@/sass/variaveis' as *;
+
+.barra {
+    background: $fundo-terciario url('assets/icons/lupa.svg') top 8px right 16px / 24px no-repeat;
+    border-radius: 1.25rem;
+    color: $cor-texto-secundaria;
+    font-size: $tamanho-fonte-pequeno;
+    line-height: 1rem;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    width: 393px;
+
+    &::placeholder {
+        color: $cor-texto-terciaria;
+    }
+
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+}
