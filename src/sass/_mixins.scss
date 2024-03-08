@@ -25,3 +25,34 @@
         }
     }
 }
+
+@mixin botao($modelo, $altura, $largura) {
+    font-size: 0.875rem;
+    font-weight: 600;
+    height: $altura;
+    line-height: normal;
+    text-align: center;
+    width: $largura;
+
+    @include breakpoint(desktop) {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    @if $modelo == primario {
+        background-color: $fundo-botao-primario;
+        color: $cor-texto-primaria;
+
+        &:hover {
+            background-color: $fundo-botao-primario-hover;
+        }
+    } @else if $modelo == secundario {
+        background-color: $fundo-botao-secundario;
+        border: 1px solid $cor-texto-destaque;
+        color: $cor-texto-destaque;
+
+        &:hover {
+            background-color: $fundo-botao-secundario-hover;
+        }
+    }
+}
