@@ -29,7 +29,7 @@
 }
 
 @mixin botao($modelo, $altura, $largura) {
-    font-size: 0.875rem;
+    font-size: $tamanho-fonte-pequeno;
     font-weight: 600;
     height: $altura;
     line-height: normal;
@@ -37,7 +37,7 @@
     width: $largura;
 
     @include breakpoint(desktop) {
-        font-size: 1rem;
+        font-size: $tamanho-fonte-medio-pequeno;
         font-weight: 400;
     }
 
