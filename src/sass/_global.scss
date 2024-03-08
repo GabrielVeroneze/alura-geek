@@ -20,6 +20,12 @@ body {
 button {
     cursor: pointer;
     outline: none;
+    padding: 0;
+}
+
+input {
+    border: none;
+    outline: none;
 }
 
 a {
