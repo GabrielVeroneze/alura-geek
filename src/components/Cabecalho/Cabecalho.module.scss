@@ -1,0 +1,50 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+
+.cabecalho {
+    align-items: center;
+    background-color: $fundo-principal;
+    display: flex;
+    gap: 0.5rem;
+    height: 72px;
+    justify-content: space-between;
+    padding: 1rem $espacamento-lateral-pequeno;
+    width: 100%;
+
+    .imagem {
+        width: 100px;
+    }
+
+    .botao {
+        @include botao(secundario, 40px, 133px);
+    }
+}
+
+@include breakpoint(tablet) {
+    .cabecalho {
+        gap: 2rem;
+        justify-content: start;
+        padding: 1rem $espacamento-lateral-medio;
+
+        .botao {
+            @include botao(secundario, 40px, 166px);
+            margin-left: auto;
+            order: 3;
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .cabecalho {
+        height: 115px;
+        padding: 2rem $espacamento-lateral-grande;
+
+        .imagem {
+            width: 176px;
+        }
+
+        .botao {
+            @include botao(secundario, 51px, 182px);
+        }
+    }
+}
