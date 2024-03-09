@@ -53,3 +53,15 @@
     }
 }
 
+@include breakpoint(desktop) {
+    .banner {
+        background-image:
+            linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
+            url('assets/images/banner.jpg');
+        padding: 2rem $espacamento-lateral-grande;
+
+        .botao {
+            @include botao(primario, 51px, 130px);
+        }
+    }
+}
