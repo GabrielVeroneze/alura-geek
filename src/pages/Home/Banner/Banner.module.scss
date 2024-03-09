@@ -35,3 +35,21 @@
         @include botao(primario, 40px, 119px);
     }
 }
+
+@include breakpoint(tablet) {
+    .banner {
+        gap: 1rem;
+        height: 352px;
+        padding: 2rem $espacamento-lateral-medio;
+
+        .titulo {
+            font-size: $tamanho-fonte-muito-grande;
+        }
+
+        .texto {
+            font-size: $tamanho-fonte-medio-grande;
+            font-weight: 700;
+        }
+    }
+}
+
