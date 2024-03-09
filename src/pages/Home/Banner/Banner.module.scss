@@ -1,0 +1,37 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+
+.banner {
+    background-image:
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('assets/images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 192px;
+    justify-content: flex-end;
+    padding: 1rem $espacamento-lateral-pequeno;
+    width: 100%;
+
+    .titulo {
+        color: $cor-texto-primaria;
+        font-size: $tamanho-fonte-medio-grande;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .texto {
+        color: $cor-texto-primaria;
+        font-size: $tamanho-fonte-pequeno;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .botao {
+        @include botao(primario, 40px, 119px);
+    }
+}
