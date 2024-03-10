@@ -2,51 +2,51 @@
     "produtos": [
         {
             "id": "8254171b-161b-46a6-98da-5e9540e2c3d9",
-            "nome": "Caneca Stormtrooper",
-            "descricao": "Uma caneca única projetada no formato de um capacete Stormtrooper, perfeita para desfrutar de sua bebida favorita enquanto mostra seu amor por Star Wars.",
-            "valor": "19.99",
             "imagem": "assets/images/produtos/caneca-stormtrooper.jpg",
-            "categoria": "Star Wars"
+            "categoria": "Star Wars",
+            "nome": "Caneca Stormtrooper",
+            "preco": 19.99,
+            "descricao": "Uma caneca única projetada no formato de um capacete Stormtrooper, perfeita para desfrutar de sua bebida favorita enquanto mostra seu amor por Star Wars."
         },
         {
             "id": "ec02a8fa-f720-4bf6-90fd-141deda83d03",
-            "nome": "Conjunto LEGO Star Wars",
-            "descricao": "Um conjunto de LEGO que apresenta personagens do Star Wars, incluindo Darth Vader e um piloto de TIE Fighter. Perfeito para qualquer fã de Star Wars e LEGO.",
-            "valor": "59.99",
             "imagem": "assets/images/produtos/conjunto-lego-star-wars.jpg",
-            "categoria": "Star Wars"
+            "categoria": "Star Wars",
+            "nome": "Conjunto LEGO Star Wars",
+            "preco": 59.99,
+            "descricao": "Um conjunto de LEGO que apresenta personagens do Star Wars, incluindo Darth Vader e um piloto de TIE Fighter. Perfeito para qualquer fã de Star Wars e LEGO."
         },
         {
             "id": "49d5c3ce-2bd1-482b-aa11-2b4f949f666f",
-            "nome": "Figura Yoda de Star Wars",
-            "descricao": "Esta é uma figura do Yoda, o sábio Mestre Jedi de Star Wars. Yoda é retratado em seu manto cinza característico, em uma pose que reflete sua sabedoria e serenidade. Uma peça de colecionador perfeita para qualquer fã de Star Wars.",
-            "valor": "29.99",
             "imagem": "assets/images/produtos/figura-yoda.jpg",
-            "categoria": "Star Wars"
+            "categoria": "Star Wars",
+            "nome": "Figura Yoda de Star Wars",
+            "preco": 29.99,
+            "descricao": "Esta é uma figura do Yoda, o sábio Mestre Jedi de Star Wars. Yoda é retratado em seu manto cinza característico, em uma pose que reflete sua sabedoria e serenidade. Uma peça de colecionador perfeita para qualquer fã de Star Wars."
         },
         {
             "id": "97484020-26b4-4907-8b19-0b643e221623",
-            "nome": "Figura Stormtrooper de Star Wars",
-            "descricao": "Esta é uma figura do Stormtrooper, o icônico soldado do Império Galáctico em Star Wars. O Stormtrooper está em posição de prontidão, segurando um rifle blaster. Uma peça de colecionador perfeita para qualquer fã de Star Wars.",
-            "valor": "34.99",
             "imagem": "assets/images/produtos/figura-stormtrooper.jpg",
-            "categoria": "Star Wars"
+            "categoria": "Star Wars",
+            "nome": "Figura Stormtrooper de Star Wars",
+            "preco": 34.99,
+            "descricao": "Esta é uma figura do Stormtrooper, o icônico soldado do Império Galáctico em Star Wars. O Stormtrooper está em posição de prontidão, segurando um rifle blaster. Uma peça de colecionador perfeita para qualquer fã de Star Wars."
         },
         {
             "id": "6a27480a-a0c3-4d3c-b944-d7a3a03a705c",
-            "nome": "Figura Baby Yoda de Star Wars",
-            "descricao": "Esta é uma figura do Baby Yoda, o adorável personagem da série 'The Mandalorian' de Star Wars. Baby Yoda é retratado em seu manto cinza característico, capturando sua expressão curiosa e encantadora.",
-            "valor": "39.99",
             "imagem": "assets/images/produtos/figura-baby-yoda.jpg",
-            "categoria": "Star Wars"
+            "categoria": "Star Wars",
+            "nome": "Figura Baby Yoda de Star Wars",
+            "preco": 39.99,
+            "descricao": "Esta é uma figura do Baby Yoda, o adorável personagem da série 'The Mandalorian' de Star Wars. Baby Yoda é retratado em seu manto cinza característico, capturando sua expressão curiosa e encantadora."
         },
         {
             "id": "5d4469e2-0856-41dd-af52-e07cf3a21fb9",
-            "nome": "Figura Kylo Ren de Star Wars",
-            "descricao": "Esta é uma figura do Kylo Ren, o poderoso guerreiro do lado sombrio da Força em Star Wars. Kylo Ren é retratado em seu manto preto característico, segurando um sabre de luz. Uma peça de colecionador perfeita para qualquer fã de Star Wars.",
-            "valor": "44.99",
             "imagem": "assets/images/produtos/figura-kylo-ren.jpg",
-            "categoria": "Star Wars"
+            "categoria": "Star Wars",
+            "nome": "Figura Kylo Ren de Star Wars",
+            "preco": 44.99,
+            "descricao": "Esta é uma figura do Kylo Ren, o poderoso guerreiro do lado sombrio da Força em Star Wars. Kylo Ren é retratado em seu manto preto característico, segurando um sabre de luz. Uma peça de colecionador perfeita para qualquer fã de Star Wars."
         }
     ]
 }
