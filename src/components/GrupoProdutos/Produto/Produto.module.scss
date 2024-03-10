@@ -1,0 +1,45 @@
+@use '@/sass/variaveis' as *;
+
+.card {
+    width: 156px;
+
+    .wrapper {
+        height: 174px;
+        margin-bottom: 0.5rem;
+        width: 156px;
+
+        .imagem {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .nome {
+            color: $cor-texto-secundaria;
+            font-size: $tamanho-fonte-pequeno;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .preco {
+            color: $cor-texto-secundaria;
+            font-size: $tamanho-fonte-medio-pequeno;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .botao {
+            color: $cor-texto-destaque;
+            font-size: $tamanho-fonte-pequeno;
+            font-weight: 700;
+            line-height: normal;
+            text-align: start;
+        }
+    }
+}
