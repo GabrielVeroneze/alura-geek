@@ -61,3 +61,12 @@
     }
 }
 
+@include breakpoint(desktop) {
+    .card {
+        width: 176px;
+
+        .wrapper {
+            width: 176px;
+        }
+    }
+}
