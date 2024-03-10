@@ -1,4 +1,5 @@
 @use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
 
 .card {
     width: 156px;
@@ -43,3 +44,20 @@
         }
     }
 }
+
+@include breakpoint(tablet) {
+    .card {
+        width: 164px;
+
+        .wrapper {
+            width: 164px;
+        }
+
+        .info {
+            .botao {
+                font-size: $tamanho-fonte-medio-pequeno;
+            }
+        }
+    }
+}
+
