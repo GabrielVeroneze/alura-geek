@@ -1,4 +1,5 @@
 @use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
 
 .grupo {
     padding: 1rem 0;
@@ -60,3 +61,19 @@
     }
 }
 
+@include breakpoint(desktop) {
+    .grupo {
+        margin-bottom: 4rem;
+        padding: 0;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .topo {
+            .categoria {
+                font-size: $tamanho-fonte-grande;
+            }
+        }
+    }
+}
