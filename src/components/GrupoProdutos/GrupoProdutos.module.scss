@@ -41,3 +41,22 @@
         justify-content: center;
     }
 }
+
+@include breakpoint(tablet) {
+    .grupo {
+        padding: 2rem 0;
+
+        .topo {
+            .botao {
+                font-size: $tamanho-fonte-medio-pequeno;
+                gap: 0.5rem;
+
+                &::after {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+}
+
