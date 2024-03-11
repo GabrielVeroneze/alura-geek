@@ -1,0 +1,43 @@
+@use '@/sass/variaveis' as *;
+
+.grupo {
+    padding: 1rem 0;
+
+    .topo {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        .categoria {
+            color: $cor-texto-secundaria;
+            font-size: $tamanho-fonte-medio-grande;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .botao {
+            align-items: center;
+            color: $cor-texto-destaque;
+            display: flex;
+            font-size: $tamanho-fonte-pequeno;
+            font-weight: 700;
+            gap: 0.25rem;
+            line-height: normal;
+
+            &::after {
+                background: url('assets/icons/flecha-direita.svg') center / cover no-repeat;
+                content: '';
+                height: 16px;
+                width: 16px;
+            }
+        }
+    }
+
+    .lista {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
