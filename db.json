@@ -47,6 +47,54 @@
             "nome": "Figura Kylo Ren de Star Wars",
             "preco": 44.99,
             "descricao": "Esta é uma figura do Kylo Ren, o poderoso guerreiro do lado sombrio da Força em Star Wars. Kylo Ren é retratado em seu manto preto característico, segurando um sabre de luz. Uma peça de colecionador perfeita para qualquer fã de Star Wars."
+        },
+        {
+            "id": "7938074c-b3cd-4213-8c8f-50989a0a533b",
+            "imagem": "assets/images/produtos/controle-xbox-one-branco.jpg",
+            "categoria": "Consoles",
+            "nome": "Controle Xbox One Branco",
+            "preco": 59.99,
+            "descricao": "Este é um controle branco do Xbox One. O controle possui um design ergonômico com dois joysticks analógicos, um D-pad, quatro botões frontais (A, B, X, Y) e dois botões superiores. É ideal para uma experiência de jogo imersiva no console Xbox One."
+        },
+        {
+            "id": "afb97f06-2758-4a85-8c56-7201976897aa",
+            "imagem": "assets/images/produtos/playstation-5-com-controle.jpg",
+            "categoria": "Consoles",
+            "nome": "Console PlayStation 5 com Controle",
+            "preco": 499.99,
+            "descricao": "Este é um console PlayStation 5 com seu controle. O console e o controle são predominantemente brancos, exibindo seu design moderno e elegante. O console PlayStation 5 é conhecido por sua velocidade, gráficos de alta qualidade e experiência de jogo imersiva."
+        },
+        {
+            "id": "a2673779-6b57-49a2-93b1-20eed4434801",
+            "imagem": "assets/images/produtos/console-nes.jpg",
+            "categoria": "Consoles",
+            "nome": "Console Nintendo Entertainment System",
+            "preco": 149.99,
+            "descricao": "Este é um console Nintendo Entertainment System. O console tem uma cor cinza clara na parte superior e cinza escuro na parte inferior. Possui dois botões retangulares vermelhos e pretos na frente do console, usados para resetar e ligar/desligar o sistema."
+        },
+        {
+            "id": "84fec2ea-2c4a-4ea3-b6c3-b8f3ce8c2517",
+            "imagem": "assets/images/produtos/controle-nintendo-switch.jpg",
+            "categoria": "Consoles",
+            "nome": "Controle Joy-Con Nintendo Switch",
+            "preco": 79.99,
+            "descricao": "Este é um controle Joy-Con do Nintendo Switch. O controle é colorido, com uma parte azul e uma parte vermelha. Possui botões direcionais, botões frontais (A, B, X, Y) e joysticks analógicos. É ideal para uma experiência de jogo versátil no console Nintendo Switch."
+        },
+        {
+            "id": "88b5c9db-90b9-46f2-ba8e-e8b11add799b",
+            "imagem": "assets/images/produtos/xbox-series-x.jpg",
+            "categoria": "Consoles",
+            "nome": "Console Xbox Series X",
+            "preco": 499.99,
+            "descricao": "Este é um console Xbox Series X. O console é preto e tem um formato retangular, semelhante a uma torre. Possui um logotipo Xbox visível no canto superior esquerdo e uma entrada para discos na parte frontal inferior, que pode reproduzir discos de jogos ou outros tipos de mídia."
+        },
+        {
+            "id": "fdeddcfe-5a42-4d29-adea-9bae09365122",
+            "imagem": "assets/images/produtos/game-boy-color.jpg",
+            "categoria": "Consoles",
+            "nome": "Console Game Boy Color",
+            "preco": 99.99,
+            "descricao": "Este é um console Game Boy Color. O console é transparente, permitindo que você veja a placa de circuito verde interna. Ele possui botões de controle de jogo e uma pequena tela. É ideal para uma experiência de jogo portátil retrô."
         }
     ]
 }
