@@ -15,6 +15,9 @@ const GrupoProdutos = ({ categoria, produtos }: GrupoProdutosProps) => {
                 <button className={styles.botao}>Ver tudo</button>
             </div>
             <ul className={styles.lista}>
+                {produtos.map(produto => (
+                    <Produto key={produto.id} {...produto} />
+                ))}
             </ul>
         </section>
     )
