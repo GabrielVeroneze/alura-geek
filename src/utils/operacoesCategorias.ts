@@ -7,3 +7,11 @@ export const obterCategoriasUnicas = (produtos: IProduto[]) => {
 
     return [...categoriasUnicas]
 }
+
+export const filtrarProdutosPorCategoria = (produtos: IProduto[], categoria: string) => {
+    const produtosFiltados = produtos.filter(produto =>
+        produto.categoria === categoria
+    )
+
+    return produtosFiltados
+}
