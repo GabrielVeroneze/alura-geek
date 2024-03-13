@@ -1,4 +1,5 @@
 @use '@/sass/variaveis' as *;
+@use '@/sass/extends' as *;
 
 @mixin breakpoint($point) {
     @if $point == mobile-small {
@@ -60,7 +61,7 @@
 }
 
 @mixin input($modelo) {
-    @extend %campoTexto;
+    @extend %campo-texto;
     padding: 0.5rem 0.75rem;
 
     input {
@@ -76,19 +77,13 @@
         position: relative;
 
         label {
-            color: $cor-texto-terciaria;
-            font-size: $tamanho-fonte-muito-pequeno;
-            font-weight: 400;
-            left: 0.75rem;
-            line-height: 1rem;
-            position: absolute;
-            top: 0.5rem;
+            @extend %absolute-label;
         }
     }
 }
 
 @mixin textarea {
-    @extend %campoTexto;
+    @extend %campo-texto;
     @extend %placeholder;
     height: 82px;
     padding: 1rem 0.75rem;
