@@ -26,6 +26,15 @@ button {
 input {
     border: none;
     outline: none;
+    padding: 0;
+}
+
+textarea {
+    border: none;
+    font-family: inherit;
+    outline: none;
+    padding: 0;
+    resize: none;
 }
 
 a {
