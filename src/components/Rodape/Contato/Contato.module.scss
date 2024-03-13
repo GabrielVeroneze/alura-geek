@@ -1,0 +1,30 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+
+    .titulo {
+        color: $cor-texto-secundaria;
+        font-size: $tamanho-fonte-medio-pequeno;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .campo {
+        @include input(float-label);
+    }
+
+    .mensagem {
+        @include textarea();
+        margin-top: 0.5rem;
+    }
+
+    .botao {
+        @include botao(primario, 40px, 151px);
+    }
+}
