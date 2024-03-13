@@ -58,3 +58,31 @@
         }
     }
 }
+
+@mixin input($modelo) {
+    @extend %campoTexto;
+    padding: 0.5rem 0.75rem;
+
+    input {
+        width: 100%;
+    }
+
+    @if $modelo == no-label {
+        @extend %placeholder;
+        height: 41px;
+    } @else if $modelo == float-label {
+        height: 56px;
+        padding-top: 1.75rem;
+        position: relative;
+
+        label {
+            color: $cor-texto-terciaria;
+            font-size: $tamanho-fonte-muito-pequeno;
+            font-weight: 400;
+            left: 0.75rem;
+            line-height: 1rem;
+            position: absolute;
+            top: 0.5rem;
+        }
+    }
+}
