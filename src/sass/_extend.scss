@@ -1,0 +1,19 @@
+%campoTexto {
+    background-color: $fundo-principal;
+    border-bottom: 1px solid #c8c8c8;
+    border-radius: 0.25rem;
+    color: $cor-texto-secundaria;
+    font-size: $tamanho-fonte-medio-pequeno;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+%placeholder {
+    &::placeholder {
+        color: $cor-texto-terciaria;
+        font-size: $tamanho-fonte-medio-pequeno;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
