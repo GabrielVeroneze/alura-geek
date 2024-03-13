@@ -1,4 +1,6 @@
-%campoTexto {
+@use '@/sass/variaveis' as *;
+
+%campo-texto {
     background-color: $fundo-principal;
     border-bottom: 1px solid #c8c8c8;
     border-radius: 0.25rem;
