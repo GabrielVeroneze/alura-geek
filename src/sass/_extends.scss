@@ -19,3 +19,13 @@
         line-height: normal;
     }
 }
+
+%absolute-label {
+    color: $cor-texto-terciaria;
+    font-size: $tamanho-fonte-muito-pequeno;
+    font-weight: 400;
+    left: 0.75rem;
+    line-height: 1rem;
+    position: absolute;
+    top: 0.5rem;
+}
