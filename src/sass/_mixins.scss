@@ -86,3 +86,10 @@
         }
     }
 }
+
+@mixin textarea {
+    @extend %campoTexto;
+    @extend %placeholder;
+    height: 82px;
+    padding: 1rem 0.75rem;
+}
