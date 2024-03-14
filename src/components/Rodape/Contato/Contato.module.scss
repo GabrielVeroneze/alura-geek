@@ -29,3 +29,9 @@
         @include botao(primario, 40px, 151px);
     }
 }
+
+@include breakpoint(tablet) {
+    .formulario {
+        margin-top: 0;
+    }
+}

@@ -32,3 +32,20 @@
         }
     }
 }
+
+@include breakpoint(tablet) {
+    .rodape {
+        grid-template-areas:
+            'logo contato'
+            'links contato';
+        grid-template-columns: 254px 1fr;
+        grid-template-rows: repeat(2, max-content);
+        justify-items: start;
+        padding: 2rem $espacamento-lateral-medio;
+
+        .lista {
+            gap: 1.5rem;
+            text-align: start;
+        }
+    }
+}
