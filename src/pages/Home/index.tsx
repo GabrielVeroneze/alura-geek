@@ -3,6 +3,7 @@ import { filtrarProdutosPorCategoria, obterCategoriasUnicas } from '@/utils/oper
 import Cabecalho from '@/components/Cabecalho'
 import GrupoProdutos from '@/components/GrupoProdutos'
 import Rodape from '@/components/Rodape'
+import Desenvolvedor from '@/components/Desenvolvedor'
 import Banner from './Banner'
 import styles from './Home.module.scss'
 
@@ -27,6 +28,7 @@ const Home = () => {
                 ))}
             </main>
             <Rodape />
+            <Desenvolvedor />
         </>
     )
 }
