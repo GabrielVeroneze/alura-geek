@@ -1,0 +1,31 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+
+.container {
+    background-color: $fundo-principal;
+    padding: 2rem $espacamento-lateral-pequeno;
+    text-align: center;
+
+    .texto {
+        color: $cor-texto-secundaria;
+        font-size: $tamanho-fonte-medio-pequeno;
+        font-weight: 500;
+        line-height: normal;
+
+        .link {
+            color: inherit;
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .container {
+        padding: 2rem $espacamento-lateral-medio;
+    }
+}
+
+@include breakpoint(desktop) {
+    .container {
+        padding: 2rem $espacamento-lateral-grande;
+    }
+}
