@@ -2,6 +2,7 @@ import { useManipularProdutos } from '@/hooks/useManipularProdutos'
 import { filtrarProdutosPorCategoria, obterCategoriasUnicas } from '@/utils/operacoesCategorias'
 import Cabecalho from '@/components/Cabecalho'
 import GrupoProdutos from '@/components/GrupoProdutos'
+import Rodape from '@/components/Rodape'
 import Banner from './Banner'
 import styles from './Home.module.scss'
 
@@ -25,6 +26,7 @@ const Home = () => {
                     />
                 ))}
             </main>
+            <Rodape />
         </>
     )
 }
