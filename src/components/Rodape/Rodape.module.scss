@@ -49,3 +49,13 @@
         }
     }
 }
+
+@include breakpoint(desktop) {
+    .rodape {
+        gap: 7rem;
+        grid-template-areas: 'logo links contato';
+        grid-template-columns: repeat(2, 176px) 1fr;
+        grid-template-rows: max-content;
+        padding: 4rem $espacamento-lateral-grande;
+    }
+}

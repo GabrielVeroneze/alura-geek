@@ -35,3 +35,11 @@
         margin-top: 0;
     }
 }
+
+@include breakpoint(desktop) {
+    .formulario {
+        .botao {
+            @include botao(primario, 51px, 165px);
+        }
+    }
+}
