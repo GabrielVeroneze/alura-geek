@@ -1,0 +1,33 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+
+.principal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 6rem $espacamento-lateral-pequeno 4.75rem;
+
+    .titulo {
+        color: $cor-texto-secundaria;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .formulario {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 275px;
+
+        .input {
+            @include input(no-label);
+        }
+
+        .botao {
+            @include botao(primario, 40px, 109px);
+        }
+    }
+}
