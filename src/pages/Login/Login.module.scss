@@ -6,7 +6,9 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 6rem $espacamento-lateral-pequeno 4.75rem;
+    height: 362px;
+    justify-content: center;
+    padding: $espacamento-lateral-pequeno;
 
     .titulo {
         color: $cor-texto-secundaria;
@@ -29,5 +31,12 @@
         .botao {
             @include botao(primario, 40px, 109px);
         }
+    }
+}
+
+@include breakpoint(tablet) {
+    .principal {
+        height: 295px;
+        padding: $espacamento-lateral-medio;
     }
 }
