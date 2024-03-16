@@ -71,6 +71,10 @@
     @if $modelo == no-label {
         @extend %placeholder;
         height: 41px;
+
+        @include breakpoint(desktop) {
+            height: 63px;
+        }
     } @else if $modelo == float-label {
         height: 56px;
         padding-top: 1.75rem;
