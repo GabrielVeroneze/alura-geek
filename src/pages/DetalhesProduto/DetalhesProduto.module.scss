@@ -1,8 +1,7 @@
 @use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
 
 .principal {
-    width: 100%;
-
     .produto {
         display: flex;
         flex-direction: column;
@@ -43,6 +42,27 @@
             .descricao {
                 font-size: $tamanho-fonte-pequeno;
                 font-weight: 400;
+            }
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .principal {
+        padding: 2rem $espacamento-lateral-medio;
+
+        .produto {
+            flex-direction: row;
+            gap: 1rem;
+
+            .wrapper {
+                flex-shrink: 0;
+                height: 157px;
+                width: 254px;
+            }
+
+            .info {
+                padding: 0;
             }
         }
     }
