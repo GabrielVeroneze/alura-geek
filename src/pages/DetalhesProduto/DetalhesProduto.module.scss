@@ -1,0 +1,49 @@
+@use '@/sass/variaveis' as *;
+
+.principal {
+    width: 100%;
+
+    .produto {
+        display: flex;
+        flex-direction: column;
+
+        .wrapper {
+            height: 192px;
+
+            .imagem {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 1rem $espacamento-lateral-pequeno;
+
+            .nome,
+            .preco,
+            .descricao {
+                color: $cor-texto-secundaria;
+                line-height: normal;
+            }
+
+            .nome {
+                font-size: $tamanho-fonte-medio-grande;
+                font-weight: 500;
+            }
+
+            .preco {
+                font-size: $tamanho-fonte-medio-pequeno;
+                font-weight: 700;
+            }
+
+            .descricao {
+                font-size: $tamanho-fonte-pequeno;
+                font-weight: 400;
+            }
+        }
+    }
+}
