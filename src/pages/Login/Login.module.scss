@@ -12,7 +12,7 @@
 
     .titulo {
         color: $cor-texto-secundaria;
-        font-size: 1rem;
+        font-size: $tamanho-fonte-medio-pequeno;
         font-weight: 700;
         line-height: normal;
     }
@@ -38,5 +38,26 @@
     .principal {
         height: 295px;
         padding: $espacamento-lateral-medio;
+    }
+}
+
+@include breakpoint(desktop) {
+    .principal {
+        gap: 2rem;
+        height: 474px;
+        padding: 0 $espacamento-lateral-grande;
+
+        .titulo {
+            font-size: $tamanho-fonte-medio;
+        }
+
+        .formulario {
+            gap: 1.5rem;
+            width: 423px;
+
+            .botao {
+                @include botao(primario, 62px, 100%);
+            }
+        }
     }
 }
