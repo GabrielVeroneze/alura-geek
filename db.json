@@ -2,7 +2,7 @@
     "produtos": [
         {
             "id": "8254171b-161b-46a6-98da-5e9540e2c3d9",
-            "imagem": "assets/images/produtos/caneca-stormtrooper.jpg",
+            "imagem": "/assets/images/produtos/caneca-stormtrooper.jpg",
             "categoria": "Star Wars",
             "nome": "Caneca Stormtrooper",
             "preco": 19.99,
@@ -10,7 +10,7 @@
         },
         {
             "id": "ec02a8fa-f720-4bf6-90fd-141deda83d03",
-            "imagem": "assets/images/produtos/conjunto-lego-star-wars.jpg",
+            "imagem": "/assets/images/produtos/conjunto-lego-star-wars.jpg",
             "categoria": "Star Wars",
             "nome": "Conjunto LEGO Star Wars",
             "preco": 59.99,
@@ -18,7 +18,7 @@
         },
         {
             "id": "49d5c3ce-2bd1-482b-aa11-2b4f949f666f",
-            "imagem": "assets/images/produtos/figura-yoda.jpg",
+            "imagem": "/assets/images/produtos/figura-yoda.jpg",
             "categoria": "Star Wars",
             "nome": "Figura Yoda de Star Wars",
             "preco": 29.99,
@@ -26,7 +26,7 @@
         },
         {
             "id": "97484020-26b4-4907-8b19-0b643e221623",
-            "imagem": "assets/images/produtos/figura-stormtrooper.jpg",
+            "imagem": "/assets/images/produtos/figura-stormtrooper.jpg",
             "categoria": "Star Wars",
             "nome": "Figura Stormtrooper de Star Wars",
             "preco": 34.99,
@@ -34,7 +34,7 @@
         },
         {
             "id": "6a27480a-a0c3-4d3c-b944-d7a3a03a705c",
-            "imagem": "assets/images/produtos/figura-baby-yoda.jpg",
+            "imagem": "/assets/images/produtos/figura-baby-yoda.jpg",
             "categoria": "Star Wars",
             "nome": "Figura Baby Yoda de Star Wars",
             "preco": 39.99,
@@ -42,7 +42,7 @@
         },
         {
             "id": "5d4469e2-0856-41dd-af52-e07cf3a21fb9",
-            "imagem": "assets/images/produtos/figura-kylo-ren.jpg",
+            "imagem": "/assets/images/produtos/figura-kylo-ren.jpg",
             "categoria": "Star Wars",
             "nome": "Figura Kylo Ren de Star Wars",
             "preco": 44.99,
@@ -50,7 +50,7 @@
         },
         {
             "id": "7938074c-b3cd-4213-8c8f-50989a0a533b",
-            "imagem": "assets/images/produtos/controle-xbox-one-branco.jpg",
+            "imagem": "/assets/images/produtos/controle-xbox-one-branco.jpg",
             "categoria": "Consoles",
             "nome": "Controle Xbox One Branco",
             "preco": 59.99,
@@ -58,7 +58,7 @@
         },
         {
             "id": "afb97f06-2758-4a85-8c56-7201976897aa",
-            "imagem": "assets/images/produtos/playstation-5-com-controle.jpg",
+            "imagem": "/assets/images/produtos/playstation-5-com-controle.jpg",
             "categoria": "Consoles",
             "nome": "Console PlayStation 5 com Controle",
             "preco": 499.99,
@@ -66,7 +66,7 @@
         },
         {
             "id": "a2673779-6b57-49a2-93b1-20eed4434801",
-            "imagem": "assets/images/produtos/console-nes.jpg",
+            "imagem": "/assets/images/produtos/console-nes.jpg",
             "categoria": "Consoles",
             "nome": "Console Nintendo Entertainment System",
             "preco": 149.99,
@@ -74,7 +74,7 @@
         },
         {
             "id": "84fec2ea-2c4a-4ea3-b6c3-b8f3ce8c2517",
-            "imagem": "assets/images/produtos/controle-nintendo-switch.jpg",
+            "imagem": "/assets/images/produtos/controle-nintendo-switch.jpg",
             "categoria": "Consoles",
             "nome": "Controle Joy-Con Nintendo Switch",
             "preco": 79.99,
@@ -82,7 +82,7 @@
         },
         {
             "id": "88b5c9db-90b9-46f2-ba8e-e8b11add799b",
-            "imagem": "assets/images/produtos/xbox-series-x.jpg",
+            "imagem": "/assets/images/produtos/xbox-series-x.jpg",
             "categoria": "Consoles",
             "nome": "Console Xbox Series X",
             "preco": 499.99,
@@ -90,7 +90,7 @@
         },
         {
             "id": "fdeddcfe-5a42-4d29-adea-9bae09365122",
-            "imagem": "assets/images/produtos/game-boy-color.jpg",
+            "imagem": "/assets/images/produtos/game-boy-color.jpg",
             "categoria": "Consoles",
             "nome": "Console Game Boy Color",
             "preco": 99.99,
@@ -98,7 +98,7 @@
         },
         {
             "id": "5dafc4f9-051f-4e4e-bb25-831f077e9ee4",
-            "imagem": "assets/images/produtos/camisa-atari.jpg",
+            "imagem": "/assets/images/produtos/camisa-atari.jpg",
             "categoria": "Diversos",
             "nome": "Camisa Atari",
             "preco": 29.99,
@@ -106,7 +106,7 @@
         },
         {
             "id": "91876b37-01d4-472a-a6a6-9c42e1050f72",
-            "imagem": "assets/images/produtos/camisa-snes.jpg",
+            "imagem": "/assets/images/produtos/camisa-snes.jpg",
             "categoria": "Diversos",
             "nome": "Camisa Super Nintendo Entertainment System",
             "preco": 29.99,
@@ -114,7 +114,7 @@
         },
         {
             "id": "499edf76-aa4d-4dd7-91ea-82ba8a75b412",
-            "imagem": "assets/images/produtos/figura-sonic.jpg",
+            "imagem": "/assets/images/produtos/figura-sonic.jpg",
             "categoria": "Diversos",
             "nome": "Figura Sonic",
             "preco": 19.99,
@@ -122,7 +122,7 @@
         },
         {
             "id": "de1263c2-ffc2-44a7-8b63-44cb5ee256ac",
-            "imagem": "assets/images/produtos/radio-relogio-antigo.jpg",
+            "imagem": "/assets/images/produtos/radio-relogio-antigo.jpg",
             "categoria": "Diversos",
             "nome": "Rádio Relógio Antigo",
             "preco": 49.99,
@@ -130,7 +130,7 @@
         },
         {
             "id": "b2ae69a5-9206-4a41-86d5-3834e7933ff2",
-            "imagem": "assets/images/produtos/oculos-realidade-virtual.jpg",
+            "imagem": "/assets/images/produtos/oculos-realidade-virtual.jpg",
             "categoria": "Diversos",
             "nome": "Óculos de Realidade Virtual",
             "preco": 199.99,
@@ -138,7 +138,7 @@
         },
         {
             "id": "b648ad1f-1ded-4267-97f3-7b501fc20d60",
-            "imagem": "assets/images/produtos/fantasia-gigante-pikachu.jpg",
+            "imagem": "/assets/images/produtos/fantasia-gigante-pikachu.jpg",
             "categoria": "Diversos",
             "nome": "Fantasia Gigante de Pikachu",
             "preco": 299.99,
