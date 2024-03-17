@@ -67,3 +67,28 @@
         }
     }
 }
+
+@include breakpoint(desktop) {
+    .principal {
+        padding: 4rem $espacamento-lateral-grande;
+
+        .produto {
+            align-items: center;
+
+            .wrapper {
+                height: 403px;
+                width: 560px;
+            }
+
+            .info {
+                .nome {
+                    font-size: $tamanho-fonte-muito-grande;
+                }
+
+                .descricao {
+                    font-size: $tamanho-fonte-medio-pequeno;
+                }
+            }
+        }
+    }
+}
