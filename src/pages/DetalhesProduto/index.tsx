@@ -1,8 +1,13 @@
 import { useObterProduto } from '@/hooks/useObterProduto'
+import { useManipularProdutos } from '@/hooks/useManipularProdutos'
+import { filtrarProdutosPorCategoria } from '@/utils/operacoesCategorias'
+import GrupoProdutos from '@/components/GrupoProdutos'
 import styles from './DetalhesProduto.module.scss'
 
 const DetalhesProduto = () => {
     const { produto } = useObterProduto()
+    const { produtos } = useManipularProdutos()
+
     if (!produto) {
         return null
     }
@@ -23,6 +28,13 @@ const DetalhesProduto = () => {
                     <p className={styles.descricao}>{produto.descricao}</p>
                 </div>
             </section>
+            <GrupoProdutos
+                categoria="Produtos similares"
+                produtos={filtrarProdutosPorCategoria(
+                    produtos,
+                    produto.categoria
+                )}
+            />
         </main>
     )
 }
