@@ -10,8 +10,8 @@ const DetalhesProduto = () => {
                 <div className={styles.wrapper}>
                     <img
                         className={styles.imagem}
-                        src={`${window.location.origin}/${produto?.imagem}`}
                         alt={produto?.nome}
+                        src={produto.imagem}
                     />
                 </div>
                 <div className={styles.info}>
