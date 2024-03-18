@@ -9,9 +9,11 @@ export const obterCategoriasUnicas = (produtos: IProduto[]) => {
 }
 
 export const filtrarProdutosPorCategoria = (produtos: IProduto[], categoria: string) => {
-    const produtosFiltados = produtos.filter(produto =>
+    const produtosFiltrados = produtos.filter(produto =>
         produto.categoria === categoria
     )
 
-    return produtosFiltados
+    produtosFiltrados.splice(6, produtosFiltrados.length)
+
+    return produtosFiltrados
 }
