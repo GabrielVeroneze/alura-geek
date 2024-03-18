@@ -23,7 +23,7 @@ const DetalhesProduto = () => {
                     />
                 </div>
                 <div className={styles.info}>
-                    <h4 className={styles.nome}>{produto.nome}</h4>
+                    <h2 className={styles.nome}>{produto.nome}</h2>
                     <p className={styles.preco}>R$ {produto.preco}</p>
                     <p className={styles.descricao}>{produto.descricao}</p>
                 </div>
