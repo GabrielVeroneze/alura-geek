@@ -55,14 +55,16 @@
 
 @include breakpoint(tablet) {
     .principal {
-        padding: 2rem $espacamento-lateral-medio;
+        padding: 2rem $espacamento-lateral-medio 0;
 
         .produto {
             flex-direction: row;
+            margin-bottom: 2rem;
 
             .wrapper {
                 flex-shrink: 0;
                 height: 157px;
+                position: static;
                 width: 254px;
             }
 
@@ -79,6 +81,7 @@
 
         .produto {
             align-items: center;
+            margin-bottom: 4rem;
 
             .wrapper {
                 height: 403px;
