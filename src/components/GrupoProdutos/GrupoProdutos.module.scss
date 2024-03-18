@@ -4,6 +4,14 @@
 .grupo {
     padding: 1rem 0;
 
+    &.relacionado {
+        .topo {
+            .botao {
+                display: none;
+            }
+        }
+    }
+
     .topo {
         align-items: center;
         display: flex;
