@@ -1,6 +1,6 @@
 import { useObterProduto } from '@/hooks/useObterProduto'
 import { useManipularProdutos } from '@/hooks/useManipularProdutos'
-import { filtrarProdutosPorCategoria } from '@/utils/operacoesCategorias'
+import { obterProdutosRelacionados } from '@/utils/obterProdutosRelacionados'
 import GrupoProdutos from '@/components/GrupoProdutos'
 import styles from './DetalhesProduto.module.scss'
 
@@ -31,10 +31,7 @@ const DetalhesProduto = () => {
             <GrupoProdutos
                 modelo="relacionado"
                 categoria="Produtos similares"
-                produtos={filtrarProdutosPorCategoria(
-                    produtos,
-                    produto.categoria
-                )}
+                produtos={obterProdutosRelacionados(produtos, produto)}
             />
         </main>
     )
