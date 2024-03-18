@@ -29,6 +29,7 @@ const DetalhesProduto = () => {
                 </div>
             </section>
             <GrupoProdutos
+                modelo="relacionado"
                 categoria="Produtos similares"
                 produtos={filtrarProdutosPorCategoria(
                     produtos,
