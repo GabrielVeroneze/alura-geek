@@ -35,3 +35,19 @@
         padding: 2rem $espacamento-lateral-medio;
     }
 }
+
+@include breakpoint(desktop) {
+    .principal {
+        display: flex;
+        justify-content: center;
+        padding: 4rem $espacamento-lateral-grande;
+
+        .formulario {
+            width: calc((100 * 559) / 1440) + vw;
+
+            .titulo {
+                font-size: $tamanho-fonte-grande;
+            }
+        }
+    }
+}
