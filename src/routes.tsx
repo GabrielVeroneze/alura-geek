@@ -5,6 +5,7 @@ import Login from '@/pages/Login'
 import DetalhesProduto from '@/pages/DetalhesProduto'
 import LayoutAdmin from '@/pages/Administracao/LayoutAdmin'
 import FormularioProduto from '@/pages/Administracao/FormularioProduto'
+import TodosProdutos from '@/pages/Administracao/TodosProdutos'
 
 const AppRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
                     <Route path="produto/:id" element={<DetalhesProduto />} />
                     <Route path="admin" element={<LayoutAdmin />}>
                         <Route path="novo-produto" element={<FormularioProduto />} />
+                        <Route path="produtos" element={<TodosProdutos />} />
                     </Route>
                 </Route>
             </Routes>
