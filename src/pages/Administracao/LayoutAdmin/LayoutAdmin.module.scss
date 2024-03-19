@@ -1,0 +1,20 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+
+.principal {
+    padding: 1rem $espacamento-lateral-pequeno;
+}
+
+@include breakpoint(tablet) {
+    .principal {
+        padding: 2rem $espacamento-lateral-medio;
+    }
+}
+
+@include breakpoint(desktop) {
+    .principal {
+        display: flex;
+        justify-content: center;
+        padding: 4rem $espacamento-lateral-grande;
+    }
+}

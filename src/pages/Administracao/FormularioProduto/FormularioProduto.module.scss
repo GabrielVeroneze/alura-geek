@@ -1,53 +1,37 @@
 @use '@/sass/variaveis' as *;
 @use '@/sass/mixins' as *;
 
-.principal {
-    padding: 1rem $espacamento-lateral-pequeno;
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        .titulo {
-            color: $cor-texto-secundaria;
-            font-size: $tamanho-fonte-medio-grande;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-        .campo {
-            @include input(float-label);
-        }
-
-        .descricao {
-            @include textarea();
-        }
-
-        .botao {
-            @include botao(primario, 51px, 100%);
-        }
+    .titulo {
+        color: $cor-texto-secundaria;
+        font-size: $tamanho-fonte-medio-grande;
+        font-weight: 700;
+        line-height: normal;
     }
-}
 
-@include breakpoint(tablet) {
-    .principal {
-        padding: 2rem $espacamento-lateral-medio;
+    .campo {
+        @include input(float-label);
+    }
+
+    .descricao {
+        @include textarea();
+    }
+
+    .botao {
+        @include botao(primario, 51px, 100%);
     }
 }
 
 @include breakpoint(desktop) {
-    .principal {
-        display: flex;
-        justify-content: center;
-        padding: 4rem $espacamento-lateral-grande;
+    .formulario {
+        width: calc((100 * 559) / 1440) + vw;
 
-        .formulario {
-            width: calc((100 * 559) / 1440) + vw;
-
-            .titulo {
-                font-size: $tamanho-fonte-grande;
-            }
+        .titulo {
+            font-size: $tamanho-fonte-grande;
         }
     }
 }
