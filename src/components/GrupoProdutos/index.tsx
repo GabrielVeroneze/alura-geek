@@ -26,7 +26,11 @@ const GrupoProdutos = ({ modelo, categoria, produtos }: GrupoProdutosProps) => {
             </div>
             <ul className={styles.lista}>
                 {produtos.map(produto => (
-                    <Produto key={produto.id} {...produto} />
+                    <Produto
+                        key={produto.id}
+                        modelo={modelo === 'editar' ? 'editar' : 'visualizar'}
+                        produto={produto}
+                    />
                 ))}
             </ul>
         </section>
