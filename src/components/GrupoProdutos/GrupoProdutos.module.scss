@@ -35,6 +35,10 @@
                 width: 16px;
             }
         }
+
+        .botaoEditar {
+            @include botao(primario, 40px, 151px);
+        }
     }
 
     .lista {
