@@ -10,18 +10,14 @@ interface GrupoProdutosProps {
 
 const GrupoProdutos = ({ modelo, categoria, produtos }: GrupoProdutosProps) => {
     return (
-        <section className={styles.grupo}>
+        <section className={`${styles.grupo} ${styles[modelo]}`}>
             <div className={styles.topo}>
                 <h3 className={styles.categoria}>{categoria}</h3>
                 {modelo === 'destaque' && (
-                    <button className={styles.botaoDestaque}>
-                        Ver tudo
-                    </button>
+                    <button className={styles.botao}>Ver tudo</button>
                 )}
                 {modelo === 'editar' && (
-                    <button className={styles.botaoEditar}>
-                        Adicionar produto
-                    </button>
+                    <button className={styles.botao}>Adicionar produto</button>
                 )}
             </div>
             <ul className={styles.lista}>
