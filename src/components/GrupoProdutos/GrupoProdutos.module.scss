@@ -19,7 +19,7 @@
             line-height: normal;
         }
 
-        .botao {
+        .botaoDestaque {
             align-items: center;
             color: $cor-texto-destaque;
             display: flex;
@@ -50,7 +50,7 @@
         padding: 2rem 0;
 
         .topo {
-            .botao {
+            .botaoDestaque {
                 font-size: $tamanho-fonte-medio-pequeno;
                 gap: 0.5rem;
 
