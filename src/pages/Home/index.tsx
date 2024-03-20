@@ -15,6 +15,7 @@ const Home = () => {
                 {categorias.map(categoria => (
                     <GrupoProdutos
                         key={self.crypto.randomUUID()}
+                        modelo="destaque"
                         categoria={categoria}
                         produtos={filtrarProdutosPorCategoria(
                             produtos,
