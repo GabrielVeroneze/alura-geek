@@ -31,7 +31,11 @@ const Produto = ({ modelo, produto }: ProdutoProps) => {
             <div className={styles.info}>
                 <h4 className={styles.nome}>{produto.nome}</h4>
                 <p className={styles.preco}>R$ {produto.preco}</p>
-                <button className={styles.botao}>Ver produto</button>
+                {modelo === 'visualizar' ? (
+                    <button className={styles.botao}>Ver produto</button>
+                ) : (
+                    <p className={styles.identificador}>#{produto.id}</p>
+                )}
             </div>
         </li>
     )
