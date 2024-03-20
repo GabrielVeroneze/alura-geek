@@ -18,27 +18,6 @@
             font-weight: 700;
             line-height: normal;
         }
-
-        .botaoDestaque {
-            align-items: center;
-            color: $cor-texto-destaque;
-            display: flex;
-            font-size: $tamanho-fonte-pequeno;
-            font-weight: 700;
-            gap: 0.25rem;
-            line-height: normal;
-
-            &::after {
-                background: url('assets/icons/flecha-direita.svg') center / cover no-repeat;
-                content: '';
-                height: 16px;
-                width: 16px;
-            }
-        }
-
-        .botaoEditar {
-            @include botao(primario, 40px, 151px);
-        }
     }
 
     .lista {
@@ -46,6 +25,37 @@
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+    }
+
+    &.destaque {
+        .topo {
+            .botao {
+                align-items: center;
+                color: $cor-texto-destaque;
+                display: flex;
+                font-size: $tamanho-fonte-pequeno;
+                font-weight: 700;
+                gap: 0.25rem;
+                line-height: normal;
+    
+                &::after {
+                    background: url('/assets/icons/flecha-direita.svg') center / cover no-repeat;
+                    content: '';
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+    
+    &.editar {
+        padding: 0;
+
+        .topo {
+            .botao {
+                @include botao(primario, 40px, 151px);
+            }
+        }
     }
 }
 
