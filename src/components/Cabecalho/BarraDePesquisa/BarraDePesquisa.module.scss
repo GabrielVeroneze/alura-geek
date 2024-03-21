@@ -7,7 +7,7 @@
     }
 
     .lupa {
-        background-image: url('assets/icons/lupa-mobile.svg');
+        background-image: url('/assets/icons/lupa-mobile.svg');
         background-repeat: no-repeat;
         background-size: 24px;
         color: $cor-texto-secundaria;
@@ -44,7 +44,7 @@
         }
 
         .lupa {
-            background-image: url('assets/icons/lupa.svg');
+            background-image: url('/assets/icons/lupa.svg');
             position: absolute;
             right: 16px;
             top: 8px;
