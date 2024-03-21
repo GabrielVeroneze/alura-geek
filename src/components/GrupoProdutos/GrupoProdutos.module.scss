@@ -37,7 +37,7 @@
                 font-weight: 700;
                 gap: 0.25rem;
                 line-height: normal;
-    
+
                 &::after {
                     background: url('/assets/icons/flecha-direita.svg') center / cover no-repeat;
                     content: '';
@@ -47,7 +47,7 @@
             }
         }
     }
-    
+
     &.editar {
         padding: 0;
 
@@ -72,7 +72,7 @@
                 .botao {
                     font-size: $tamanho-fonte-medio-pequeno;
                     gap: 0.5rem;
-    
+
                     &::after {
                         height: 24px;
                         width: 24px;
@@ -88,14 +88,26 @@
         margin-bottom: 4rem;
         padding: 0;
 
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-
         .topo {
             .categoria {
                 font-size: $tamanho-fonte-grande;
             }
+        }
+
+        &.editar {
+            .topo {
+                .botao {
+                    @include botao(primario, 51px, 164px);
+                }
+            }
+
+            .lista {
+                gap: 4rem 1rem;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 }
