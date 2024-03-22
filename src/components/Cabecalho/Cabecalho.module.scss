@@ -16,6 +16,12 @@
     }
 
     .botao {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .login {
         @include botao(secundario, 40px, 133px);
     }
 }
@@ -27,9 +33,12 @@
         padding: 1rem $espacamento-lateral-medio;
 
         .botao {
-            @include botao(secundario, 40px, 166px);
             margin-left: auto;
             order: 3;
+        }
+
+        .login {
+            @include botao(secundario, 40px, 166px);
         }
     }
 }
@@ -43,7 +52,7 @@
             width: 176px;
         }
 
-        .botao {
+        .login {
             @include botao(secundario, 51px, 182px);
         }
     }
