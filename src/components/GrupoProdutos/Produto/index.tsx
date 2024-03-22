@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { IProduto } from '@/interfaces/IProduto'
 import styles from './Produto.module.scss'
 
@@ -32,7 +33,12 @@ const Produto = ({ modelo, produto }: ProdutoProps) => {
                 <h4 className={styles.nome}>{produto.nome}</h4>
                 <p className={styles.preco}>R$ {produto.preco}</p>
                 {modelo === 'visualizar' ? (
-                    <button className={styles.botao}>Ver produto</button>
+                    <Link
+                        to={`/produto/${produto.id}`}
+                        className={styles.botao}
+                    >
+                        Ver produto
+                    </Link>
                 ) : (
                     <p className={styles.identificador}>#{produto.id}</p>
                 )}
