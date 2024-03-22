@@ -24,6 +24,10 @@
     .login {
         @include botao(secundario, 40px, 133px);
     }
+
+    .menu {
+        @include botao(secundario, 40px, 166px);
+    }
 }
 
 @include breakpoint(tablet) {
@@ -54,6 +58,10 @@
 
         .login {
             @include botao(secundario, 51px, 182px);
+        }
+
+        .menu {
+            @include botao(secundario, 51px, 181px);
         }
     }
 }
