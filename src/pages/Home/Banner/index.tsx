@@ -7,7 +7,9 @@ const Banner = () => {
             <p className={styles.texto}>
                 Produtos selecionados com 33% de desconto
             </p>
-            <button className={styles.botao}>Ver Consoles</button>
+            <button className={styles.botao}>
+                <a href="#Consoles">Ver Consoles</a>
+            </button>
         </section>
     )
 }
