@@ -21,6 +21,14 @@ const Cabecalho = () => {
                     Login
                 </Link>
             )}
+            {pathname === '/admin/novo-produto' && (
+                <Link
+                    to="/admin/produtos"
+                    className={`${styles.botao} ${styles.menu}`}
+                >
+                    Menu administrador
+                </Link>
+            )}
             <BarraDePesquisa />
         </header>
     )
