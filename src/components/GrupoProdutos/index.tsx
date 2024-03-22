@@ -10,7 +10,7 @@ interface GrupoProdutosProps {
 
 const GrupoProdutos = ({ modelo, categoria, produtos }: GrupoProdutosProps) => {
     return (
-        <section className={`${styles.grupo} ${styles[modelo]}`}>
+        <section id={categoria} className={`${styles.grupo} ${styles[modelo]}`}>
             <div className={styles.topo}>
                 <h3 className={styles.categoria}>{categoria}</h3>
                 {modelo === 'destaque' && (
