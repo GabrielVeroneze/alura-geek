@@ -8,11 +8,13 @@ const Cabecalho = () => {
 
     return (
         <header className={styles.cabecalho}>
-            <img
-                className={styles.imagem}
-                src={logo}
-                alt="Logotipo da AluraGeek"
-            />
+            <Link to="/" className={styles.logo}>
+                <img
+                    className={styles.imagem}
+                    src={logo}
+                    alt="Logotipo da AluraGeek"
+                />
+            </Link>
             {pathname === '/' && (
                 <Link
                     to="/login"

@@ -11,8 +11,12 @@
     padding: 1rem $espacamento-lateral-pequeno;
     width: 100%;
 
-    .imagem {
-        width: 100px;
+    .logo {
+        display: flex;
+
+        .imagem {
+            width: 100px;
+        }
     }
 
     .botao {
@@ -52,8 +56,10 @@
         height: 115px;
         padding: 2rem $espacamento-lateral-grande;
 
-        .imagem {
-            width: 176px;
+        .logo {
+            .imagem {
+                width: 176px;
+            }
         }
 
         .login {
