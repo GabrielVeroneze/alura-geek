@@ -1,26 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useRecoilValue } from 'recoil'
+import { produtosAtom } from '@/state/atoms'
 import { IProduto } from '@/interfaces/IProduto'
-import http from '@/http'
 
 export const useManipularProdutos = () => {
-    const [produtos, setProdutos] = useState<IProduto[]>([])
-
-    useEffect(() => {
-        carregarProdutos()
-    }, [])
-
-    const carregarProdutos = () => {
-        http.get<IProduto[]>('produtos')
-            .then(resposta => {
-                setProdutos(resposta.data)
-            })
-            .catch(erro => {
-                throw new Error(erro)
-            })
-    }
+    const produtos = useRecoilValue<IProduto[]>(produtosAtom)
 
     return {
         produtos,
-        carregarProdutos,
     }
 }
