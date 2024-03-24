@@ -1,0 +1,18 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+
+.resultados {
+    padding: 0 $espacamento-lateral-pequeno;
+}
+
+@include breakpoint(tablet) {
+    .resultados {
+        padding: 0 $espacamento-lateral-medio;
+    }
+}
+
+@include breakpoint(desktop) {
+    .resultados {
+        padding: 4rem $espacamento-lateral-grande;
+    }
+}
