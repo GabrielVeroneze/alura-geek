@@ -2,6 +2,7 @@
 @use '@/sass/mixins' as *;
 
 .principal {
+    flex-grow: 1;
     padding: 1rem $espacamento-lateral-pequeno;
 }
 
