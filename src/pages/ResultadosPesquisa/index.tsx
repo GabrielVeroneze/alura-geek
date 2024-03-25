@@ -1,8 +1,8 @@
 import { usePesquisarProdutos } from '@/hooks/usePesquisarProdutos'
 import GrupoProdutos from '@/components/GrupoProdutos'
-import styles from './ResultadoBusca.module.scss'
+import styles from './ResultadoPesquisa.module.scss'
 
-const ResultadosBusca = () => {
+const ResultadosPesquisa = () => {
     const { resultadoProdutos } = usePesquisarProdutos()
 
     return (
@@ -16,4 +16,4 @@ const ResultadosBusca = () => {
     )
 }
 
-export default ResultadosBusca
+export default ResultadosPesquisa
