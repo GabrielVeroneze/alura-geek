@@ -60,6 +60,15 @@
     }
 }
 
+@mixin botao-icone($iconeUrl, $tamanho) {
+    background-image: url($iconeUrl);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: $tamanho;
+    width: $tamanho;
+}
+
 @mixin input($modelo) {
     @extend %campo-texto;
     padding: 0.5rem 0.75rem;
