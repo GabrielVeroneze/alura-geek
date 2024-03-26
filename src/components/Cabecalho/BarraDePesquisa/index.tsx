@@ -17,13 +17,13 @@ const BarraDePesquisa = () => {
     return (
         <div
             className={`
-                ${styles.container}
-                ${barraAberta ? styles.aberta : styles.fechada}
+                ${styles.wrapper}
+                ${barraAberta ? styles.aberta : ''}
             `}
         >
             <div className={styles.barraPesquisa}>
                 <input
-                    className={styles.input}
+                    className={styles.campo}
                     type="search"
                     placeholder="O que deseja encontrar?"
                     value={termo}
@@ -31,7 +31,7 @@ const BarraDePesquisa = () => {
                     onKeyDown={evento => handleKeyDown(evento)}
                 />
                 <button
-                    className={styles.lupa}
+                    className={styles.botaoLupa}
                     onClick={() => redirecionarParaResultados()}
                 ></button>
             </div>
