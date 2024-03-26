@@ -13,18 +13,28 @@ const BarraDePesquisa = () => {
     }
 
     return (
-        <div className={styles.barra}>
-            <input
-                className={styles.input}
-                type="search"
-                placeholder="O que deseja encontrar?"
-                value={termo}
-                onChange={evento => setTermo(evento.target.value)}
-                onKeyDown={evento => handleKeyDown(evento)}
-            />
+        <div
+            className={`
+                ${styles.container}
+                ${barraAberta ? styles.aberta : styles.fechada}
+            `}
+        >
+            <div className={styles.barraPesquisa}>
+                <input
+                    className={styles.input}
+                    type="search"
+                    placeholder="O que deseja encontrar?"
+                    value={termo}
+                    onChange={evento => setTermo(evento.target.value)}
+                    onKeyDown={evento => handleKeyDown(evento)}
+                />
+                <button
+                    className={styles.lupa}
+                    onClick={() => redirecionarParaResultados()}
+                ></button>
+            </div>
             <button
-                className={styles.lupa}
-                onClick={() => redirecionarParaResultados()}
+                className={styles.botaoAlternar}
             ></button>
         </div>
     )
