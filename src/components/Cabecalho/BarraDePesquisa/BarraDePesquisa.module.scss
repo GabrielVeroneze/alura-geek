@@ -23,24 +23,6 @@
         position: relative;
         width: 272px;
 
-        .input {
-            background-color: $fundo-terciario;
-            border-radius: 1.25rem;
-            color: $cor-texto-secundaria;
-            display: block;
-            font-size: $tamanho-fonte-pequeno;
-            height: 40px;
-            line-height: 1rem;
-            padding: 0.5rem 1rem;
-            width: 100%;
-
-            &::placeholder {
-                color: $cor-texto-terciaria;
-            }
-
-            &::-webkit-search-cancel-button {
-                -webkit-appearance: none;
-            }
         }
 
         .lupa {

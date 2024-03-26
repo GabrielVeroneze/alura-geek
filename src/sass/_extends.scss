@@ -11,6 +11,21 @@
     width: 100%;
 }
 
+%campo-pesquisa {
+    background-color: $fundo-terciario;
+    border-radius: 1.25rem;
+    color: $cor-texto-secundaria;
+    font-size: $tamanho-fonte-pequeno;
+    height: 40px;
+    line-height: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+}
+
 %placeholder {
     &::placeholder {
         color: $cor-texto-terciaria;
