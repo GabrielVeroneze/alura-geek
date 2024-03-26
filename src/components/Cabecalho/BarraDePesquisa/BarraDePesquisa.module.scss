@@ -1,41 +1,69 @@
 @use '@/sass/variaveis' as *;
 @use '@/sass/mixins' as *;
+@use '@/sass/extends' as *;
 
-.barra {
-    .input {
+.wrapper {
+    .barraPesquisa {
         display: none;
-    }
-
-    .lupa {
-        background-image: url('/assets/icons/lupa-mobile.svg');
-        background-repeat: no-repeat;
-        background-size: 24px;
-        color: $cor-texto-secundaria;
-        display: block;
-        height: 24px;
-        width: 24px;
-    }
-}
-
-@include breakpoint(tablet) {
-    .barra {
-        order: 2;
         position: relative;
-        width: 272px;
 
+        .campo {
+            @extend %campo-pesquisa;
         }
 
-        .lupa {
-            background-image: url('/assets/icons/lupa.svg');
+        .botaoLupa {
+            @include botao-icone('/assets/icons/lupa.svg', 24px);
             position: absolute;
             right: 16px;
             top: 8px;
         }
     }
+
+    .botaoAlternar {
+        @include botao-icone('/assets/icons/lupa-mobile.svg', 24px);
+    }
+}
+
+.aberta {
+    align-items: center;
+    background-color: $fundo-principal;
+    display: flex;
+    gap: 0.5rem;
+    left: 0;
+    padding: 1rem $espacamento-lateral-pequeno;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .barraPesquisa {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .botaoAlternar {
+        background-image: url('/assets/icons/fechar.svg');
+    }
+}
+
+@include breakpoint(tablet) {
+    .wrapper {
+        order: 2;
+        padding: unset;
+        position: unset;
+        width: 272px;
+
+        .barraPesquisa {
+            display: block;
+        }
+
+        .botaoAlternar {
+            display: none;
+        }
+    }
 }
 
 @include breakpoint(desktop) {
-    .barra {
+    .wrapper {
         width: 393px;
     }
 }
