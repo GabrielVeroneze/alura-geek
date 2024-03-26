@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useTermoDePesquisa } from '@/hooks/useTermoDePesquisa'
 import { usePesquisarProdutos } from '@/hooks/usePesquisarProdutos'
 import styles from './BarraDePesquisa.module.scss'
@@ -5,6 +6,7 @@ import styles from './BarraDePesquisa.module.scss'
 const BarraDePesquisa = () => {
     const { termo, setTermo } = useTermoDePesquisa()
     const { redirecionarParaResultados } = usePesquisarProdutos()
+    const [barraAberta, setBarraAberta] = useState<boolean>(false)
 
     const handleKeyDown = (evento: React.KeyboardEvent<HTMLInputElement>) => {
         if (evento.key === 'Enter') {
@@ -35,6 +37,7 @@ const BarraDePesquisa = () => {
             </div>
             <button
                 className={styles.botaoAlternar}
+                onClick={() => setBarraAberta(!barraAberta)}
             ></button>
         </div>
     )
