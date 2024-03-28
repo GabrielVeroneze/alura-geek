@@ -4,7 +4,7 @@ import styles from './Contato.module.scss'
 
 const Contato = () => {
     const { dadosContato, handleDadosChange, handleSubmit } = useFormularioContato()
-    const { validarCampo } = useValidarFormularioContato()
+    const { errosValidacao, validarCampo } = useValidarFormularioContato()
 
     return (
         <form
@@ -28,21 +28,33 @@ const Contato = () => {
                     maxLength={40}
                     required
                 />
+                {errosValidacao.nome && (
+                    <span className={styles.erro}>
+                        {errosValidacao.nome}
+                    </span>
+                )}
             </div>
-            <textarea
-                name="mensagem"
-                className={styles.mensagem}
-                placeholder="Escreva sua mensagem"
-                value={dadosContato.mensagem}
-                onChange={evento =>
-                    handleDadosChange('mensagem', evento.target.value)
-                }
-                onInvalid={evento => evento.preventDefault()}
-                onBlur={evento => validarCampo(evento.target)}
-                minLength={10}
-                maxLength={120}
-                required
-            ></textarea>
+            <div>
+                <textarea
+                    name="mensagem"
+                    className={styles.mensagem}
+                    placeholder="Escreva sua mensagem"
+                    value={dadosContato.mensagem}
+                    onChange={evento =>
+                        handleDadosChange('mensagem', evento.target.value)
+                    }
+                    onInvalid={evento => evento.preventDefault()}
+                    onBlur={evento => validarCampo(evento.target)}
+                    minLength={10}
+                    maxLength={120}
+                    required
+                ></textarea>
+                {errosValidacao.mensagem && (
+                    <span className={styles.erro}>
+                        {errosValidacao.mensagem}
+                    </span>
+                )}
+            </div>
             <button className={styles.botao} type="submit">
                 Enviar mensagem
             </button>
