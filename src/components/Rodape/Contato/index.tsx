@@ -21,6 +21,9 @@ const Contato = () => {
                         handleDadosChange('nome', evento.target.value)
                     }
                     onInvalid={evento => evento.preventDefault()}
+                    minLength={3}
+                    maxLength={40}
+                    required
                 />
             </div>
             <textarea
@@ -32,6 +35,9 @@ const Contato = () => {
                     handleDadosChange('mensagem', evento.target.value)
                 }
                 onInvalid={evento => evento.preventDefault()}
+                minLength={10}
+                maxLength={120}
+                required
             ></textarea>
             <button className={styles.botao} type="submit">
                 Enviar mensagem
