@@ -10,3 +10,6 @@ export type Erro =
     | 'typeMismatch'
     | 'valueMissing'
 
+export interface IMensagensDeErro {
+    [campo: string]: Partial<Record<Erro, string>>
+}
