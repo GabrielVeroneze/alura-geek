@@ -1,8 +1,10 @@
 import { useFormularioContato } from '@/hooks/useFormularioContato'
+import { useValidarFormularioContato } from '@/hooks/useValidarFormularioContato'
 import styles from './Contato.module.scss'
 
 const Contato = () => {
     const { dadosContato, handleDadosChange, handleSubmit } = useFormularioContato()
+    const { validarCampo } = useValidarFormularioContato()
 
     return (
         <form
@@ -21,6 +23,7 @@ const Contato = () => {
                         handleDadosChange('nome', evento.target.value)
                     }
                     onInvalid={evento => evento.preventDefault()}
+                    onBlur={evento => validarCampo(evento.target)}
                     minLength={3}
                     maxLength={40}
                     required
@@ -35,6 +38,7 @@ const Contato = () => {
                     handleDadosChange('mensagem', evento.target.value)
                 }
                 onInvalid={evento => evento.preventDefault()}
+                onBlur={evento => validarCampo(evento.target)}
                 minLength={10}
                 maxLength={120}
                 required
