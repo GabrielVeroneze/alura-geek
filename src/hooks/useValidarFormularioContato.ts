@@ -23,7 +23,26 @@ export const useValidarFormularioContato = () => {
         },
     }
 
+    const validarCampo = (campo: HTMLInputElement | HTMLTextAreaElement) => {
+        tiposDeErro.forEach(erro => {
+            if (campo.validity[erro]) {
+                setErrosValidacao({
+                    ...errosValidacao,
+                    [campo.name]: mensagensDeErro[campo.name][erro],
+                })
+            }
+        })
+
+        if (campo.validity.valid) {
+            setErrosValidacao({
+                ...errosValidacao,
+                [campo.name]: '',
+            })
+        }
+    }
+
     return {
         errosValidacao,
+        validarCampo,
     }
 }
