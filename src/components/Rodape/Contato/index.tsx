@@ -13,6 +13,7 @@ const Contato = () => {
             <div className={styles.campo}>
                 <label htmlFor="nome">Nome</label>
                 <input
+                    name="nome"
                     type="text"
                     id="nome"
                     value={dadosContato.nome}
@@ -22,6 +23,7 @@ const Contato = () => {
                 />
             </div>
             <textarea
+                name="mensagem"
                 className={styles.mensagem}
                 placeholder="Escreva sua mensagem"
                 value={dadosContato.mensagem}
