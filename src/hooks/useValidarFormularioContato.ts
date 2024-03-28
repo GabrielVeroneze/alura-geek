@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import { Erro, IMensagensDeErro } from '@/interfaces/IMensagensDeErro'
 
 export const useValidarFormularioContato = () => {
+    const [errosValidacao, setErrosValidacao] = useState({
+        nome: '',
+        mensagem: '',
+    })
+
     const tiposDeErro: Erro[] = ['tooLong', 'tooShort', 'valueMissing']
 
     const mensagensDeErro: IMensagensDeErro = {
@@ -17,4 +23,7 @@ export const useValidarFormularioContato = () => {
         },
     }
 
+    return {
+        errosValidacao,
+    }
 }
