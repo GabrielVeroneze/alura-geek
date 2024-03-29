@@ -12,29 +12,31 @@ const Contato = () => {
             onSubmit={evento => handleSubmit(evento)}
         >
             <h3 className={styles.titulo}>Fale conosco</h3>
-            <div className={styles.campo}>
-                <label htmlFor="nome">Nome</label>
-                <input
-                    name="nome"
-                    type="text"
-                    id="nome"
-                    value={dadosContato.nome}
-                    onChange={evento =>
-                        handleDadosChange('nome', evento.target.value)
-                    }
-                    onInvalid={evento => evento.preventDefault()}
-                    onBlur={evento => validarCampo(evento.target)}
-                    minLength={3}
-                    maxLength={40}
-                    required
-                />
+            <fieldset>
+                <div className={styles.campo}>
+                    <label htmlFor="nome">Nome</label>
+                    <input
+                        name="nome"
+                        type="text"
+                        id="nome"
+                        value={dadosContato.nome}
+                        onChange={evento =>
+                            handleDadosChange('nome', evento.target.value)
+                        }
+                        onInvalid={evento => evento.preventDefault()}
+                        onBlur={evento => validarCampo(evento.target)}
+                        minLength={3}
+                        maxLength={40}
+                        required
+                    />
+                </div>
                 {errosValidacao.nome && (
                     <span className={styles.erro}>
                         {errosValidacao.nome}
                     </span>
                 )}
-            </div>
-            <div>
+            </fieldset>
+            <fieldset>
                 <textarea
                     name="mensagem"
                     className={styles.mensagem}
@@ -54,7 +56,7 @@ const Contato = () => {
                         {errosValidacao.mensagem}
                     </span>
                 )}
-            </div>
+            </fieldset>
             <button className={styles.botao} type="submit">
                 Enviar mensagem
             </button>
