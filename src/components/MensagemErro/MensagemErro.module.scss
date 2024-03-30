@@ -1,0 +1,18 @@
+@use '@/sass/variaveis' as *;
+
+.erro {
+    align-items: center;
+    color: $cor-texto-erro;
+    display: flex;
+    gap: 0.25rem;
+
+    &::before {
+        background-image: url('/assets/icons/error.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        display: block;
+        height: 24px;
+        width: 24px;
+    }
+}
