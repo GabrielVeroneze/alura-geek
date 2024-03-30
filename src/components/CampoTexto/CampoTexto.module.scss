@@ -1,0 +1,9 @@
+@use '@/sass/mixins' as *;
+
+.noLabel {
+    @include input(no-label);
+}
+
+.floatLabel {
+    @include input(float-label);
+}
