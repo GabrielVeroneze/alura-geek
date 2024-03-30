@@ -1,6 +1,7 @@
 import { useFormularioContato } from '@/hooks/useFormularioContato'
 import { useValidarFormularioContato } from '@/hooks/useValidarFormularioContato'
 import CampoTexto from '@/components/CampoTexto'
+import MensagemErro from '@/components/MensagemErro'
 import styles from './Contato.module.scss'
 
 const Contato = () => {
@@ -15,10 +16,10 @@ const Contato = () => {
             <h3 className={styles.titulo}>Fale conosco</h3>
             <fieldset>
                 <CampoTexto
-                    modelo='float-label'
+                    modelo="float-label"
                     inputConfig={{
-                        id: "nome",
-                        name: "nome",
+                        id: 'nome',
+                        name: 'nome',
                         value: dadosContato.nome,
                         onChange: evento => handleDadosChange('nome', evento.target.value),
                         onInvalid: evento => evento.preventDefault(),
@@ -28,14 +29,12 @@ const Contato = () => {
                         required: true,
                     }}
                     labelConfig={{
-                        label: "Nome",
-                        htmlFor: "nome",
+                        label: 'Nome',
+                        htmlFor: 'nome',
                     }}
                 />
                 {errosValidacao.nome && (
-                    <span className={styles.erro}>
-                        {errosValidacao.nome}
-                    </span>
+                    <MensagemErro>{errosValidacao.nome}</MensagemErro>
                 )}
             </fieldset>
             <fieldset>
@@ -54,9 +53,7 @@ const Contato = () => {
                     required
                 ></textarea>
                 {errosValidacao.mensagem && (
-                    <span className={styles.erro}>
-                        {errosValidacao.mensagem}
-                    </span>
+                    <MensagemErro>{errosValidacao.mensagem}</MensagemErro>
                 )}
             </fieldset>
             <button className={styles.botao} type="submit">
