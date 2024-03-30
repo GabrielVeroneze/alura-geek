@@ -1,6 +1,6 @@
 import { useFormularioContato } from '@/hooks/useFormularioContato'
 import { useValidarFormularioContato } from '@/hooks/useValidarFormularioContato'
-import CampoTexto from '@/components/CampoTexto'
+import CampoTextoFloatLabel from '@/components/CampoTextoFloatLabel'
 import MensagemErro from '@/components/MensagemErro'
 import styles from './Contato.module.scss'
 
@@ -15,9 +15,10 @@ const Contato = () => {
         >
             <h3 className={styles.titulo}>Fale conosco</h3>
             <fieldset>
-                <CampoTexto
-                    modelo="float-label"
+                <CampoTextoFloatLabel
+                    label='Nome'
                     inputConfig={{
+                        type: 'text',
                         id: 'nome',
                         name: 'nome',
                         value: dadosContato.nome,
@@ -27,10 +28,6 @@ const Contato = () => {
                         minLength: 3,
                         maxLength: 40,
                         required: true,
-                    }}
-                    labelConfig={{
-                        label: 'Nome',
-                        htmlFor: 'nome',
                     }}
                 />
                 {errosValidacao.nome && (
