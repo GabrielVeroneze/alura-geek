@@ -16,10 +16,6 @@
         line-height: normal;
     }
 
-    .campo {
-        @include input(float-label);
-    }
-
     .mensagem {
         @include textarea();
         margin-top: 0.5rem;
