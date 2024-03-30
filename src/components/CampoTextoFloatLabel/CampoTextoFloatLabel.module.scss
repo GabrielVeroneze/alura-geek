@@ -1,5 +1,5 @@
 @use '@/sass/mixins' as *;
 
 .campo {
-    @include input(no-label);
+    @include input(float-label);
 }

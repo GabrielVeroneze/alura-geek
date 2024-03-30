@@ -1,9 +1,10 @@
-import styles from './CampoTexto.module.scss'
+import styles from './CampoTextoComLabel.module.scss'
 
-interface CampoTextoProps {
-    placeholder: string
+interface CampoTextoFloatLabelProps {
+    label: string
     inputConfig: {
         type: 'text' | 'email' | 'password' | 'url'
+        id: string
         name: string
         value: string
         onChange: (evento: React.ChangeEvent<HTMLInputElement>) => void
@@ -15,15 +16,13 @@ interface CampoTextoProps {
     }
 }
 
-const CampoTexto = ({ placeholder, inputConfig }: CampoTextoProps) => {
+const CampoTextoFloatLabel = ({ label, inputConfig }: CampoTextoFloatLabelProps) => {
     return (
-        <input
-            className={styles.campo}
-            placeholder={placeholder}
-            aria-label={placeholder}
-            {...inputConfig}
-        />
+        <div className={styles.campo}>
+            <label htmlFor={inputConfig.id}>{label}</label>
+            <input {...inputConfig} />
+        </div>
     )
 }
 
-export default CampoTexto
+export default CampoTextoFloatLabel
