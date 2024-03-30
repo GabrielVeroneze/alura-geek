@@ -16,7 +16,7 @@ const Contato = () => {
             <h3 className={styles.titulo}>Fale conosco</h3>
             <fieldset>
                 <CampoTextoFloatLabel
-                    label='Nome'
+                    label="Nome"
                     inputConfig={{
                         type: 'text',
                         id: 'nome',
