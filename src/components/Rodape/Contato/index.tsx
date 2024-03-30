@@ -1,5 +1,6 @@
 import { useFormularioContato } from '@/hooks/useFormularioContato'
 import { useValidarFormularioContato } from '@/hooks/useValidarFormularioContato'
+import CampoTexto from '@/components/CampoTexto'
 import styles from './Contato.module.scss'
 
 const Contato = () => {
@@ -13,23 +14,24 @@ const Contato = () => {
         >
             <h3 className={styles.titulo}>Fale conosco</h3>
             <fieldset>
-                <div className={styles.campo}>
-                    <label htmlFor="nome">Nome</label>
-                    <input
-                        name="nome"
-                        type="text"
-                        id="nome"
-                        value={dadosContato.nome}
-                        onChange={evento =>
-                            handleDadosChange('nome', evento.target.value)
-                        }
-                        onInvalid={evento => evento.preventDefault()}
-                        onBlur={evento => validarCampo(evento.target)}
-                        minLength={3}
-                        maxLength={40}
-                        required
-                    />
-                </div>
+                <CampoTexto
+                    modelo='float-label'
+                    inputConfig={{
+                        id: "nome",
+                        name: "nome",
+                        value: dadosContato.nome,
+                        onChange: evento => handleDadosChange('nome', evento.target.value),
+                        onInvalid: evento => evento.preventDefault(),
+                        onBlur: evento => validarCampo(evento.target),
+                        minLength: 3,
+                        maxLength: 40,
+                        required: true,
+                    }}
+                    labelConfig={{
+                        label: "Nome",
+                        htmlFor: "nome",
+                    }}
+                />
                 {errosValidacao.nome && (
                     <span className={styles.erro}>
                         {errosValidacao.nome}
