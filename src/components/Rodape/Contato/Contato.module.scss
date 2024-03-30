@@ -21,23 +21,6 @@
         margin-top: 0.5rem;
     }
 
-    .erro {
-        align-items: center;
-        color: $cor-texto-erro;
-        display: flex;
-        gap: 0.25rem;
-
-        &::before {
-            background-image: url('/assets/icons/error.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            content: '';
-            display: block;
-            height: 24px;
-            width: 24px;
-        }
-    }
-
     .botao {
         @include botao(primario, 40px, 151px);
     }
