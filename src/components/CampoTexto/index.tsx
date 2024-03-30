@@ -13,6 +13,10 @@ interface CampoTextoProps {
         maxLength: number
         required: boolean
     }
+    labelConfig?: {
+        label: string
+        htmlFor: string
+    }
 }
 
 const CampoTexto = ({ modelo, inputConfig, labelConfig }: CampoTextoProps) => {
@@ -20,6 +24,14 @@ const CampoTexto = ({ modelo, inputConfig, labelConfig }: CampoTextoProps) => {
         <>
             {modelo === 'no-label' && (
                 <input className={styles.noLabel} {...inputConfig} />
+            )}
+            {modelo === 'float-label' && (
+                <div className={styles.floatLabel}>
+                    <label htmlFor={labelConfig?.htmlFor}>
+                        {labelConfig?.label}
+                    </label>
+                    <input {...inputConfig} />
+                </div>
             )}
         </>
     )
