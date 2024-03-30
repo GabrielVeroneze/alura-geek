@@ -1,4 +1,4 @@
-import styles from './CampoTextoComLabel.module.scss'
+import styles from './CampoTextoFloatLabel.module.scss'
 
 interface CampoTextoFloatLabelProps {
     label: string
