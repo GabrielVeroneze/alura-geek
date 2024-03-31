@@ -42,11 +42,13 @@ export const useValidarFormularioContato = () => {
     }
 
     const validarFormulario = (campo: EventTarget) => {
+        const campoValidavel = campo as HTMLInputElement | HTMLTextAreaElement
+
         tiposDeErro.forEach(erro => {
-            if (campo.validity[erro]) {
+            if (campoValidavel.validity[erro]) {
                 setErrosValidacao({
                     ...errosValidacao,
-                    [campo.name]: mensagensDeErro[campo.name][erro],
+                    [campoValidavel.name]: mensagensDeErro[campoValidavel.name][erro],
                 })
             }
         })
