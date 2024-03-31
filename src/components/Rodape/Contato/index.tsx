@@ -6,12 +6,13 @@ import styles from './Contato.module.scss'
 
 const Contato = () => {
     const { dadosContato, handleDadosChange, handleSubmit } = useFormularioContato()
-    const { errosValidacao, validarCampo } = useValidarFormularioContato()
+    const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioContato()
 
     return (
         <form
             className={styles.formulario}
             onSubmit={evento => handleSubmit(evento)}
+            onInvalid={evento => validarFormulario(evento.target)}
         >
             <h3 className={styles.titulo}>Fale conosco</h3>
             <fieldset>
