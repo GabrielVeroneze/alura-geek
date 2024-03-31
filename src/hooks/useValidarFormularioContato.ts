@@ -41,8 +41,20 @@ export const useValidarFormularioContato = () => {
         }
     }
 
+    const validarFormulario = (campo: EventTarget) => {
+        tiposDeErro.forEach(erro => {
+            if (campo.validity[erro]) {
+                setErrosValidacao({
+                    ...errosValidacao,
+                    [campo.name]: mensagensDeErro[campo.name][erro],
+                })
+            }
+        })
+    }
+
     return {
         errosValidacao,
         validarCampo,
+        validarFormulario,
     }
 }
