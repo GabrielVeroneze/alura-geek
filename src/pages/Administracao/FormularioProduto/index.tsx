@@ -20,6 +20,7 @@ const FormularioProduto = () => {
                     onChange: evento => handleDadosChange(evento),
                     onInvalid: evento => evento.preventDefault(),
                     onBlur: evento => validarCampo(evento.target),
+                    pattern: '.+\\.(png|jpg)',
                     required: true,
                 }}
             />
@@ -47,6 +48,7 @@ const FormularioProduto = () => {
                     onInvalid: evento => evento.preventDefault(),
                     onBlur: evento => validarCampo(evento.target),
                     maxLength: 20,
+                    minLength: 3,
                     required: true,
                 }}
             />
@@ -73,6 +75,7 @@ const FormularioProduto = () => {
                 onInvalid={evento => evento.preventDefault()}
                 onBlur={evento => validarCampo(evento.target)}
                 maxLength={150}
+                minLength={10}
                 required
             ></textarea>
             <button className={styles.botao}>Adicionar produto</button>
