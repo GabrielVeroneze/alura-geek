@@ -14,6 +14,7 @@ interface CampoTextoFloatLabelProps {
         maxLength?: number
         min?: number
         minLength?: number
+        pattern?: string
         required?: boolean
     }
 }
