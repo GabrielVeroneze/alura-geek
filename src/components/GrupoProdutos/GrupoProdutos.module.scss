@@ -54,6 +54,9 @@
         .topo {
             .botao {
                 @include botao(primario, 40px, 151px);
+                align-items: center;
+                display: flex;
+                justify-content: center;
             }
         }
     }
