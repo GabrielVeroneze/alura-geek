@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { IProduto } from '@/interfaces/IProduto'
 import Produto from './Produto'
 import styles from './GrupoProdutos.module.scss'
@@ -17,7 +18,9 @@ const GrupoProdutos = ({ modelo, categoria, produtos }: GrupoProdutosProps) => {
                     <button className={styles.botao}>Ver tudo</button>
                 )}
                 {modelo === 'editar' && (
-                    <button className={styles.botao}>Adicionar produto</button>
+                    <Link to="/admin/novo-produto" className={styles.botao}>
+                        Adicionar produto
+                    </Link>
                 )}
             </div>
             <ul className={styles.lista}>
