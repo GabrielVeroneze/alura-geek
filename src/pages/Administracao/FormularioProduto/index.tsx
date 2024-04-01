@@ -1,9 +1,11 @@
 import { useFormularioProduto } from '@/hooks/useFormularioProduto'
+import { useValidarFormularioProduto } from '@/hooks/useValidarFormularioProduto'
 import CampoTextoFloatLabel from '@/components/CampoTextoFloatLabel'
 import styles from './FormularioProduto.module.scss'
 
 const FormularioProduto = () => {
     const { produtoDados, handleDadosChange } = useFormularioProduto()
+    const { validarCampo } = useValidarFormularioProduto()
 
     return (
         <form className={styles.formulario}>
@@ -16,6 +18,8 @@ const FormularioProduto = () => {
                     name: 'imagem',
                     value: produtoDados.imagem,
                     onChange: evento => handleDadosChange(evento),
+                    onInvalid: evento => evento.preventDefault(),
+                    onBlur: evento => validarCampo(evento.target),
                     required: true,
                 }}
             />
@@ -27,6 +31,8 @@ const FormularioProduto = () => {
                     name: 'categoria',
                     value: produtoDados.categoria,
                     onChange: evento => handleDadosChange(evento),
+                    onInvalid: evento => evento.preventDefault(),
+                    onBlur: evento => validarCampo(evento.target),
                     required: true,
                 }}
             />
@@ -38,6 +44,8 @@ const FormularioProduto = () => {
                     name: 'nome',
                     value: produtoDados.nome,
                     onChange: evento => handleDadosChange(evento),
+                    onInvalid: evento => evento.preventDefault(),
+                    onBlur: evento => validarCampo(evento.target),
                     maxLength: 20,
                     required: true,
                 }}
@@ -50,6 +58,8 @@ const FormularioProduto = () => {
                     name: 'preco',
                     value: produtoDados.preco,
                     onChange: evento => handleDadosChange(evento),
+                    onInvalid: evento => evento.preventDefault(),
+                    onBlur: evento => validarCampo(evento.target),
                     min: 0,
                     required: true,
                 }}
@@ -60,6 +70,8 @@ const FormularioProduto = () => {
                 name="descricao"
                 value={produtoDados.descricao}
                 onChange={evento => handleDadosChange(evento)}
+                onInvalid={evento => evento.preventDefault()}
+                onBlur={evento => validarCampo(evento.target)}
                 maxLength={150}
                 required
             ></textarea>
