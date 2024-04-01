@@ -3,7 +3,7 @@ import styles from './CampoTextoFloatLabel.module.scss'
 interface CampoTextoFloatLabelProps {
     label: string
     inputConfig: {
-        type: 'text' | 'email' | 'password' | 'url'
+        type: 'text' | 'number' | 'email' | 'password' | 'url'
         id: string
         name: string
         value: string
