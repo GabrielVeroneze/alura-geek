@@ -16,6 +16,7 @@ const FormularioProduto = () => {
                     name: 'imagem',
                     value: produtoDados.imagem,
                     onChange: evento => handleDadosChange(evento),
+                    required: true,
                 }}
             />
             <CampoTextoFloatLabel
@@ -26,6 +27,7 @@ const FormularioProduto = () => {
                     name: 'categoria',
                     value: produtoDados.categoria,
                     onChange: evento => handleDadosChange(evento),
+                    required: true,
                 }}
             />
             <CampoTextoFloatLabel
@@ -36,6 +38,8 @@ const FormularioProduto = () => {
                     name: 'nome',
                     value: produtoDados.nome,
                     onChange: evento => handleDadosChange(evento),
+                    maxLength: 20,
+                    required: true,
                 }}
             />
             <CampoTextoFloatLabel
@@ -46,6 +50,8 @@ const FormularioProduto = () => {
                     name: 'preco',
                     value: produtoDados.preco,
                     onChange: evento => handleDadosChange(evento),
+                    min: 0,
+                    required: true,
                 }}
             />
             <textarea
@@ -54,6 +60,8 @@ const FormularioProduto = () => {
                 name="descricao"
                 value={produtoDados.descricao}
                 onChange={evento => handleDadosChange(evento)}
+                maxLength={150}
+                required
             ></textarea>
             <button className={styles.botao}>Adicionar produto</button>
         </form>
