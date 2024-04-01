@@ -6,13 +6,15 @@ interface CampoTextoFloatLabelProps {
         type: 'text' | 'number' | 'email' | 'password' | 'url'
         id: string
         name: string
-        value: string
+        value: string | number
         onChange: (evento: React.ChangeEvent<HTMLInputElement>) => void
         onInvalid: (evento: React.FormEvent<HTMLInputElement>) => void
         onBlur: (evento: React.FocusEvent<HTMLInputElement, Element>) => void
-        minLength: number
-        maxLength: number
-        required: boolean
+        max?: number
+        maxLength?: number
+        min?: number
+        minLength?: number
+        required?: boolean
     }
 }
 
