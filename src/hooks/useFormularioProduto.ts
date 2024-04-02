@@ -16,9 +16,15 @@ export const useFormularioProduto = () => {
     const handleDadosChange = (
         evento: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => {
+        let novoValor: string | number = evento.target.value
+
+        if (evento.target.name === 'preco') {
+            novoValor = Number(evento.target.value)
+        }
+
         setProdutoDados({
             ...produtoDados,
-            [evento.target.name]: evento.target.value,
+            [evento.target.name]: novoValor,
         })
     }
 
