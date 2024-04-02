@@ -1,6 +1,10 @@
 import { useState } from 'react'
+import { useManipularProdutos } from '@/hooks/useManipularProdutos'
+import { obterId } from '@/utils/gerarIdProduto'
 
 export const useFormularioProduto = () => {
+    const { cadastrarProduto } = useManipularProdutos()
+
     const [produtoDados, setProdutoDados] = useState({
         imagem: '',
         categoria: '',
@@ -18,8 +22,20 @@ export const useFormularioProduto = () => {
         })
     }
 
+    const handleSubmit = (evento: React.FormEvent<HTMLFormElement>) => {
+        evento.preventDefault()
+
+        const novoProduto = {
+            ...produtoDados,
+            id: obterId(),
+        }
+
+        cadastrarProduto(novoProduto)
+    }
+
     return {
         produtoDados,
         handleDadosChange,
+        handleSubmit,
     }
 }
