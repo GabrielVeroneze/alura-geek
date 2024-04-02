@@ -6,10 +6,13 @@ import styles from './FormularioProduto.module.scss'
 
 const FormularioProduto = () => {
     const { produtoDados, handleDadosChange } = useFormularioProduto()
-    const { errosValidacao, validarCampo } = useValidarFormularioProduto()
+    const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioProduto()
 
     return (
-        <form className={styles.formulario}>
+        <form
+            className={styles.formulario}
+            onInvalid={evento => validarFormulario(evento.target)}
+        >
             <h2 className={styles.titulo}>Adicionar novo produto</h2>
             <fieldset>
                 <CampoTextoFloatLabel
