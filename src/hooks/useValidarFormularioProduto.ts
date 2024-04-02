@@ -64,8 +64,15 @@ export const useValidarFormularioProduto = () => {
         }
     }
 
+    const validarFormulario = (campo: EventTarget) => {
+        const campoValidavel = campo as HTMLInputElement | HTMLTextAreaElement
+
+        validarCampo(campoValidavel)
+    }
+
     return {
         errosValidacao,
         validarCampo,
+        validarFormulario,
     }
 }
