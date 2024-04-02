@@ -5,12 +5,13 @@ import MensagemErro from '@/components/MensagemErro'
 import styles from './FormularioProduto.module.scss'
 
 const FormularioProduto = () => {
-    const { produtoDados, handleDadosChange } = useFormularioProduto()
+    const { produtoDados, handleDadosChange, handleSubmit } = useFormularioProduto()
     const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioProduto()
 
     return (
         <form
             className={styles.formulario}
+            onSubmit={evento => handleSubmit(evento)}
             onInvalid={evento => validarFormulario(evento.target)}
         >
             <h2 className={styles.titulo}>Adicionar novo produto</h2>
