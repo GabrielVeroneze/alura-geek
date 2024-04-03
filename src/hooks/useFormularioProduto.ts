@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNumberFormat } from '@react-input/number-format'
 import { useManipularProdutos } from '@/hooks/useManipularProdutos'
+import { converterPrecoEmNumero } from '@/utils/formatarPrecoProduto'
 import { obterId } from '@/utils/gerarIdProduto'
 
 export const useFormularioProduto = () => {
@@ -33,9 +34,12 @@ export const useFormularioProduto = () => {
     const handleSubmit = (evento: React.FormEvent<HTMLFormElement>) => {
         evento.preventDefault()
 
+        const precoConvertido = converterPrecoEmNumero(produtoDados.preco)
+
         const novoProduto = {
             ...produtoDados,
             id: obterId(),
+            preco: precoConvertido,
         }
 
         cadastrarProduto(novoProduto)
