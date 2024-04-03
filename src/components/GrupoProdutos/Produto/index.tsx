@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import { IProduto } from '@/interfaces/IProduto'
 import styles from './Produto.module.scss'
 
@@ -31,7 +32,9 @@ const Produto = ({ modelo, produto }: ProdutoProps) => {
             </div>
             <div className={styles.info}>
                 <h4 className={styles.nome}>{produto.nome}</h4>
-                <p className={styles.preco}>R$ {produto.preco}</p>
+                <p className={styles.preco}>
+                    {formatarPrecoEmReal(produto.preco)}
+                </p>
                 {modelo === 'visualizar' ? (
                     <Link
                         to={`/produto/${produto.id}`}
