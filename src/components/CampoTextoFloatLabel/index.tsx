@@ -2,6 +2,7 @@ import styles from './CampoTextoFloatLabel.module.scss'
 
 interface CampoTextoFloatLabelProps {
     label: string
+    mask?: React.MutableRefObject<HTMLInputElement | null>
     inputConfig: {
         type: 'text' | 'number' | 'email' | 'password' | 'url'
         id: string
@@ -19,11 +20,11 @@ interface CampoTextoFloatLabelProps {
     }
 }
 
-const CampoTextoFloatLabel = ({ label, inputConfig }: CampoTextoFloatLabelProps) => {
+const CampoTextoFloatLabel = ({ label, mask, inputConfig }: CampoTextoFloatLabelProps) => {
     return (
         <div className={styles.campo}>
             <label htmlFor={inputConfig.id}>{label}</label>
-            <input {...inputConfig} />
+            <input ref={mask} {...inputConfig} />
         </div>
     )
 }
