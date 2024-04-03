@@ -1,4 +1,5 @@
 import { useRecoilValue } from 'recoil'
+import { toast } from 'react-toastify'
 import { produtosAtom } from '@/state/atoms'
 import { IProduto } from '@/interfaces/IProduto'
 import http from '@/http'
@@ -9,10 +10,16 @@ export const useManipularProdutos = () => {
     const cadastrarProduto = (produto: IProduto) => {
         http.post<IProduto>('produtos', produto)
             .then(() => {
-                alert('Projeto adicionado com sucesso!')
+                toast.success('Produto adicionado com sucesso!', {
+                    position: 'bottom-right',
+                    theme: 'colored',
+                })
             })
             .catch(() => {
-                alert('Erro ao cadastrar o projeto.')
+                toast.error('Erro ao adicionar o produto.', {
+                    position: 'bottom-right',
+                    theme: 'colored',
+                })
             })
     }
 
