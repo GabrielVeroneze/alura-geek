@@ -5,7 +5,7 @@ import MensagemErro from '@/components/MensagemErro'
 import styles from './FormularioProduto.module.scss'
 
 const FormularioProduto = () => {
-    const { produtoDados, handleDadosChange, handleSubmit } = useFormularioProduto()
+    const { produtoDados, handleDadosChange, handleSubmit, mascaraMonetaria } = useFormularioProduto()
     const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioProduto()
 
     return (
@@ -75,8 +75,9 @@ const FormularioProduto = () => {
             <fieldset>
                 <CampoTextoFloatLabel
                     label="Preço do produto"
+                    mask={mascaraMonetaria}
                     inputConfig={{
-                        type: 'number',
+                        type: 'text',
                         id: 'preco',
                         name: 'preco',
                         value: produtoDados.preco,
