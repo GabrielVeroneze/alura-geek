@@ -7,3 +7,11 @@ export const converterPrecoEmNumero = (preco: string) => {
     return Number(precoConvertido)
 }
 
+export const formatarPrecoEmReal = (preco: number) => {
+    const precoFormatado = preco.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+    })
+
+    return precoFormatado
+}
