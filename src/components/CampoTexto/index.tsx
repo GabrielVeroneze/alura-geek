@@ -9,9 +9,12 @@ interface CampoTextoProps {
         onChange: (evento: React.ChangeEvent<HTMLInputElement>) => void
         onInvalid: (evento: React.FormEvent<HTMLInputElement>) => void
         onBlur: (evento: React.FocusEvent<HTMLInputElement, Element>) => void
-        minLength: number
-        maxLength: number
-        required: boolean
+        max?: number
+        maxLength?: number
+        min?: number
+        minLength?: number
+        pattern?: string
+        required?: boolean
     }
 }
 
