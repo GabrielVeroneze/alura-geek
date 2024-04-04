@@ -1,3 +1,4 @@
+import CampoTexto from '@/components/CampoTexto'
 import styles from './Login.module.scss'
 
 const Login = () => {
@@ -5,17 +6,19 @@ const Login = () => {
         <main className={styles.principal}>
             <h2 className={styles.titulo}>Iniciar Sessão</h2>
             <form className={styles.formulario}>
-                <input
-                    className={styles.input}
-                    type="email"
+                <CampoTexto
                     placeholder="Escreva seu email"
-                    aria-label="Escreva seu email"
+                    inputConfig={{
+                        type: 'email',
+                        name: 'email',
+                    }}
                 />
-                <input
-                    className={styles.input}
-                    type="password"
+                <CampoTexto
                     placeholder="Escreva sua senha"
-                    aria-label="Escreva sua senha"
+                    inputConfig={{
+                        type: 'password',
+                        name: 'senha',
+                    }}
                 />
                 <button className={styles.botao}>Entrar</button>
             </form>
