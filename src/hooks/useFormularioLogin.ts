@@ -6,7 +6,15 @@ export const useFormularioLogin = () => {
         senha: '',
     })
 
+    const handleDadosChange = (evento: React.ChangeEvent<HTMLInputElement>) => {
+        setLoginDados({
+            ...loginDados,
+            [evento.target.name]: evento.target.value,
+        })
+    }
+
     return {
         loginDados,
+        handleDadosChange,
     }
 }
