@@ -13,10 +13,6 @@
         line-height: normal;
     }
 
-    .campo {
-        @include input(float-label);
-    }
-
     .descricao {
         @include textarea();
     }
