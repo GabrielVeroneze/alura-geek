@@ -16,6 +16,8 @@ const Login = () => {
                         name: 'email',
                         value: loginDados.email,
                         onChange: evento => handleDadosChange(evento),
+                        pattern: '^[a-zA-Z0-9._+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}$',
+                        required: true,
                     }}
                 />
                 <CampoTexto
@@ -25,6 +27,8 @@ const Login = () => {
                         name: 'senha',
                         value: loginDados.senha,
                         onChange: evento => handleDadosChange(evento),
+                        pattern: '^(?=.*[A-Z])(?=.*[0-9]).{8,}$',
+                        required: true,
                     }}
                 />
                 <button className={styles.botao}>Entrar</button>
