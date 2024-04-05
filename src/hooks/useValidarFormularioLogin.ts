@@ -38,8 +38,15 @@ export const useValidarFormularioLogin = () => {
         }
     }
 
+    const validarFormulario = (campo: EventTarget) => {
+        const campoValidavel = campo as HTMLInputElement
+
+        validarCampo(campoValidavel)
+    }
+
     return {
         errosValidacao,
         validarCampo,
+        validarFormulario,
     }
 }
