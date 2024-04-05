@@ -13,8 +13,13 @@ export const useFormularioLogin = () => {
         })
     }
 
+    const handleSubmit = (evento: React.FormEvent<HTMLFormElement>) => {
+        evento.preventDefault()
+    }
+
     return {
         loginDados,
         handleDadosChange,
+        handleSubmit,
     }
 }
