@@ -5,7 +5,7 @@ import MensagemErro from '@/components/MensagemErro'
 import styles from './Login.module.scss'
 
 const Login = () => {
-    const { loginDados, handleDadosChange } = useFormularioLogin()
+    const { loginDados, handleDadosChange, handleSubmit } = useFormularioLogin()
     const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioLogin()
 
     return (
@@ -13,6 +13,7 @@ const Login = () => {
             <h2 className={styles.titulo}>Iniciar Sessão</h2>
             <form
                 className={styles.formulario}
+                onSubmit={evento => handleSubmit(evento)}
                 onInvalid={evento => validarFormulario(evento.target)}
             >
                 <fieldset className={styles.campo}>
