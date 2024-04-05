@@ -25,8 +25,8 @@
         gap: 1rem;
         width: calc((100 * 275) / 360) + vw;
 
-        .input {
-            @include input(no-label);
+        .campo {
+            width: 100%
         }
 
         .botao {
