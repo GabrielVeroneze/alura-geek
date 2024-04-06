@@ -5,7 +5,7 @@ import MensagemErro from '@/components/MensagemErro'
 import styles from './Contato.module.scss'
 
 const Contato = () => {
-    const { dadosContato, handleDadosChange, handleSubmit } = useFormularioContato()
+    const { contatoDados, handleDadosChange, handleSubmit } = useFormularioContato()
     const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioContato()
 
     return (
@@ -22,7 +22,7 @@ const Contato = () => {
                         type: 'text',
                         id: 'nome',
                         name: 'nome',
-                        value: dadosContato.nome,
+                        value: contatoDados.nome,
                         onChange: evento => handleDadosChange('nome', evento.target.value),
                         onInvalid: evento => evento.preventDefault(),
                         onBlur: evento => validarCampo(evento.target),
@@ -40,7 +40,7 @@ const Contato = () => {
                     name="mensagem"
                     className={styles.mensagem}
                     placeholder="Escreva sua mensagem"
-                    value={dadosContato.mensagem}
+                    value={contatoDados.mensagem}
                     onChange={evento =>
                         handleDadosChange('mensagem', evento.target.value)
                     }

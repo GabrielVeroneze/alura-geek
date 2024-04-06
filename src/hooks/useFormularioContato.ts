@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
 export const useFormularioContato = () => {
-    const [dadosContato, setDadosContato] = useState({
+    const [contatoDados, setContatoDados] = useState({
         nome: '',
         mensagem: '',
     })
 
     const handleDadosChange = (campo: 'nome' | 'mensagem', valor: string) => {
-        setDadosContato({
-            ...dadosContato,
+        setContatoDados({
+            ...contatoDados,
             [campo]: valor,
         })
     }
@@ -18,7 +18,7 @@ export const useFormularioContato = () => {
     }
 
     return {
-        dadosContato,
+        contatoDados,
         handleDadosChange,
         handleSubmit,
     }
