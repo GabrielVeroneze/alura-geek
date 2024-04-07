@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { jsonServerApi } from '@/services/api'
 import { IProduto } from '@/interfaces/IProduto'
-import http from '@/http'
 
 export const useObterProduto = () => {
     const { id } = useParams()
@@ -14,7 +14,8 @@ export const useObterProduto = () => {
     }, [id])
 
     const carregarProduto = (id: string) => {
-        http.get<IProduto>(`produtos/${id}`)
+        jsonServerApi
+            .get<IProduto>(`produtos/${id}`)
             .then(resposta => {
                 setProduto(resposta.data)
             })
