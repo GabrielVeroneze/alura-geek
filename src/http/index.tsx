@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const http = axios.create({
+export const jsonServerApi = axios.create({
     baseURL: 'http://localhost:3000/',
     headers: {
         Accept: 'application/json',
@@ -8,4 +8,3 @@ const http = axios.create({
     },
 })
 
-export default http
