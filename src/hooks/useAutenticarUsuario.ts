@@ -8,7 +8,7 @@ export const useAutenticarUsuario = () => {
     const fazerLogin = async (email: string, senha: string) => {
         const dados = await login(email, senha)
 
-        if (dados.user && dados.token) {
+        if (dados.usuario && dados.token) {
             setUsuario(dados.usuario)
 
             return true
