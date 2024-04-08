@@ -1,6 +1,12 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { useAutenticarUsuario } from '@/hooks/useAutenticarUsuario'
 
 export const useFormularioLogin = () => {
+    const { fazerLogin } = useAutenticarUsuario()
+    const navigate = useNavigate()
+
     const [loginDados, setLoginDados] = useState({
         email: '',
         senha: '',
@@ -13,8 +19,19 @@ export const useFormularioLogin = () => {
         })
     }
 
-    const handleSubmit = (evento: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (evento: React.FormEvent<HTMLFormElement>) => {
         evento.preventDefault()
+
+        const estaLogado = await fazerLogin(loginDados.email, loginDados.senha)
+
+        if (estaLogado) {
+            navigate('/admin/produtos')
+        } else {
+            toast.error('E-mail ou senha inválido.', {
+                position: 'bottom-right',
+                theme: 'colored',
+            })
+        }
     }
 
     return {
