@@ -22,6 +22,10 @@ export const useAutenticarUsuario = () => {
         setUsuario(null)
     }
 
+    const setToken = (token: string) => {
+        localStorage.setItem('token', token)
+    }
+
     return {
         usuario,
         fazerLogin,
