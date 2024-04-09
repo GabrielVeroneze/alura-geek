@@ -10,6 +10,7 @@ export const useAutenticarUsuario = () => {
 
         if (dados.usuario && dados.token) {
             setUsuario(dados.usuario)
+            setToken(dados.token)
 
             return true
         }
