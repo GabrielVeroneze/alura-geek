@@ -1,9 +1,24 @@
+import { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
 import { usuarioAtom } from '@/state/atoms'
-import { login, logout } from '@/utils/autenticacao'
+import { login, logout, validarToken } from '@/utils/autenticacao'
 
 export const useAutenticarUsuario = () => {
     const [usuario, setUsuario] = useRecoilState(usuarioAtom)
+
+    useEffect(() => {
+        (async () => {
+            const storageToken = localStorage.getItem('token')
+
+            if (storageToken) {
+                const dados = await validarToken(storageToken) 
+
+                if (dados.usuario) {
+                    setUsuario(dados.usuario)
+                }
+            }
+        })()
+    }, [setUsuario])
 
     const fazerLogin = async (email: string, senha: string) => {
         const dados = await login(email, senha)
