@@ -35,7 +35,9 @@ export const useAutenticarUsuario = () => {
 
     const fazerLogout = async () => {
         await logout()
+
         setUsuario(null)
+        setToken('')
     }
 
     const setToken = (token: string) => {
