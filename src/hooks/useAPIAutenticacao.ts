@@ -1,20 +1,24 @@
 import { jsonServerApi } from '@/services/api'
+import { simularRequisicaoLogin, simularRequisicaoLogout, simularRequisicaoValidarToken } from '@/utils/autenticacao'
 
 export const useAPIAutenticacao = () => {
     const validarToken = async (token: string) => {
-        const resposta = await jsonServerApi.post('/validate', { token })
+        const resposta = await simularRequisicaoValidarToken(token)
+        // const resposta = await jsonServerApi.post('/validate', { token })
 
         return resposta.data
     }
 
     const login = async (email: string, senha: string) => {
-        const resposta = await jsonServerApi.post('/login', { email, senha })
+        const resposta = await simularRequisicaoLogin(email, senha)
+        // const resposta = await jsonServerApi.post('/login', { email, senha })
 
         return resposta.data
     }
 
     const logout = async () => {
-        const resposta = await jsonServerApi.post('/logout')
+        const resposta = await simularRequisicaoLogout()
+        // const resposta = await jsonServerApi.post('/logout')
 
         return resposta.data
     }
