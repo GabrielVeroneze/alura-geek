@@ -1,5 +1,5 @@
 import { jsonServerApi } from '@/services/api'
-import { simularRequisicaoLogin, simularRequisicaoLogout, simularRequisicaoValidarToken } from '@/utils/autenticacao'
+import { simularRequisicaoLogin, simularRequisicaoLogout, simularRequisicaoValidarToken } from '@/utils/mockRequisicoesAutenticacao'
 
 export const useAPIAutenticacao = () => {
     const validarToken = async (token: string) => {
