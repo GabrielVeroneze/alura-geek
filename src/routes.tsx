@@ -7,6 +7,7 @@ import LayoutAdmin from '@/pages/Administracao/LayoutAdmin'
 import FormularioProduto from '@/pages/Administracao/FormularioProduto'
 import MenuAdmin from '@/pages/Administracao/MenuAdmin'
 import ResultadosPesquisa from '@/pages/ResultadosPesquisa'
+import CategoriaProdutos from '@/pages/CategoriaProdutos'
 
 const AppRoutes = () => {
     return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
                         <Route path="menu" element={<MenuAdmin />} />
                     </Route>
                     <Route path="resultados" element={<ResultadosPesquisa />} />
+                    <Route path="produtos/:categoria" element={<CategoriaProdutos />} />
                 </Route>
             </Routes>
         </Router>
