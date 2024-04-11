@@ -1,10 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
+import { useAutenticarUsuario } from '@/hooks/useAutenticarUsuario'
 import BarraDePesquisa from './BarraDePesquisa'
 import styles from './Cabecalho.module.scss'
 import logo from '@/assets/images/logo.svg'
 
 const Cabecalho = () => {
     const { pathname } = useLocation()
+    const { usuario } = useAutenticarUsuario()
 
     return (
         <header className={styles.cabecalho}>
@@ -15,7 +17,7 @@ const Cabecalho = () => {
                     alt="Logotipo da AluraGeek"
                 />
             </Link>
-            {pathname === '/' && (
+            {!usuario && (
                 <Link
                     to="/login"
                     className={`${styles.botao} ${styles.login}`}
@@ -23,7 +25,7 @@ const Cabecalho = () => {
                     Login
                 </Link>
             )}
-            {pathname === '/admin/novo-produto' && (
+            {usuario && pathname !== '/admin/produtos' && (
                 <Link
                     to="/admin/produtos"
                     className={`${styles.botao} ${styles.menu}`}
