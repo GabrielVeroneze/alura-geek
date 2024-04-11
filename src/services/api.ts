@@ -7,11 +7,3 @@ export const jsonServerApi = axios.create({
         'Content-Type': 'application/json',
     },
 })
-
-export const reqresApi = axios.create({
-    baseURL: 'https://reqres.in/api/',
-    headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-    },
-})
