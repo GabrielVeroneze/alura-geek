@@ -26,19 +26,6 @@
         gap: 1rem;
         justify-content: center;
     }
-
-    &.editar {
-        padding: 0;
-
-        .topo {
-            .botao {
-                @include botao(primario, 40px, 151px);
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-        }
-    }
 }
 
 @include breakpoint(tablet) {
@@ -59,18 +46,6 @@
         .topo {
             .categoria {
                 font-size: $tamanho-fonte-grande;
-            }
-        }
-
-        &.editar {
-            .topo {
-                .botao {
-                    @include botao(primario, 51px, 164px);
-                }
-            }
-
-            .lista {
-                gap: 4rem 1rem;
             }
         }
 
