@@ -25,7 +25,7 @@ export const useFormularioLogin = () => {
         const estaLogado = await fazerLogin(loginDados.email, loginDados.senha)
 
         if (estaLogado) {
-            navigate('/admin/produtos')
+            navigate('/admin/menu')
         } else {
             toast.error('E-mail ou senha inválido.', {
                 position: 'bottom-right',

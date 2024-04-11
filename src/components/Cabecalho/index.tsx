@@ -25,9 +25,9 @@ const Cabecalho = () => {
                     Login
                 </Link>
             )}
-            {usuario && pathname !== '/admin/produtos' && (
+            {usuario && pathname !== '/admin/menu' && (
                 <Link
-                    to="/admin/produtos"
+                    to="/admin/menu"
                     className={`${styles.botao} ${styles.menu}`}
                 >
                     Menu administrador
