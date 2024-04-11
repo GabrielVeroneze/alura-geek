@@ -5,7 +5,7 @@ import Login from '@/pages/Login'
 import DetalhesProduto from '@/pages/DetalhesProduto'
 import LayoutAdmin from '@/pages/Administracao/LayoutAdmin'
 import FormularioProduto from '@/pages/Administracao/FormularioProduto'
-import TodosProdutos from '@/pages/Administracao/TodosProdutos'
+import MenuAdmin from '@/pages/Administracao/MenuAdmin'
 import ResultadosPesquisa from '@/pages/ResultadosPesquisa'
 
 const AppRoutes = () => {
@@ -18,7 +18,7 @@ const AppRoutes = () => {
                     <Route path="produto/:id" element={<DetalhesProduto />} />
                     <Route path="admin" element={<LayoutAdmin />}>
                         <Route path="novo-produto" element={<FormularioProduto />} />
-                        <Route path="produtos" element={<TodosProdutos />} />
+                        <Route path="produtos" element={<MenuAdmin />} />
                     </Route>
                     <Route path="resultados" element={<ResultadosPesquisa />} />
                 </Route>

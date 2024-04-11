@@ -1,7 +1,7 @@
 import { useManipularProdutos } from '@/hooks/useManipularProdutos'
 import GrupoProdutos from '@/components/GrupoProdutos'
 
-const TodosProdutos = () => {
+const MenuAdmin = () => {
     const { produtos } = useManipularProdutos()
 
     return (
@@ -13,4 +13,4 @@ const TodosProdutos = () => {
     )
 }
 
-export default TodosProdutos
+export default MenuAdmin
