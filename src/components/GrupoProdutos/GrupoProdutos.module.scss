@@ -27,27 +27,6 @@
         justify-content: center;
     }
 
-    &.destaque {
-        .topo {
-            .botao {
-                align-items: center;
-                color: $cor-texto-destaque;
-                display: flex;
-                font-size: $tamanho-fonte-pequeno;
-                font-weight: 700;
-                gap: 0.25rem;
-                line-height: normal;
-
-                &::after {
-                    background: url('/assets/icons/flecha-direita.svg') center / cover no-repeat;
-                    content: '';
-                    height: 16px;
-                    width: 16px;
-                }
-            }
-        }
-    }
-
     &.editar {
         padding: 0;
 
@@ -68,20 +47,6 @@
 
         .lista {
             justify-content: start;
-        }
-
-        &.destaque {
-            .topo {
-                .botao {
-                    font-size: $tamanho-fonte-medio-pequeno;
-                    gap: 0.5rem;
-
-                    &::after {
-                        height: 24px;
-                        width: 24px;
-                    }
-                }
-            }
         }
     }
 }
