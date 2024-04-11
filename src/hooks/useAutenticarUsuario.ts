@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
 import { usuarioAtom } from '@/state/atoms'
 import { useAPIAutenticacao } from '@/hooks/useAPIAutenticacao'
+import { setTokenLocalStorage } from '@/utils/tokenLocalStorage'
 
 export const useAutenticarUsuario = () => {
     const [usuario, setUsuario] = useRecoilState(usuarioAtom)
@@ -26,7 +27,7 @@ export const useAutenticarUsuario = () => {
 
         if (dados.usuario && dados.token) {
             setUsuario(dados.usuario)
-            setToken(dados.token)
+            setTokenLocalStorage(dados.token)
 
             return true
         }
@@ -38,11 +39,7 @@ export const useAutenticarUsuario = () => {
         await logout()
 
         setUsuario(null)
-        setToken('')
-    }
-
-    const setToken = (token: string) => {
-        localStorage.setItem('token', token)
+        setTokenLocalStorage('')
     }
 
     return {
