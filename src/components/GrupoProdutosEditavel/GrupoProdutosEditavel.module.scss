@@ -1,0 +1,41 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/mixins' as *;
+@use '@/sass/extends' as *;
+
+.grupo {
+    @extend %grupo-produtos;
+    padding: 0;
+
+    .topo {
+        @extend %grupo-topo;
+
+        .titulo {
+            @extend %grupo-titulo;
+        }
+
+        .botao {
+            @include botao(primario, 40px, 151px);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .lista {
+        @extend %lista-produtos;
+    }
+}
+
+@include breakpoint(desktop) {
+    .grupo {
+        .topo {
+            .botao {
+                @include botao(primario, 51px, 164px);
+            }
+        }
+
+        .lista {
+            gap: 4rem 1rem;
+        }
+    }
+}
