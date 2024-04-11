@@ -9,5 +9,5 @@ export const getTokenLocalStorage = () => {
         return null
     }
 
-    return JSON.parse(token)
+    return token
 }
