@@ -17,7 +17,7 @@ const Cabecalho = () => {
                     alt="Logotipo da AluraGeek"
                 />
             </Link>
-            {!usuario && (
+            {!usuario && pathname !== '/login' && (
                 <Link
                     to="/login"
                     className={`${styles.botao} ${styles.login}`}
