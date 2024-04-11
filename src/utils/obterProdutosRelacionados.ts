@@ -9,7 +9,8 @@ export const obterProdutosRelacionados = (produtos: IProduto[], produtoSeleciona
 
     const produtosRelacionados = filtrarProdutosPorCategoria(
         produtosSemSelecionado,
-        produtoSelecionado.categoria
+        produtoSelecionado.categoria,
+        6
     )
 
     const produtosRelacionadosEmbaralhados = shuffle(produtosRelacionados)

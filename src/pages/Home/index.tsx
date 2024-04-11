@@ -19,7 +19,8 @@ const Home = () => {
                         categoria={categoria}
                         produtos={filtrarProdutosPorCategoria(
                             produtos,
-                            categoria
+                            categoria,
+                            6
                         )}
                     />
                 ))}
