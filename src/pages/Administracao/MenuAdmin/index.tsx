@@ -1,12 +1,11 @@
 import { useManipularProdutos } from '@/hooks/useManipularProdutos'
-import GrupoProdutos from '@/components/GrupoProdutos'
+import GrupoProdutosEditavel from '@/components/GrupoProdutosEditavel'
 
 const MenuAdmin = () => {
     const { produtos } = useManipularProdutos()
 
     return (
-        <GrupoProdutos
-            modelo="editar"
+        <GrupoProdutosEditavel
             categoria="Todos os produtos"
             produtos={produtos}
         />
