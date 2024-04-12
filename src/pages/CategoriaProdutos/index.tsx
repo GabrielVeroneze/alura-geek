@@ -13,7 +13,6 @@ const CategoriaProdutos = () => {
     return (
         <main className={styles.principal}>
             <GrupoProdutos
-                modelo="relacionado"
                 categoria={`Todos os Produtos - ${categoria}`}
                 produtos={filtrarProdutosPorCategoria(
                     produtos,

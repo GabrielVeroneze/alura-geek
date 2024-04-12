@@ -8,7 +8,6 @@ const ResultadosPesquisa = () => {
     return (
         <main className={styles.resultados}>
             <GrupoProdutos
-                modelo="relacionado"
                 categoria={`${resultadoProdutos.length} produtos encontrados`}
                 produtos={resultadoProdutos}
             />

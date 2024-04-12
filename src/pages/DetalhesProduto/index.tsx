@@ -32,7 +32,6 @@ const DetalhesProduto = () => {
                 </div>
             </section>
             <GrupoProdutos
-                modelo="relacionado"
                 categoria="Produtos similares"
                 produtos={obterProdutosRelacionados(produtos, produto)}
             />
