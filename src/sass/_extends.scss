@@ -48,3 +48,51 @@
     position: absolute;
     top: 0.5rem;
 }
+
+%grupo-produtos {
+    padding: 1rem 0;
+
+    @include breakpoint(tablet) {
+        padding: 2rem 0;
+    }
+
+    @include breakpoint(desktop) {
+        margin-bottom: 4rem;
+        padding: 0;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+%grupo-topo {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+%grupo-titulo {
+    color: $cor-texto-secundaria;
+    font-size: $tamanho-fonte-medio-grande;
+    font-weight: 700;
+    line-height: normal;
+
+    @include breakpoint(desktop) {
+        font-size: $tamanho-fonte-grande;
+    }
+}
+
+%lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    @include breakpoint(tablet) {
+        justify-content: start;
+    }
+}

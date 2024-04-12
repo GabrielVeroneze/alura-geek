@@ -2,55 +2,11 @@
 @use '@/sass/mixins' as *;
 
 .grupo {
-    padding: 1rem 0;
 
     .topo {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-
-        .categoria {
-            color: $cor-texto-secundaria;
-            font-size: $tamanho-fonte-medio-grande;
-            font-weight: 700;
-            line-height: normal;
         }
     }
 
     .lista {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-    }
-}
-
-@include breakpoint(tablet) {
-    .grupo {
-        padding: 2rem 0;
-
-        .lista {
-            justify-content: start;
-        }
-    }
-}
-
-@include breakpoint(desktop) {
-    .grupo {
-        margin-bottom: 4rem;
-        padding: 0;
-
-        .topo {
-            .categoria {
-                font-size: $tamanho-fonte-grande;
-            }
-        }
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }
     }
 }
