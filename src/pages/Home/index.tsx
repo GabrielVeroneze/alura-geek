@@ -1,6 +1,6 @@
 import { useManipularProdutos } from '@/hooks/useManipularProdutos'
 import { filtrarProdutosPorCategoria, obterCategoriasUnicas } from '@/utils/operacoesCategorias'
-import GrupoProdutos from '@/components/GrupoProdutos'
+import GrupoProdutosDestaque from '@/components/GrupoProdutosDestaque'
 import Banner from './Banner'
 import styles from './Home.module.scss'
 
@@ -13,9 +13,8 @@ const Home = () => {
             <Banner />
             <main className={styles.principal}>
                 {categorias.map(categoria => (
-                    <GrupoProdutos
+                    <GrupoProdutosDestaque
                         key={self.crypto.randomUUID()}
-                        modelo="destaque"
                         categoria={categoria}
                         produtos={filtrarProdutosPorCategoria(
                             produtos,
