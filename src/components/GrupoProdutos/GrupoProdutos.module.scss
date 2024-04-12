@@ -1,12 +1,19 @@
 @use '@/sass/variaveis' as *;
 @use '@/sass/mixins' as *;
+@use '@/sass/extends' as *;
 
 .grupo {
+    @extend %grupo-produtos;
 
     .topo {
+        @extend %grupo-topo;
+
+        .titulo {
+            @extend %grupo-titulo;
         }
     }
 
     .lista {
+        @extend %lista-produtos;
     }
 }
