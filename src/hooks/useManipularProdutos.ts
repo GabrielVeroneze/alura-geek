@@ -1,11 +1,23 @@
-import { useRecoilValue } from 'recoil'
+import { useEffect } from 'react'
+import { useRecoilState } from 'recoil'
 import { jsonServerApi } from '@/services/api'
 import { produtosAtom } from '@/state/atoms'
 import { exibirAlerta } from '@/utils/mensagensDeAlerta'
 import { IProduto } from '@/interfaces/IProduto'
 
 export const useManipularProdutos = () => {
-    const produtos = useRecoilValue<IProduto[]>(produtosAtom)
+    const [produtos, setProdutos] = useRecoilState<IProduto[]>(produtosAtom)
+
+    useEffect(() => {
+        const carregarProdutos = () => {
+            jsonServerApi
+                .get<IProduto[]>('produtos')
+                .then(resposta => {
+                    setProdutos(resposta.data)
+                })
+        }
+        carregarProdutos()
+    }, [setProdutos])
 
     const cadastrarProduto = (produto: IProduto) => {
         jsonServerApi
