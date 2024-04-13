@@ -1,7 +1,7 @@
 import { useRecoilValue } from 'recoil'
-import { toast } from 'react-toastify'
 import { jsonServerApi } from '@/services/api'
 import { produtosAtom } from '@/state/atoms'
+import { exibirAlerta } from '@/utils/mensagensDeAlerta'
 import { IProduto } from '@/interfaces/IProduto'
 
 export const useManipularProdutos = () => {
@@ -11,16 +11,10 @@ export const useManipularProdutos = () => {
         jsonServerApi
             .post<IProduto>('produtos', produto)
             .then(() => {
-                toast.success('Produto adicionado com sucesso!', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('success', 'Produto adicionado com sucesso!')
             })
             .catch(() => {
-                toast.error('Erro ao adicionar o produto.', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('error', 'Erro ao adicionar o produto.')
             })
     }
 
@@ -28,16 +22,10 @@ export const useManipularProdutos = () => {
         jsonServerApi
             .put<IProduto>(`produtos/${produto.id}`, produto)
             .then(() => {
-                toast.success('Produto atualizado com sucesso!', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('success', 'Produto atualizado com sucesso!')
             })
             .catch(() => {
-                toast.error('Erro ao editar o produto.', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('error', 'Erro ao editar o produto.')
             })
     }
 
@@ -45,16 +33,10 @@ export const useManipularProdutos = () => {
         jsonServerApi
             .delete(`produtos/${produtoId}`)
             .then(() => {
-                toast.success('Produto removido com sucesso!', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('success', 'Produto removido com sucesso!')
             })
             .catch(() => {
-                toast.error('Erro ao remover o produto.', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('error', 'Erro ao remover o produto.')
             })
     }
 
