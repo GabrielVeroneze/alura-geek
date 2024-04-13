@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import { IProduto } from '@/interfaces/IProduto'
@@ -8,7 +9,7 @@ interface ProdutoProps {
     produto: IProduto
 }
 
-const Produto = ({ modelo, produto }: ProdutoProps) => {
+const Produto = memo(({ modelo, produto }: ProdutoProps) => {
     return (
         <li className={styles.card}>
             <div className={styles.wrapper}>
@@ -48,6 +49,6 @@ const Produto = ({ modelo, produto }: ProdutoProps) => {
             </div>
         </li>
     )
-}
+})
 
 export default Produto
