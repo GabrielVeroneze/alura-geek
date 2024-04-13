@@ -24,8 +24,25 @@ export const useManipularProdutos = () => {
             })
     }
 
+    const editarProduto = (produto: IProduto) => {
+        jsonServerApi
+            .put<IProduto>(`produtos/${produto.id}`, produto)
+            .then(() => {
+                toast.success('Produto atualizado com sucesso!', {
+                    position: 'bottom-right',
+                    theme: 'colored',
+                })
+            })
+            .catch(() => {
+                toast.error('Erro ao editar o produto.', {
+                    position: 'bottom-right',
+                    theme: 'colored',
+                })
+            })
+    }
     return {
         produtos,
         cadastrarProduto,
+        editarProduto,
     }
 }
