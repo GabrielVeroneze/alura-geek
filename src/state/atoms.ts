@@ -1,11 +1,10 @@
 import { atom } from 'recoil'
-import { produtosAsyncSelector } from '@/state/selectors'
 import { IProduto } from '@/interfaces/IProduto'
 import { IUsuario } from '@/interfaces/IUsuario'
 
 export const produtosAtom = atom<IProduto[]>({
     key: 'produtosAtom',
-    default: produtosAsyncSelector,
+    default: [],
 })
 
 export const termoDePesquisaAtom = atom<string>({
