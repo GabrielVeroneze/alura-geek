@@ -40,9 +40,28 @@ export const useManipularProdutos = () => {
                 })
             })
     }
+
+    const removerProduto = (produtoId: string) => {
+        jsonServerApi
+            .delete(`produtos/${produtoId}`)
+            .then(() => {
+                toast.success('Produto removido com sucesso!', {
+                    position: 'bottom-right',
+                    theme: 'colored',
+                })
+            })
+            .catch(() => {
+                toast.error('Erro ao remover o produto.', {
+                    position: 'bottom-right',
+                    theme: 'colored',
+                })
+            })
+    }
+
     return {
         produtos,
         cadastrarProduto,
         editarProduto,
+        removerProduto,
     }
 }
