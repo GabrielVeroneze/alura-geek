@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { IProduto } from '@/interfaces/IProduto'
 import Produto from '@/components/Produto'
@@ -8,7 +9,7 @@ interface GrupoProdutosDestaqueProps {
     produtos: IProduto[]
 }
 
-const GrupoProdutosDestaque = ({ categoria, produtos }: GrupoProdutosDestaqueProps) => {
+const GrupoProdutosDestaque = memo(({ categoria, produtos }: GrupoProdutosDestaqueProps) => {
     return (
         <section id={categoria} className={styles.grupo}>
             <div className={styles.topo}>
@@ -28,6 +29,6 @@ const GrupoProdutosDestaque = ({ categoria, produtos }: GrupoProdutosDestaquePro
             </ul>
         </section>
     )
-}
+})
 
 export default GrupoProdutosDestaque
