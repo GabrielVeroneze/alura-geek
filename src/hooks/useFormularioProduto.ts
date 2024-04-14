@@ -1,10 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { useNumberFormat } from '@react-input/number-format'
+import { useObterProduto } from '@/hooks/useObterProduto'
 import { useManipularProdutos } from '@/hooks/useManipularProdutos'
-import { converterPrecoEmNumero } from '@/utils/formatarPrecoProduto'
+import { converterPrecoEmNumero, formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import { obterId } from '@/utils/gerarIdProduto'
+import { IProduto } from '@/interfaces/IProduto'
 
 export const useFormularioProduto = () => {
+    const { id } = useParams()
+    const { produto } = useObterProduto()
     const { cadastrarProduto, editarProduto } = useManipularProdutos()
 
     const [produtoDados, setProdutoDados] = useState({
@@ -14,6 +19,12 @@ export const useFormularioProduto = () => {
         preco: '',
         descricao: '',
     })
+
+    useEffect(() => {
+        if (id && produto) {
+            processarProdutoEmEdicao(produto)
+        }
+    }, [id, produto])
 
     const mascaraMonetaria = useNumberFormat({
         currency: 'BRL',
@@ -55,6 +66,16 @@ export const useFormularioProduto = () => {
 
             cadastrarProduto(novoProduto)
         }
+    }
+
+    const processarProdutoEmEdicao = (produto: IProduto) => {
+        setProdutoDados({
+            imagem: produto.imagem,
+            categoria: produto.categoria,
+            nome: produto.nome,
+            preco: formatarPrecoEmReal(produto.preco),
+            descricao: produto.descricao,
+        })
     }
 
     return {

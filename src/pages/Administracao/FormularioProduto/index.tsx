@@ -1,30 +1,14 @@
-import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { useObterProduto } from '@/hooks/useObterProduto'
 import { useFormularioProduto } from '@/hooks/useFormularioProduto'
 import { useValidarFormularioProduto } from '@/hooks/useValidarFormularioProduto'
-import { formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import CampoTextoFloatLabel from '@/components/CampoTextoFloatLabel'
 import MensagemErro from '@/components/MensagemErro'
 import styles from './FormularioProduto.module.scss'
 
 const FormularioProduto = () => {
     const { id } = useParams()
-    const { produto } = useObterProduto()
-    const { produtoDados, setProdutoDados, handleDadosChange, handleSubmit, mascaraMonetaria } = useFormularioProduto()
+    const { produtoDados, handleDadosChange, handleSubmit, mascaraMonetaria } = useFormularioProduto()
     const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioProduto()
-
-    useEffect(() => {
-        if (id && produto) {
-            setProdutoDados({
-                imagem: produto.imagem,
-                categoria: produto.categoria,
-                nome: produto.nome,
-                preco: formatarPrecoEmReal(produto.preco),
-                descricao: produto.descricao,
-            })
-        }
-    }, [id, produto, setProdutoDados])
 
     return (
         <form
