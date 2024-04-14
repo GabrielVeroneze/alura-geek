@@ -1,5 +1,6 @@
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
+import { useManipularProdutos } from '@/hooks/useManipularProdutos'
 import { formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import { IProduto } from '@/interfaces/IProduto'
 import styles from './Produto.module.scss'
@@ -10,6 +11,8 @@ interface ProdutoProps {
 }
 
 const Produto = memo(({ modelo, produto }: ProdutoProps) => {
+    const { removerProduto } = useManipularProdutos()
+
     return (
         <li className={styles.card}>
             <div className={styles.wrapper}>
@@ -18,6 +21,7 @@ const Produto = memo(({ modelo, produto }: ProdutoProps) => {
                         <button
                             className={styles.excluir}
                             aria-label="Excluir"
+                            onClick={() => removerProduto(produto.id)}
                         ></button>
                         <button
                             className={styles.editar}
