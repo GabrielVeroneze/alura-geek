@@ -5,7 +5,7 @@ import { converterPrecoEmNumero } from '@/utils/formatarPrecoProduto'
 import { obterId } from '@/utils/gerarIdProduto'
 
 export const useFormularioProduto = () => {
-    const { cadastrarProduto } = useManipularProdutos()
+    const { cadastrarProduto, editarProduto } = useManipularProdutos()
 
     const [produtoDados, setProdutoDados] = useState({
         imagem: '',
@@ -31,18 +31,30 @@ export const useFormularioProduto = () => {
         })
     }
 
-    const handleSubmit = (evento: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (
+        evento: React.FormEvent<HTMLFormElement>,
+        id: string | undefined
+    ) => {
         evento.preventDefault()
 
         const precoConvertido = converterPrecoEmNumero(produtoDados.preco)
 
-        const novoProduto = {
-            ...produtoDados,
-            id: obterId(),
-            preco: precoConvertido,
-        }
+        if (id) {
+            const produtoEditado = {
+                ...produtoDados,
+                preco: precoConvertido,
+            }
 
-        cadastrarProduto(novoProduto)
+            editarProduto(produtoEditado)
+        } else {
+            const novoProduto = {
+                ...produtoDados,
+                id: obterId(),
+                preco: precoConvertido,
+            }
+
+            cadastrarProduto(novoProduto)
+        }
     }
 
     return {
