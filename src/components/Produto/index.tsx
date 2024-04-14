@@ -23,10 +23,11 @@ const Produto = memo(({ modelo, produto }: ProdutoProps) => {
                             aria-label="Excluir"
                             onClick={() => removerProduto(produto.id)}
                         ></button>
-                        <button
+                        <Link
+                            to={`/admin/editar-produto/${produto.id}`}
                             className={styles.editar}
                             aria-label="Editar"
-                        ></button>
+                        ></Link>
                     </div>
                 )}
                 <img
