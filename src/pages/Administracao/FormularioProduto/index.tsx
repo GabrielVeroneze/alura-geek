@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom'
 import { useFormularioProduto } from '@/hooks/useFormularioProduto'
 import { useValidarFormularioProduto } from '@/hooks/useValidarFormularioProduto'
 import CampoTextoFloatLabel from '@/components/CampoTextoFloatLabel'
@@ -6,6 +7,7 @@ import styles from './FormularioProduto.module.scss'
 
 const FormularioProduto = () => {
     const { produtoDados, handleDadosChange, handleSubmit, mascaraMonetaria } = useFormularioProduto()
+    const { id } = useParams()
     const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioProduto()
 
     return (
@@ -14,7 +16,9 @@ const FormularioProduto = () => {
             onSubmit={evento => handleSubmit(evento)}
             onInvalid={evento => validarFormulario(evento.target)}
         >
-            <h2 className={styles.titulo}>Adicionar novo produto</h2>
+            <h2 className={styles.titulo}>
+                {id ? 'Editar produto' : 'Adicionar novo produto'}
+            </h2>
             <fieldset>
                 <CampoTextoFloatLabel
                     label="URL da imagem"
@@ -109,7 +113,9 @@ const FormularioProduto = () => {
                     <MensagemErro>{errosValidacao.descricao}</MensagemErro>
                 )}
             </fieldset>
-            <button className={styles.botao}>Adicionar produto</button>
+            <button className={styles.botao}>
+                {id ? 'Editar produto' : 'Adicionar produto'}
+            </button>
         </form>
     )
 }
