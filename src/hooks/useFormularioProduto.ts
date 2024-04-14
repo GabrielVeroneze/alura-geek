@@ -47,6 +47,7 @@ export const useFormularioProduto = () => {
 
     return {
         produtoDados,
+        setProdutoDados,
         handleDadosChange,
         handleSubmit,
         mascaraMonetaria,
