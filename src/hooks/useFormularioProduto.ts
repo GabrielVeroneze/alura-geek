@@ -50,13 +50,13 @@ export const useFormularioProduto = () => {
 
         const precoConvertido = converterPrecoEmNumero(produtoDados.preco)
 
-        if (id) {
+        if (id && produto) {
             const produtoEditado = {
                 ...produtoDados,
                 preco: precoConvertido,
             }
 
-            editarProduto(produtoEditado)
+            editarProduto(id, produtoEditado)
         } else {
             const novoProduto = {
                 ...produtoDados,
