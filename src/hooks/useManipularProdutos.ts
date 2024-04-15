@@ -29,9 +29,9 @@ export const useManipularProdutos = () => {
             })
     }
 
-    const editarProduto = (produto: IProduto) => {
+    const editarProduto = (produtoId: string, produto: IProduto) => {
         jsonServerApi
-            .put<IProduto>(`produtos/${produto.id}`, produto)
+            .put<IProduto>(`produtos/${produtoId}`, produto)
             .then(() => {
                 exibirAlerta('success', 'Produto atualizado com sucesso!')
             })
