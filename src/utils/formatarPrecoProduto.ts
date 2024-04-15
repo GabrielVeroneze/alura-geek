@@ -1,6 +1,6 @@
 export const converterPrecoEmNumero = (preco: string) => {
     const precoConvertido = preco
-        .replace('R$ ', '')
+        .replace(/R\$\s/g, '')
         .replace(/\./g, '')
         .replace(',', '.')
 
