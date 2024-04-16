@@ -11,16 +11,15 @@ interface ProdutoProps {
 }
 
 const Produto = memo(({ modelo, produto, removerProduto }: ProdutoProps) => {
-
     return (
         <li className={styles.card}>
             <div className={styles.wrapper}>
-                {modelo === 'editar' && (
+                {modelo === 'editar' && removerProduto && (
                     <div className={styles.icones}>
                         <button
                             className={styles.excluir}
                             aria-label="Excluir"
-                            onClick={() => removerProduto(produto.id)}
+                            onClick={() => removerProduto(produto.id!)}
                         ></button>
                         <Link
                             to={`/admin/editar-produto/${produto.id}`}
