@@ -6,9 +6,10 @@ import styles from './GrupoProdutosEditavel.module.scss'
 interface GrupoProdutosEditavelProps {
     categoria: string
     produtos: IProduto[]
+    removerProduto: (id: string) => void
 }
 
-const GrupoProdutosEditavel = ({ categoria, produtos }: GrupoProdutosEditavelProps) => {
+const GrupoProdutosEditavel = ({ categoria, produtos, removerProduto }: GrupoProdutosEditavelProps) => {
     return (
         <section id={categoria} className={styles.grupo}>
             <div className={styles.topo}>
@@ -23,6 +24,7 @@ const GrupoProdutosEditavel = ({ categoria, produtos }: GrupoProdutosEditavelPro
                         key={produto.id}
                         modelo="editar"
                         produto={produto}
+                        removerProduto={removerProduto}
                     />
                 ))}
             </ul>

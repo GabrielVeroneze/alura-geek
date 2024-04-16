@@ -1,6 +1,5 @@
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
-import { useManipularProdutos } from '@/hooks/useManipularProdutos'
 import { formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import { IProduto } from '@/interfaces/IProduto'
 import styles from './Produto.module.scss'
@@ -8,10 +7,10 @@ import styles from './Produto.module.scss'
 interface ProdutoProps {
     modelo: 'visualizar' | 'editar'
     produto: IProduto
+    removerProduto?: (id: string) => void
 }
 
-const Produto = memo(({ modelo, produto }: ProdutoProps) => {
-    const { removerProduto } = useManipularProdutos()
+const Produto = memo(({ modelo, produto, removerProduto }: ProdutoProps) => {
 
     return (
         <li className={styles.card}>
