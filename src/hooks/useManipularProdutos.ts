@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import { useRecoilState } from 'recoil'
+import { produtosAtom } from '@/state/atoms'
 import { jsonServerApi } from '@/services/api'
 import { exibirAlerta } from '@/utils/mensagensDeAlerta'
 import { IProduto } from '@/interfaces/IProduto'
 
 export const useManipularProdutos = () => {
-    const [produtos, setProdutos] = useState<IProduto[]>([])
+    const [produtos, setProdutos] = useRecoilState(produtosAtom)
 
     useEffect(() => {
         carregarProdutos()
