@@ -9,16 +9,15 @@ export const useManipularProdutos = () => {
     const [produtos, setProdutos] = useRecoilState(produtosAtom)
 
     useEffect(() => {
+        const carregarProdutos = () => {
+            jsonServerApi
+                .get<IProduto[]>('produtos')
+                .then(resposta => {
+                    setProdutos(resposta.data)
+                })
+        }
         carregarProdutos()
-    }, [])
-
-    const carregarProdutos = () => {
-        jsonServerApi
-            .get<IProduto[]>('produtos')
-            .then(resposta => {
-                setProdutos(resposta.data)
-            })
-    }
+    }, [setProdutos])
 
     const cadastrarProduto = (produto: IProduto) => {
         jsonServerApi
