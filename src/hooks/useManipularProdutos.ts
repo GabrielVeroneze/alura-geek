@@ -45,6 +45,10 @@ export const useManipularProdutos = () => {
         jsonServerApi
             .delete(`produtos/${produtoId}`)
             .then(() => {
+                setProdutos(
+                    produtos.filter(produto => produto.id !== produtoId)
+                )
+
                 exibirAlerta('success', 'Produto removido com sucesso!')
             })
             .catch(() => {
