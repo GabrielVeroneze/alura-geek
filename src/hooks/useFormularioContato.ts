@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { toast } from 'react-toastify'
+import { exibirAlerta } from '@/utils/mensagensDeAlerta'
 import emailjs from '@emailjs/browser'
 
 export const useFormularioContato = () => {
@@ -20,16 +20,10 @@ export const useFormularioContato = () => {
 
         emailjs.send('service_zoqh3sp', 'template_x54gazo', contatoDados)
             .then(() => {
-                toast.success('Mensagem enviada com sucesso!', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('success', 'Mensagem enviada com sucesso!')
             })
             .catch(() => {
-                toast.error('Erro ao enviar a mensagem.', {
-                    position: 'bottom-right',
-                    theme: 'colored',
-                })
+                exibirAlerta('error', 'Erro ao enviar a mensagem.')
             })
     }
 

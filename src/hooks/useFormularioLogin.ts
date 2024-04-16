@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { toast } from 'react-toastify'
 import { useAutenticarUsuario } from '@/hooks/useAutenticarUsuario'
+import { exibirAlerta } from '@/utils/mensagensDeAlerta'
 
 export const useFormularioLogin = () => {
     const { fazerLogin } = useAutenticarUsuario()
@@ -27,10 +27,7 @@ export const useFormularioLogin = () => {
         if (estaLogado) {
             navigate('/admin/menu')
         } else {
-            toast.error('E-mail ou senha inválido.', {
-                position: 'bottom-right',
-                theme: 'colored',
-            })
+            exibirAlerta('error', 'E-mail ou senha inválido.')
         }
     }
 
