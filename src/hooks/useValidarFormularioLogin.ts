@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useValidarFormulario } from '@/hooks/useValidarFormulario'
 import { Erro, IMensagensDeErro } from '@/interfaces/IMensagensDeErro'
 
 export const useValidarFormularioLogin = () => {
-    const [errosValidacao, setErrosValidacao] = useState({
+    const campos = {
         email: '',
         senha: '',
-    })
+    }
 
     const tiposDeErro: Erro[] = ['patternMismatch', 'valueMissing']
 
@@ -20,33 +20,5 @@ export const useValidarFormularioLogin = () => {
         },
     }
 
-    const validarCampo = (campo: HTMLInputElement) => {
-        tiposDeErro.forEach(erro => {
-            if (campo.validity[erro]) {
-                setErrosValidacao({
-                    ...errosValidacao,
-                    [campo.name]: mensagensDeErro[campo.name][erro],
-                })
-            }
-        })
-
-        if (campo.validity.valid) {
-            setErrosValidacao({
-                ...errosValidacao,
-                [campo.name]: '',
-            })
-        }
-    }
-
-    const validarFormulario = (campo: EventTarget) => {
-        const campoValidavel = campo as HTMLInputElement
-
-        validarCampo(campoValidavel)
-    }
-
-    return {
-        errosValidacao,
-        validarCampo,
-        validarFormulario,
-    }
+    return useValidarFormulario({ campos, tiposDeErro, mensagensDeErro })
 }
