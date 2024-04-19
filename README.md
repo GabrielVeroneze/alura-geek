@@ -20,3 +20,9 @@ A página de iniciar sessão fornece uma interface para os usuários acessarem s
 
 [Visualizar Screenshot]()
 
+### Página do Produto
+
+A página do produto é onde os usuários podem obter informações detalhadas sobre um produto específico. O produto é apresentado com uma imagem grande, seguida por um título, preço do produto e uma descrição detalhada. Além disso, a página exibe uma seção de produtos relacionados, que apresenta uma variedade de produtos que podem interessar aos usuários.
+
+[Visualizar Screenshot]()
+
