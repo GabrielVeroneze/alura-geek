@@ -26,3 +26,9 @@ A página do produto é onde os usuários podem obter informações detalhadas s
 
 [Visualizar Screenshot]()
 
+### Página de Resultados de Pesquisa
+
+A página de resultados de pesquisa é onde os usuários podem visualizar os resultados de suas buscas. Esta página apresenta um texto informando a quantidade de produtos disponíveis que correspondem à pesquisa, seguido por uma lista dos produtos encontrados.
+
+[Visualizar Screenshot]()
+
