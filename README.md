@@ -14,3 +14,9 @@ A página inicial é o ponto de entrada da plataforma, que se destaca como um es
 
 [Visualizar Screenshot]()
 
+### Página de Iniciar Sessão
+
+A página de iniciar sessão fornece uma interface para os usuários acessarem suas contas na AluraGeek. Esta página contém dois campos de texto onde os usuários podem inserir suas credenciais de login, especificamente seu endereço de email e senha.
+
+[Visualizar Screenshot]()
+
