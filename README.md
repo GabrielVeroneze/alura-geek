@@ -32,3 +32,9 @@ A página de resultados de pesquisa é onde os usuários podem visualizar os res
 
 [Visualizar Screenshot]()
 
+### Página de Todos os Produtos de uma Categoria
+
+A página de todos os produtos de uma categoria é onde os usuários podem visualizar todos os produtos de uma categoria específica. Nessa página, os produtos são apresentados em formato de lista, cada produto tem uma imagem, um título descritivo, o preço e um botão que leva a mais detalhes sobre esse produto.
+
+[Visualizar Screenshot]()
+
