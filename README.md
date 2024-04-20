@@ -8,6 +8,12 @@
 
 ## :building_construction: Páginas e Componentes
 
+### Todas as Páginas
+
+Em todas as páginas é exibido um cabeçalho que inclui uma barra de pesquisa de produtos e um botão que redireciona para a página de iniciar sessão ou para o menu administrativo, dependendo do status de login do usuário. Além disso, apresenta um rodapé que contém vários links úteis e um formulário de contato com campos para nome, mensagem e um botão para enviar.
+
+[Visualizar Screenshot]()
+
 ### Página Inicial
 
 A página inicial é o ponto de entrada da plataforma, que se destaca como um espaço promocional e interativo para os usuários explorarem os produtos. Nesta página, os usuários podem ver produtos em destaque com descontos especiais, navegar por categorias populares e acessar listas completas de produtos clicando em "Ver tudo".
