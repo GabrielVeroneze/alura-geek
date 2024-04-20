@@ -38,3 +38,9 @@ A página de todos os produtos de uma categoria é onde os usuários podem visua
 
 [Visualizar Screenshot]()
 
+### Página de Menu do Administrador (Administração)
+
+A página de menu do administrador é onde os administradores podem gerenciar os produtos disponíveis na plataforma. Esta página exibe uma lista de todos os produtos disponíveis, cada um com opções para editar e excluir. Além disso, possui um botão que permite aos administradores adicionar novos produtos ao catálogo.
+
+[Visualizar Screenshot]()
+
