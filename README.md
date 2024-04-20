@@ -44,3 +44,8 @@ A página de menu do administrador é onde os administradores podem gerenciar os
 
 [Visualizar Screenshot]()
 
+### Página de Cadastro de Produto (Administração)
+
+Na página de cadastro de produto os administradores têm a possibilidade de adicionar novos produtos no catálogo. Nessa página é disponibilizado um formulário completo com campos para inserir imagem, categoria, nome, preço e descrição do produto, todos precisam ser preenchidos pelo administrador. Além disso, há um botão para adicionar o produto ao catálogo.
+
+[Visualizar Screenshot]()
