@@ -59,22 +59,22 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 ## :camera: Demonstração Visual
 
 #### `Página Inicial`
-![AluraGeek]()
+![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ce576f75-a81c-4356-b646-1297be834811)
 
 #### `Página Iniciar Sessão`
-![AluraGeek]()
+![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/5d49d340-f2b3-437c-a2bf-871e38b6979b)
 
 #### `Página Produto`
-![AluraGeek]()
+![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/d96e25ed-1e49-4058-b9bb-0dc0db4605eb)
 
 #### `Página Resultados de Pesquisa`
-![AluraGeek]()
+![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/827f5686-ab42-45e4-b2e4-a335d53bf6cc)
 
 #### `Página Produtos de uma Categoria`
-![AluraGeek]()
+![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ea264911-3eeb-4409-9cba-cb72393c1ccb)
 
 #### `Página Menu do Administrador`
-![AluraGeek]()
+![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/dc3f4d62-7f93-4d98-bbe6-df07a4fc565e)
 
 #### `Página Cadastro de Produto`
-![AluraGeek]()
+![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/0d125d80-39c7-4713-bc60-3bd7a88921a0)
