@@ -55,3 +55,26 @@ A página de menu do administrador é onde os administradores podem gerenciar os
 Na página de cadastro de produto os administradores têm a possibilidade de adicionar novos produtos no catálogo. Nessa página é disponibilizado um formulário completo com campos para inserir imagem, categoria, nome, preço e descrição do produto, todos precisam ser preenchidos pelo administrador. Além disso, há um botão para adicionar o produto ao catálogo.
 
 [Visualizar Screenshot]()
+
+## :camera: Demonstração Visual
+
+#### `Página Inicial`
+![AluraGeek]()
+
+#### `Página Iniciar Sessão`
+![AluraGeek]()
+
+#### `Página Produto`
+![AluraGeek]()
+
+#### `Página Resultados de Pesquisa`
+![AluraGeek]()
+
+#### `Página Produtos de uma Categoria`
+![AluraGeek]()
+
+#### `Página Menu do Administrador`
+![AluraGeek]()
+
+#### `Página Cadastro de Produto`
+![AluraGeek]()
