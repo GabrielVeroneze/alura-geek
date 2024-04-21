@@ -16,7 +16,7 @@ Em todas as páginas é exibido um cabeçalho que inclui uma barra de pesquisa d
 
 A página inicial é o ponto de entrada da plataforma, que se destaca como um espaço promocional e interativo para os usuários explorarem os produtos. Nesta página, os usuários podem ver produtos em destaque com descontos especiais, navegar por categorias populares e acessar listas completas de produtos clicando em "Ver tudo".
 
-[Visualizar Screenshot](#pc3a1gina-inicial-1)
+[Visualizar Screenshot](#página-inicio)
 
 ### Página de Iniciar Sessão
 
@@ -56,7 +56,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ## :camera: Demonstração Visual
 
-#### `Página Inicial`
+#### `Página Inicio`
 ![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ce576f75-a81c-4356-b646-1297be834811)
 
 #### `Página Iniciar Sessão`
