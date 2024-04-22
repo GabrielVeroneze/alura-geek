@@ -88,6 +88,10 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 -   `Selectors para Computações Derivadas`: Usa selectors para calcular e derivar estados com base nos atoms existentes, como os produtos pesquisados após uma busca.
 
+### Comunicação com API via Axios
+
+-   `Integração com API RESTful`: Utiliza o Axios para realizar requisições HTTP e interagir com a API RESTful do backend, como as requisições de login, validação de token e logout.
+
 ## :camera: Demonstração Visual
 
 #### `Página Inicio`
