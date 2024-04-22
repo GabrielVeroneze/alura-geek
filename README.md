@@ -76,6 +76,12 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 `Type Assertions`: Utiliza Type Assertions para informar ao TypeScript o tipo de uma variável quando o tipo não pode ser inferido automaticamente.
 
+### Roteamento com React Router
+
+-   `Rotas para Navegação`: Utiliza o React Router para definir rotas e facilitar a navegação entre diferentes páginas da aplicação, como a página inicial, página de login e detalhes do produto.
+
+-   `Nesting de Rotas`: Implementa nesting de rotas para organizar e estruturar a aplicação, como as rotas para a área administrativa e suas funcionalidades.
+
 ## :camera: Demonstração Visual
 
 #### `Página Inicio`
