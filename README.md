@@ -82,6 +82,12 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 -   `Nesting de Rotas`: Implementa nesting de rotas para organizar e estruturar a aplicação, como as rotas para a área administrativa e suas funcionalidades.
 
+### Gerenciamento de Estado com Recoil
+
+-   `Atoms para Estado Global`: Utiliza atoms do Recoil para gerenciar o estado global da aplicação, como os produtos, o termo de pesquisa e o usuário logado.
+
+-   `Selectors para Computações Derivadas`: Usa selectors para calcular e derivar estados com base nos atoms existentes, como os produtos pesquisados após uma busca.
+
 ## :camera: Demonstração Visual
 
 #### `Página Inicio`
