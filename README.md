@@ -66,6 +66,16 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 `Renderização Condicional e Mapeamento de Listas`: Utiliza renderização condicional e mapeamento de listas do React para exibir conteúdos de forma dinâmica com base em condições e dados de fontes externas, como listas de produtos e resultados de pesquisa.
 
+### Desenvolvimento com TypeScript
+
+`Tipagem Estática`: Utiliza o TypeScript para adicionar tipagem estática ao JavaScript, garantindo maior robustez e detecção de erros durante o desenvolvimento.
+
+`Interfaces`: Define interfaces no TypeScript para descrever a estrutura de objetos e garantir consistência nos tipos de dados utilizados na aplicação.
+
+`Tipos Avançados`: Utiliza tipos avançados do TypeScript, como Union Types para criar tipos complexos e mais expressivos.
+
+`Type Assertions`: Utiliza Type Assertions para informar ao TypeScript o tipo de uma variável quando o tipo não pode ser inferido automaticamente.
+
 ## :camera: Demonstração Visual
 
 #### `Página Inicio`
