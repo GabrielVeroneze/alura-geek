@@ -58,9 +58,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Desenvolvimento com React
 
-`React`: Utiliza o React devido à sua eficiência, flexibilidade e escalabilidade para construir interfaces de usuário dinâmicas e interativas.
 
-`Componentização`: Utiliza a abordagem de componentização do React para criar componentes reutilizáveis e modulares, facilitando a manutenção e a construção de interfaces consistentes.
 
 `Hooks`: Utiliza os Hooks do React, como `useState` e `useEffect`, para gerenciar o estado local dos componentes, realizar efeitos colaterais e interagir com o ciclo de vida dos componentes.
 
