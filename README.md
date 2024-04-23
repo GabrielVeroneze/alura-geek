@@ -72,13 +72,9 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Desenvolvimento com TypeScript
 
-`Tipagem Estática`: Utiliza o TypeScript para adicionar tipagem estática ao JavaScript, garantindo maior robustez e detecção de erros durante o desenvolvimento.
 
-`Interfaces`: Define interfaces no TypeScript para descrever a estrutura de objetos e garantir consistência nos tipos de dados utilizados na aplicação.
 
-`Tipos Avançados`: Utiliza tipos avançados do TypeScript, como Union Types para criar tipos complexos e mais expressivos.
 
-`Type Assertions`: Utiliza Type Assertions para informar ao TypeScript o tipo de uma variável quando o tipo não pode ser inferido automaticamente.
 
 ### Roteamento com React Router
 
