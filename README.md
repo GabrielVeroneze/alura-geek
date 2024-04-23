@@ -72,9 +72,15 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Desenvolvimento com TypeScript
 
+`Definições de Tipos`: Utiliza `interfaces` e `type aliases` para definir a estrutura e os tipos de dados, auxiliando a evitar erros e garantir a integridade dos dados ao longo do código.
 
+`Tipos utilizados`: Utiliza tipos básicos, como `string`, `number`, `boolean`, para representar dados simples. Além disso, utiliza tipos específicos, como `HTMLInputElement`, `HTMLTextAreaElement`, `ChangeEvent`, `FormEvent`, para garantir a correta manipulação e tratamento de elementos e eventos.
 
+`Recursos de Tipagem`: Explora recursos avançados de tipagem, como propriedades opcionais em interfaces e type aliases, união de tipos para lidar com diferentes tipos em uma mesma variável, asserções de tipo para garantir o tipo de uma variável e assinaturas de índice para trabalhar com objetos dinâmicos.
 
+`Tipos Utilitários`: Utiliza tipos utilitários do TypeScript, como `Record` para criar tipos baseados em um conjunto de chaves e valores, e `Partial` para tornar todas as propriedades de um tipo opcional.
+
+`Operadores`: Utiliza o operador de assertiva não nula `!` para garantir que determinadas variáveis não sejam nulas ou indefinidas em pontos críticos do código, aumentando a segurança e evitando erros inesperados em situações onde a presença dos dados é essencial.
 
 ### Roteamento com React Router
 
