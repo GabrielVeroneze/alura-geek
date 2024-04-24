@@ -58,29 +58,29 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Desenvolvimento com React
 
-`Hooks`: Utiliza os Hooks do React, como `useState` e `useEffect`, para gerenciar o estado local dos componentes, realizar efeitos colaterais e interagir com o ciclo de vida dos componentes.
+-   `Hooks`: Utiliza os Hooks do React, como `useState` e `useEffect`, para gerenciar o estado local dos componentes, realizar efeitos colaterais e interagir com o ciclo de vida dos componentes.
 
-`Hooks Customizados`: Implementa hooks customizados para encapsular lógicas específicas e reutilizáveis em componentes. Eles são criados para abstrair funcionalidades, como gerenciamento de estado, efeitos colaterais e integração com APIs externas.
+-   `Hooks Customizados`: Implementa hooks customizados para encapsular lógicas específicas e reutilizáveis em componentes. Eles são criados para abstrair funcionalidades, como gerenciamento de estado, efeitos colaterais e integração com APIs externas.
 
-`Renderização Condicional e Mapeamento de Listas`: Utiliza renderização condicional e mapeamento de listas para exibir conteúdos de forma dinâmica com base em condições e dados de fontes externas, como listas de produtos e resultados de pesquisa.
+-   `Renderização Condicional e Mapeamento de Listas`: Utiliza renderização condicional e mapeamento de listas para exibir conteúdos de forma dinâmica com base em condições e dados de fontes externas, como listas de produtos e resultados de pesquisa.
 
-`Eventos`: Implementa diversos eventos, como onChange, onKeyDown, onInvalid e onSubmit, para interagir com elementos da interface e responder às ações do usuário de forma dinâmica.
+-   `Eventos`: Implementa diversos eventos, como onChange, onKeyDown, onInvalid e onSubmit, para interagir com elementos da interface e responder às ações do usuário de forma dinâmica.
 
-`Validação de Formulários`: Utiliza funcionalidades nativas de validação de formulários, como validation attributes para validar e garantir a integridade dos dados inseridos pelo usuário. Também utiliza o ValidityState para realizar validações programaticamente e fornecer feedback aos usuários sobre possíveis erros.
+-   `Validação de Formulários`: Utiliza funcionalidades nativas de validação de formulários, como validation attributes para validar e garantir a integridade dos dados inseridos pelo usuário. Também utiliza o ValidityState para realizar validações programaticamente e fornecer feedback aos usuários sobre possíveis erros.
 
 `Armazenamento Local`: Utiliza a API localStorage para armazenar dados no navegador do usuário, como os tokens de autenticação.
 
 ### Desenvolvimento com TypeScript
 
-`Definições de Tipos`: Utiliza `interfaces` e `type aliases` para definir a estrutura e os tipos de dados, auxiliando a evitar erros e garantir a integridade dos dados ao longo do código.
+-   `Definições de Tipos`: Utiliza `interfaces` e `type aliases` para definir a estrutura e os tipos de dados, auxiliando a evitar erros e garantir a integridade dos dados ao longo do código.
 
-`Tipos utilizados`: Utiliza tipos básicos, como `string`, `number`, `boolean`, para representar dados simples. Além disso, utiliza tipos específicos, como `HTMLInputElement`, `HTMLTextAreaElement`, `ChangeEvent`, `FormEvent`, para garantir a correta manipulação e tratamento de elementos e eventos.
+-   `Tipos utilizados`: Utiliza tipos básicos, como `string`, `number`, `boolean`, para representar dados simples. Além disso, utiliza tipos específicos, como `HTMLInputElement`, `HTMLTextAreaElement`, `ChangeEvent`, `FormEvent`, para garantir a correta manipulação e tratamento de elementos e eventos.
 
-`Recursos de Tipagem`: Explora recursos avançados de tipagem, como propriedades opcionais em interfaces e type aliases, união de tipos para lidar com diferentes tipos em uma mesma variável, asserções de tipo para garantir o tipo de uma variável e assinaturas de índice para trabalhar com objetos dinâmicos.
+-   `Recursos de Tipagem`: Explora recursos avançados de tipagem, como propriedades opcionais em interfaces e type aliases, união de tipos para lidar com diferentes tipos em uma mesma variável, asserções de tipo para garantir o tipo de uma variável e assinaturas de índice para trabalhar com objetos dinâmicos.
 
-`Tipos Utilitários`: Utiliza tipos utilitários do TypeScript, como `Record` para criar tipos baseados em um conjunto de chaves e valores, e `Partial` para tornar todas as propriedades de um tipo opcional.
+-   `Tipos Utilitários`: Utiliza tipos utilitários do TypeScript, como `Record` para criar tipos baseados em um conjunto de chaves e valores, e `Partial` para tornar todas as propriedades de um tipo opcional.
 
-`Operadores`: Utiliza o operador de assertiva não nula `!` para garantir que determinadas variáveis não sejam nulas ou indefinidas em pontos críticos do código, aumentando a segurança e evitando erros inesperados em situações onde a presença dos dados é essencial.
+-   `Operadores`: Utiliza o operador de assertiva não nula `!` para garantir que determinadas variáveis não sejam nulas ou indefinidas em pontos críticos do código, aumentando a segurança e evitando erros inesperados em situações onde a presença dos dados é essencial.
 
 ### Roteamento com React Router
 
