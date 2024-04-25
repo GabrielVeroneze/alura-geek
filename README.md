@@ -84,9 +84,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Roteamento com React Router
 
--   `Rotas para Navegação`: Utiliza o React Router para definir rotas e facilitar a navegação entre diferentes páginas da aplicação, como a página inicial, página de login e detalhes do produto.
 
--   `Nesting de Rotas`: Implementa nesting de rotas para organizar e estruturar a aplicação, como as rotas para a área administrativa e suas funcionalidades.
 
 ### Gerenciamento de Estado com Recoil
 
