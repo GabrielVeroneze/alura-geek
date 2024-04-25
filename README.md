@@ -96,9 +96,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Gerenciamento de Estado com Recoil
 
--   `Atoms para Estado Global`: Utiliza atoms do Recoil para gerenciar o estado global da aplicação, como os produtos, o termo de pesquisa e o usuário logado.
 
--   `Selectors para Computações Derivadas`: Usa selectors para calcular e derivar estados com base nos atoms existentes, como os produtos pesquisados após uma busca.
 
 ### Comunicação com API via Axios
 
