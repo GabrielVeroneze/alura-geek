@@ -96,7 +96,9 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Gerenciamento de Estado com Recoil
 
+-   `Estado Global`: Utiliza `atom` e `selector` do Recoil para gerenciar o estado global da aplicação. Como o átomo de usuário que armazena informações de id, email e senha, ou o seletor de produtos pesquisados que filtra e retorna produtos com base em um termo de pesquisa.
 
+-   `Hooks de Manipulação de Estado`: Utiliza os hooks `useRecoilState` e `useRecoilValue` para manipular e acessar o estado gerenciado pelo Recoil. Como no caso do átomo de produtos para o gerenciamento dos produtos da aplicação e no seletor de produtos pesquisados para obter os resultados da pesquisa.
 
 ### Comunicação com API via Axios
 
