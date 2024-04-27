@@ -116,6 +116,16 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 -   `Lógica Condicional`: Utiliza lógica condicional com `@if`e `@else` para aplicar estilos com base em condições específicas. Permitindo criar estilos dinâmicos e responsivos que se adaptam de acordo com o contexto da aplicação, como diferentes tamanhos de tela.
 
+### Estilização e Layout Responsivo
+
+-   `Flexbox`: Utiliza alguns dos principais atributos do Flexbox, como `flex-direction`, `flex-wrap`, `order`, entre outros, para criar layouts flexíveis e responsivos. Como na exibição dos produtos na lista flexível da página de categoria.
+
+-   `Grid Layout`: Utiliza vários atributos do Grid Layout, como `grid-template-columns`, `grid-template-rows`, `grid-template-areas`, entre outros, para criar layouts mais complexos e organizados. Como o layout do rodapé com áreas definidas para logo, links úteis e formulário de contato.
+
+-   `Alinhamento e Posicionamento`: Utiliza propriedades como `align-items`, `justify-content`, `position`, entre outros, para alinhar e posicionar elementos de forma precisa na página.
+
+-   `Responsividade`: Utiliza media queries para aplicar estilos específicos com base no tamanho da tela, garantindo que a aplicação seja acessível e funcione bem em dispositivos móveis, tablets e desktops.
+
 ## :camera: Demonstração Visual
 
 #### `Página Inicio`
