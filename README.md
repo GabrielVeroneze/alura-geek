@@ -106,6 +106,16 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 -   `Métodos HTTP`: Utiliza os métodos HTTP do Axios, como `get`, `post`, `put` e `delete`, para realizar requisições e interagir com a API RESTful. Como as requisições de login, cadastro de produto, validação de token, entre outros.
 
+### Estilização com Sass
+
+-   `Variáveis de Estilo`: Utiliza variáveis para armazenar valores de cores, tamanhos, fontes, entre outros. Essas variáveis são utilizadas em todo o código SCSS para facilitar a manutenção e a personalização dos estilos.
+
+-   `Mixins`: Utiliza a diretiva `@mixin` para criar mixins que agrupam um conjunto de estilos que podem ser reutilizados em diversos elementos. Os mixins são inseridos no código utilizando `@include`, permitindo aplicar estilos específicos em vários elementos sem repetição de código.
+
+-   `Extensão de Estilos`: Utiliza placeholder selectors para criar estilos pré-definidos que podem ser estendidos com o `@extend`. Isso para reutilizar os estilos em diferentes elementos de forma eficiente.
+
+-   `Lógica Condicional`: Utiliza lógica condicional com `@if`e `@else` para aplicar estilos com base em condições específicas. Permitindo criar estilos dinâmicos e responsivos que se adaptam de acordo com o contexto da aplicação, como diferentes tamanhos de tela.
+
 ## :camera: Demonstração Visual
 
 #### `Página Inicio`
