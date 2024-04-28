@@ -126,6 +126,20 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 -   `Responsividade`: Utiliza media queries para aplicar estilos específicos com base no tamanho da tela, garantindo que a aplicação seja acessível e funcione bem em dispositivos móveis, tablets e desktops.
 
+### Utilização dos Pacotes
+
+-   `Servidor JSON`: Utiliza o pacote `json-server` para simular uma API RESTful localmente.
+
+-   `Envio de E-mails`: Utiliza o pacote `@emailjs/browser` para enviar e-mails diretamente do navegador.
+
+-   `Notificações`: Utiliza o pacote `react-toastify` para exibir notificações que informam o usuário sobre operações importantes.
+
+-   `Formatação de Números`: Utiliza o pacote `@react-input/number-format` para criar máscaras monetárias em campos de entrada.
+
+-   `Manipulação de Arrays`: Utiliza o pacote `just-shuffle` para embaralhar aleatoriamente elementos em um array.
+
+-   `Identificadores Únicos`: Utiliza o pacote `nanoid` para gerar identificadores únicos de forma rápida e segura.
+
 ## :camera: Demonstração Visual
 
 #### `Página Inicio`
