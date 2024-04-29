@@ -16,43 +16,71 @@ Em todas as páginas é exibido um cabeçalho que inclui uma barra de pesquisa d
 
 A página inicial é o ponto de entrada da plataforma, que se destaca como um espaço promocional e interativo para os usuários explorarem os produtos. Nesta página, os usuários podem ver produtos em destaque com descontos especiais, navegar por categorias populares e acessar listas completas de produtos clicando em "Ver tudo".
 
-[Visualizar Screenshot](#página-inicio)
+<details>
+    <summary><b>:camera: Visualizar Screenshot</b></summary>
+    <br />
+    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ce576f75-a81c-4356-b646-1297be834811" />
+</details>
 
 ### Página de Iniciar Sessão
 
 A página de iniciar sessão fornece uma interface para os usuários acessarem suas contas na AluraGeek. Esta página contém dois campos de texto onde os usuários podem inserir suas credenciais de login, especificamente seu endereço de email e senha.
 
-[Visualizar Screenshot](#página-iniciar-sessão)
+<details>
+    <summary><b>:camera: Visualizar Screenshot</b></summary>
+    <br />
+    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/5d49d340-f2b3-437c-a2bf-871e38b6979b" />
+</details>
 
 ### Página do Produto
 
 A página do produto é onde os usuários podem obter informações detalhadas sobre um produto específico. O produto é apresentado com uma imagem grande, seguida por um título, preço do produto e uma descrição detalhada. Além disso, a página exibe uma seção de produtos relacionados, que apresenta uma variedade de produtos que podem interessar aos usuários.
 
-[Visualizar Screenshot](#página-produto)
+<details>
+    <summary><b>:camera: Visualizar Screenshot</b></summary>
+    <br />
+    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/d96e25ed-1e49-4058-b9bb-0dc0db4605eb" />
+</details>
 
 ### Página de Resultados de Pesquisa
 
 A página de resultados de pesquisa é onde os usuários podem visualizar os resultados de suas buscas. Esta página apresenta um texto informando a quantidade de produtos disponíveis que correspondem à pesquisa, seguido por uma lista dos produtos encontrados.
 
-[Visualizar Screenshot](#página-resultados-de-pesquisa)
+<details>
+    <summary><b>:camera: Visualizar Screenshot</b></summary>
+    <br />
+    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/827f5686-ab42-45e4-b2e4-a335d53bf6cc" />
+</details>
 
 ### Página de Todos os Produtos de uma Categoria
 
 A página de todos os produtos de uma categoria é onde os usuários podem visualizar todos os produtos de uma categoria específica. Nessa página, os produtos são apresentados em formato de lista, cada produto tem uma imagem, um título descritivo, o preço e um botão que leva a mais detalhes sobre esse produto.
 
-[Visualizar Screenshot](#página-produtos-de-uma-categoria)
+<details>
+    <summary><b>:camera: Visualizar Screenshot</b></summary>
+    <br />
+    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ea264911-3eeb-4409-9cba-cb72393c1ccb" />
+</details>
 
 ### Página de Menu do Administrador (Administração)
 
 A página de menu do administrador é onde os administradores podem gerenciar os produtos disponíveis na plataforma. Esta página exibe uma lista de todos os produtos disponíveis, cada um com opções para editar e excluir. Além disso, possui um botão que permite aos administradores adicionar novos produtos ao catálogo.
 
-[Visualizar Screenshot](#página-menu-do-administrador)
+<details>
+    <summary><b>:camera: Visualizar Screenshot</b></summary>
+    <br />
+    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/dc3f4d62-7f93-4d98-bbe6-df07a4fc565e" />
+</details>
 
 ### Página de Cadastro de Produto (Administração)
 
 Na página de cadastro de produto os administradores têm a possibilidade de adicionar novos produtos no catálogo. Nessa página é disponibilizado um formulário completo com campos para inserir imagem, categoria, nome, preço e descrição do produto, todos precisam ser preenchidos pelo administrador. Além disso, há um botão para adicionar o produto ao catálogo.
 
-[Visualizar Screenshot](#página-cadastro-de-produto)
+<details>
+    <summary><b>:camera: Visualizar Screenshot</b></summary>
+    <br />
+    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/0d125d80-39c7-4713-bc60-3bd7a88921a0" />
+</details>
 
 ## :toolbox: Desenvolvimento e Implementação
 
@@ -139,26 +167,3 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 -   `Manipulação de Arrays`: Utiliza o pacote `just-shuffle` para embaralhar aleatoriamente elementos em um array.
 
 -   `Identificadores Únicos`: Utiliza o pacote `nanoid` para gerar identificadores únicos de forma rápida e segura.
-
-## :camera: Demonstração Visual
-
-#### `Página Inicio`
-![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ce576f75-a81c-4356-b646-1297be834811)
-
-#### `Página Iniciar Sessão`
-![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/5d49d340-f2b3-437c-a2bf-871e38b6979b)
-
-#### `Página Produto`
-![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/d96e25ed-1e49-4058-b9bb-0dc0db4605eb)
-
-#### `Página Resultados de Pesquisa`
-![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/827f5686-ab42-45e4-b2e4-a335d53bf6cc)
-
-#### `Página Produtos de uma Categoria`
-![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ea264911-3eeb-4409-9cba-cb72393c1ccb)
-
-#### `Página Menu do Administrador`
-![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/dc3f4d62-7f93-4d98-bbe6-df07a4fc565e)
-
-#### `Página Cadastro de Produto`
-![AluraGeek](https://github.com/GabrielVeroneze/alura-geek/assets/95183901/0d125d80-39c7-4713-bc60-3bd7a88921a0)
