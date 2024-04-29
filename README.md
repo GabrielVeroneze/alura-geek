@@ -96,7 +96,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 -   `Validação de Formulários`: Utiliza funcionalidades nativas de validação de formulários, como validation attributes para validar e garantir a integridade dos dados inseridos pelo usuário. Também utiliza o ValidityState para realizar validações programaticamente e fornecer feedback aos usuários sobre possíveis erros.
 
-`Armazenamento Local`: Utiliza a API localStorage para armazenar dados no navegador do usuário, como os tokens de autenticação.
+-   `Armazenamento Local`: Utiliza a API localStorage para armazenar dados no navegador do usuário, como os tokens de autenticação.
 
 ### Desenvolvimento com TypeScript
 
