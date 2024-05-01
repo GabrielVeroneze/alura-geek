@@ -84,27 +84,33 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ## :rocket: Funcionalidades e Recursos
 
+### Gerenciamento de Produtos
+
 -   `Adicionar Novo Produto`: Permite aos administradores adicionar novos produtos ao catálogo da loja, incluindo imagem, categoria, nome, preço e descrição.
 
 -   `Editar Produto`: Permite aos administradores realizar alterações nos dados de um produto existente no catálogo.
 
 -   `Remover Produto`: Possibilita aos administradores excluir um produto do catálogo da loja.
 
--   `Login de Usuário`: Permite acesso aos usuários autenticados na plataforma, exigindo e-mail e senha. 
+### Login e Autenticação
 
--   `Contato`: Permite preencher os campos de nome e mensagem para enviar dúvidas ou sugestões à equipe da AluraGeek.
+-   `Login de Usuário`: Permite acesso aos usuários autenticados na plataforma, exigindo e-mail e senha para iniciar sessão.
+
+### Exploração de Produtos
 
 -   `Pesquisa de Produtos`: Permite filtrar os produtos pelo nome do produto, facilitando a busca por itens específicos.
 
+-   `Lista de Produtos por Categoria`: Permite aos usuários visualizarem todos os produtos de uma categoria específica oferecidos pela loja, facilitando a navegação e a busca por itens variados.
+
+-   `Detalhes do Produto`: Cada card de produto possui um link para a página de detalhes do produto, permitindo aos usuários visualizarem informações detalhadas sobre o produto selecionado.
+
+### Comunicação
+
+-   `Contato`: Permite preencher os campos de nome e mensagem para enviar dúvidas ou sugestões à equipe da AluraGeek.
+
+### Validações
+
 -   `Validações dos Formulários`: Os formulários possuem validações, exibindo mensagens de erro que orientam os usuários sobre como corrigir os erros quando os campos não são preenchidos corretamente.
-
--   `Visualização Detalhada de Produtos`: Cada card de produto possui um link para a página de detalhes do produto, permitindo aos usuários visualizarem informações detalhadas sobre o item selecionado.
-
--   `Iniciar Sessão`: Oferece acesso aos usuários autenticados na plataforma, garantindo uma experiência personalizada e segura.
-
--   `Visualização Completa de Categoria`: Ao ser clicado, permite aos usuários visualizarem todos os produtos de uma categoria específica oferecidos pela loja, facilitando a navegação e a busca por itens variados.
-
--   `Navegação para Consoles`: Ao ser clicado, direciona o usuário para a seção de consoles, proporcionando uma navegação intuitiva dentro da plataforma.
 
 ## :toolbox: Desenvolvimento e Implementação
 
