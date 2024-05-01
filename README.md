@@ -86,31 +86,31 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 ### Gerenciamento de Produtos
 
--   `Adicionar Novo Produto`: Permite aos administradores adicionar novos produtos ao catálogo da loja, incluindo imagem, categoria, nome, preço e descrição.
+-   `Adicionar Novo Produto`: Permite que os administradores adicionem novos produtos ao catálogo da loja, incluindo informações detalhadas como imagem, categoria, nome, preço e descrição.
 
--   `Editar Produto`: Permite aos administradores realizar alterações nos dados de um produto existente no catálogo.
+-   `Editar Produto`: Oferece aos administradores a capacidade de realizar alterações nos dados de produtos existentes no catálogo. Isso inclui a atualização de preços, descrições e categorias.
 
--   `Remover Produto`: Possibilita aos administradores excluir um produto do catálogo da loja.
+-   `Remover Produto`: Permite que os administradores removam produtos descontinuados ou fora de estoque do catálogo da loja quando necessário.
 
 ### Login e Autenticação
 
--   `Login de Usuário`: Permite acesso aos usuários autenticados na plataforma, exigindo e-mail e senha para iniciar sessão.
+-   `Login de Usuário`: Permite acesso aos usuários autenticados na plataforma, o processo de login exige a inserção de credenciais, como e-mail e senha.
 
 ### Exploração de Produtos
 
--   `Pesquisa de Produtos`: Permite filtrar os produtos pelo nome do produto, facilitando a busca por itens específicos.
+-   `Pesquisa de Produtos`: Permite que os usuários realizem buscas por produtos específicos, filtrando os resultados pelo nome do produto.
 
--   `Lista de Produtos por Categoria`: Permite aos usuários visualizarem todos os produtos de uma categoria específica oferecidos pela loja, facilitando a navegação e a busca por itens variados.
+-   `Lista de Produtos por Categoria`: Permite aos usuários visualizarem todos os produtos de uma categoria específica, facilitando a navegação e a busca por itens relacionados.
 
--   `Detalhes do Produto`: Cada card de produto possui um link para a página de detalhes do produto, permitindo aos usuários visualizarem informações detalhadas sobre o produto selecionado.
+-   `Detalhes do Produto`: Ao acessar a página de detalhes de um produto, os usuários podem visualizar informações completas e detalhadas sobre o produto selecionado.
 
 ### Comunicação
 
--   `Contato`: Permite preencher os campos de nome e mensagem para enviar dúvidas ou sugestões à equipe da AluraGeek.
+-   `Contato`: Disponibiliza um formulário para que os usuários possam enviar mensagens de dúvidas, sugestões ou feedback.
 
 ### Validações
 
--   `Validações dos Formulários`: Os formulários possuem validações, exibindo mensagens de erro que orientam os usuários sobre como corrigir os erros quando os campos não são preenchidos corretamente.
+-   `Validações dos Formulários`: Os formulários possuem validações, quando os campos não são preenchidos corretamente são exibidas mensagens de erro que orientam os usuários sobre como corrigi-los.
 
 ## :toolbox: Desenvolvimento e Implementação
 
