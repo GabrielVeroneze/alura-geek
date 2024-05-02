@@ -203,3 +203,15 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 | React | TypeScript | Sass | React Router | Recoil | &nbsp; Axios &nbsp; | Vite |
 | :---: | :--------: | :--: | :----------: | :----: | :-----------------: | :--: |
 <img height="65px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/7593964e-72dd-409b-a0f7-acceab417def"> | <img height="65px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/4bc2aa2f-7281-42c8-8eea-d5004e0b4946"> | <img height="55px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/26f8f73c-0aad-4a6b-a4a8-e3188c7207f4"> | <img height="50px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/80312998-c88f-43e0-af5d-5099760b8788"> | <img height="65px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/1d6054b4-fab8-4e9b-baf7-2bb007d81b27"> | <img height="65px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/e16956b4-d035-4275-806f-5fdb09ed2f02"> | <img height="65px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/cb27ec61-e53a-4239-a580-9dfb7b52a324">
+
+## :open_file_folder: Acesso ao Projeto
+
+Você pode baixar o projeto diretamente:
+
+[Baixar código fonte](https://github.com/GabrielVeroneze/alura-geek/archive/refs/heads/main.zip)
+
+Também é possível clonar o repositório usando o seguinte comando:
+
+```
+git clone https://github.com/GabrielVeroneze/alura-geek.git
+```
