@@ -197,3 +197,10 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 -   `Manipulação de Arrays`: Utiliza o pacote `just-shuffle` para embaralhar aleatoriamente elementos em um array.
 
 -   `Identificadores Únicos`: Utiliza o pacote `nanoid` para gerar identificadores únicos de forma rápida e segura.
+
+## :computer: Ferramentas Utilizadas
+
+| React | TypeScript | Sass | React Router | Recoil | &nbsp; Axios &nbsp; | Vite |
+| :---: | :--------: | :--: | :----------: | :----: | :-----------------: | :--: |
+<img height="65px" src=""> | <img height="65px" src=""> | <img height="85px" src=""> | <img height="55px" src=""> | <img height="65px" src=""> | <img height="65px" src=""> | <img height="65px" src="">
+
