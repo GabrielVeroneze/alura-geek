@@ -253,3 +253,11 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
     ```
 
     Você receberá uma mensagem com a URL de execução da aplicação, geralmente em http://localhost:5173.
+
+## :trophy: Sobre o Challenge
+
+O Challenge Front-End 3ª Edição proporciona uma oportunidade única para os participantes praticarem e aprimorarem seus conhecimentos em desenvolvimento web, ao mesmo tempo em que criam um novo projeto do início ao fim.
+
+### O que é um Challenge?
+
+O Challenge Front-End é uma abordagem baseada em desafios, onde os participantes se envolvem em um problema específico e buscam soluções por meio de cursos, conteúdos e interações. É uma simulação de um desafio real do mundo profissional, incentivando os participantes a aplicarem seus conhecimentos de forma prática e criativa.
