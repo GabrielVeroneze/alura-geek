@@ -261,3 +261,9 @@ O Challenge Front-End 3ª Edição proporciona uma oportunidade única para os p
 ### O que é um Challenge?
 
 O Challenge Front-End é uma abordagem baseada em desafios, onde os participantes se envolvem em um problema específico e buscam soluções por meio de cursos, conteúdos e interações. É uma simulação de um desafio real do mundo profissional, incentivando os participantes a aplicarem seus conhecimentos de forma prática e criativa.
+
+### História do Projeto
+
+A empresa AluraGeek está buscando expandir suas vendas criando um site para vender produtos online. Eles necessitam de uma plataforma intuitiva que permita aos clientes visualizar, selecionar e comprar produtos facilmente, ao mesmo tempo em que oferece aos administradores ferramentas eficazes para gerenciar o site de forma eficiente.
+
+É crucial que o site seja e compatível com dispositivos móveis, tablets e computadores, para garantir uma boa experiência de compra para os clientes.
