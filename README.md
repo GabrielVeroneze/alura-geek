@@ -267,3 +267,9 @@ O Challenge Front-End é uma abordagem baseada em desafios, onde os participante
 A empresa AluraGeek está buscando expandir suas vendas criando um site para vender produtos online. Eles necessitam de uma plataforma intuitiva que permita aos clientes visualizar, selecionar e comprar produtos facilmente, ao mesmo tempo em que oferece aos administradores ferramentas eficazes para gerenciar o site de forma eficiente.
 
 É crucial que o site seja e compatível com dispositivos móveis, tablets e computadores, para garantir uma boa experiência de compra para os clientes.
+
+### Desenvolvimento Ágil com Trello
+
+Durante o período de seis semanas, o projeto foi desenvolvido seguindo uma abordagem ágil, com o auxílio do Trello. Ele é utilizado para gerenciar as tarefas, desde o início até a conclusão do projeto.
+
+Ao longo de cada semana, foram estabelecidas metas específicas, direcionando o foco e o esforço em diferentes áreas do projeto. Abaixo, estão listadas as principais tarefas de cada semana:
