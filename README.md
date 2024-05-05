@@ -273,3 +273,29 @@ A empresa AluraGeek está buscando expandir suas vendas criando um site para ven
 Durante o período de seis semanas, o projeto foi desenvolvido seguindo uma abordagem ágil, com o auxílio do Trello. Ele é utilizado para gerenciar as tarefas, desde o início até a conclusão do projeto.
 
 Ao longo de cada semana, foram estabelecidas metas específicas, direcionando o foco e o esforço em diferentes áreas do projeto. Abaixo, estão listadas as principais tarefas de cada semana:
+
+#### Semana 1
+
+-   Criação da interface inicial da loja, incluindo elementos básicos como logotipo, barra de pesquisa, botão de login e banner promocional.
+
+-   Estruturação da galeria de produtos com seções específicas para Star Wars, Consoles e Diversos, adicionando imagens, nomes e preços dos produtos.
+    
+-   Implementação do rodapé com logotipo, formulário de contato e informações adicionais.
+
+#### Semana 2
+
+-   Estilização e estruturação avançada da interface, incluindo elementos como formulário de login, formulário de login e páginas individuais de descrição de produtos.
+
+-   Desenvolvimento da seção de produtos similares e criação da página "Adicionar Novo Produto" no menu administrador.
+
+#### Semanas 3 & 4
+
+-   Adição de funcionalidades avançadas como integração dos dados da API para listar os produtos disponíveis, implementação de barra de pesquisa e validações nos formulários.
+
+-   Implementação das funcionalidades de ver detalhes do produto e barra de pesquisa de produtos.
+
+-   Validação dos formulários de contato, adicionar produto e iniciar sessão.
+
+-   Implementação das funcionalidades extras como Ver tudo, Editar Produto e Remover Produto.
+
+-   Desenvolvimento das funcionalidades extras como "Ver tudo", "Editar Produto" e "Remover Produto".
