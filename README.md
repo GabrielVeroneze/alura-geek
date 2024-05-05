@@ -276,26 +276,30 @@ Ao longo de cada semana, foram estabelecidas metas específicas, direcionando o 
 
 #### Semana 1
 
--   Criação da interface inicial da loja, incluindo elementos básicos como logotipo, barra de pesquisa, botão de login e banner promocional.
+-   Implementação do layout da página inicial, incluindo elementos básicos como barra de pesquisa, botão de login e banner promocional.
 
--   Estruturação da galeria de produtos com seções específicas para Star Wars, Consoles e Diversos, adicionando imagens, nomes e preços dos produtos.
-    
--   Implementação do rodapé com logotipo, formulário de contato e informações adicionais.
+-   Estruturação da galeria de produtos com seções específicas.
+
+-   Implementação do rodapé com formulário de contato e informações adicionais.
 
 #### Semana 2
 
--   Estilização e estruturação avançada da interface, incluindo elementos como formulário de login, formulário de login e páginas individuais de descrição de produtos.
+-   Estilização dos elementos e estruturação de novas seções.
 
--   Desenvolvimento da seção de produtos similares e criação da página "Adicionar Novo Produto" no menu administrador.
+-   Criação da página de login e páginas individuais dos produtos.
+
+-   Desenvolvimento do menu administrativo e formulário para adicionar novo produto.
 
 #### Semanas 3 & 4
 
--   Adição de funcionalidades avançadas como integração dos dados da API para listar os produtos disponíveis, implementação de barra de pesquisa e validações nos formulários.
+-   Adição de funcionalidades avançadas como integração dos dados da API para listar os produtos disponíveis.
 
--   Implementação das funcionalidades de ver detalhes do produto e barra de pesquisa de produtos.
+-   Implementação das funcionalidades de ver detalhes do produto e pesquisar os produtos.
 
 -   Validação dos formulários de contato, adicionar produto e iniciar sessão.
 
--   Implementação das funcionalidades extras como Ver tudo, Editar Produto e Remover Produto.
+#### Extra
 
--   Desenvolvimento das funcionalidades extras como "Ver tudo", "Editar Produto" e "Remover Produto".
+-   Implementação da funcionalidade de ver todos produtos de uma categoria.
+
+-   Implementação das funcionalidades de editar produto e remover produto.
