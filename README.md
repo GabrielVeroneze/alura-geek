@@ -276,30 +276,30 @@ Ao longo de cada semana, foram estabelecidas metas específicas, direcionando o 
 
 #### Semana 1
 
--   Implementação do layout da página inicial, incluindo elementos básicos como barra de pesquisa, botão de login e banner promocional.
+-   Desenvolvimento da estrutura básica da página inicial, incluindo elementos essenciais como barra de pesquisa, botão de login e banner promocional.
 
--   Estruturação da galeria de produtos com seções específicas.
+-   Estruturação da galeria de produtos com seções específicas para cada categoria.
 
--   Implementação do rodapé com formulário de contato e informações adicionais.
+-   Implementação do rodapé contendo formulário de contato e informações adicionais.
 
 #### Semana 2
 
--   Estilização dos elementos e estruturação de novas seções.
+-   Estilização dos componentes e estruturação de novas seções.
 
--   Criação da página de login e páginas individuais dos produtos.
+-   Construção da página de login e das páginas individuais de produtos.
 
--   Desenvolvimento do menu administrativo e formulário para adicionar novo produto.
+-   Desenvolvimento do menu administrativo e do formulário para adicionar novos produtos.
 
 #### Semanas 3 & 4
 
--   Adição de funcionalidades avançadas como integração dos dados da API para listar os produtos disponíveis.
+-   Adição de funcionalidades avançadas como a integração dos dados da API para listar os produtos disponíveis.
 
--   Implementação das funcionalidades de ver detalhes do produto e pesquisar os produtos.
+-   Implementação das funcionalidades de visualização detalhada dos produtos e busca de produtos.
 
--   Validação dos formulários de contato, adicionar produto e iniciar sessão.
+-   Realização de validações nos formulários de contato, adicionar produto e iniciar sessão.
 
 #### Extra
 
--   Implementação da funcionalidade de ver todos produtos de uma categoria.
+-   Adição da funcionalidade de visualizar todos os produtos de uma categoria.
 
--   Implementação das funcionalidades de editar produto e remover produto.
+-   Implementação das funcionalidades de edição e remoção de produtos.
