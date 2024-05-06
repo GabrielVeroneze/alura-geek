@@ -42,26 +42,6 @@ A página do produto é onde os usuários podem obter informações detalhadas s
     <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/d96e25ed-1e49-4058-b9bb-0dc0db4605eb" />
 </details>
 
-### Página de Resultados de Pesquisa
-
-A página de resultados de pesquisa é onde os usuários podem visualizar os resultados de suas buscas. Esta página apresenta um texto informando a quantidade de produtos disponíveis que correspondem à pesquisa, seguido por uma lista dos produtos encontrados.
-
-<details>
-    <summary><b>:camera: Visualizar Screenshot</b></summary>
-    <br />
-    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/827f5686-ab42-45e4-b2e4-a335d53bf6cc" />
-</details>
-
-### Página de Todos os Produtos de uma Categoria
-
-A página de todos os produtos de uma categoria é onde os usuários podem visualizar todos os produtos de uma categoria específica. Nessa página, os produtos são apresentados em formato de lista, cada produto tem uma imagem, um título descritivo, o preço e um botão que leva a mais detalhes sobre esse produto.
-
-<details>
-    <summary><b>:camera: Visualizar Screenshot</b></summary>
-    <br />
-    <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/ea264911-3eeb-4409-9cba-cb72393c1ccb" />
-</details>
-
 ### Página de Menu do Administrador (Administração)
 
 A página de menu do administrador é onde os administradores podem gerenciar os produtos disponíveis na plataforma. Esta página exibe uma lista de todos os produtos disponíveis, cada um com opções para editar e excluir. Além disso, possui um botão que permite aos administradores adicionar novos produtos ao catálogo.
