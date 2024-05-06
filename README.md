@@ -1,3 +1,35 @@
+## Índice
+
+-   [Descrição](#descricao)
+-   [Páginas e Componentes](#building_construction-páginas-e-componentes)
+    -   [Página Inicial](#página-inicial)
+    -   [Página de Iniciar Sessão](#página-de-iniciar-sessão)
+    -   [Página do Produto](#página-do-produto)
+    -   [Página de Menu do Administrador](#página-de-menu-do-administrador-administração)
+    -   [Página de Cadastro de Produto](#página-de-cadastro-de-produto-administração)
+-   [Funcionalidades e Recursos](#rocket-funcionalidades-e-recursos)
+    -   [Gerenciamento de Produtos](#gerenciamento-de-produtos)
+    -   [Login e Autenticação](#login-e-autenticação)
+    -   [Exploração de Produtos](#exploração-de-produtos)
+    -   [Comunicação](#comunicação)
+    -   [Validações](#validações)
+-   [Desenvolvimento e Implementação](#toolbox-desenvolvimento-e-implementação)
+    -   [Desenvolvimento com React](#desenvolvimento-com-react)
+    -   [Desenvolvimento com TypeScript](#desenvolvimento-com-typescript)
+    -   [Roteamento com React Router](#roteamento-com-react-router)
+    -   [Gerenciamento de Estado com Recoil](#gerenciamento-de-estado-com-recoil)
+    -   [Comunicação com API via Axios](#comunicação-com-api-via-axios)
+    -   [Estilização com Sass](#estilização-com-sass)
+    -   [Estilização e Layout Responsivo](#estilização-e-layout-responsivo)
+    -   [Utilização dos Pacotes](#utilização-dos-pacotes)
+-   [Ferramentas Utilizadas](#computer-ferramentas-utilizadas)
+-   [Acesso ao Projeto](#open_file_folder-acesso-ao-projeto)
+-   [Instruções](#clipboard-instruções)
+-   [Sobre o Challenge](#trophy-sobre-o-challenge)
+    -   [O que é um Challenge?](#o-que-é-um-challenge)
+    -   [História do Projeto](#história-do-projeto)
+    -   [Desenvolvimento Ágil com Trello](#desenvolvimento-ágil-com-trello)
+
 <h1 align="center" id="descricao"><img width="250px" src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/51a8f694-4c65-4163-8343-4e9a64a82328"></h1>
 
 <p align="center">A AluraGeek é uma plataforma de e-commerce que oferece uma experiência completa de compra e gerenciamento de produtos, é especializada em produtos tecnológicos e acessórios voltados para entusiastas do universo geek.</p>
