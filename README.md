@@ -1,3 +1,7 @@
+Este projeto foi desenvolvido como parte do Challenge Front-End 3ª Edição promovido pela Alura. Ao longo de seis semanas, os participantes se dedicaram a aprimorar suas habilidades em desenvolvimento web, resultando na criação do AluraGeek, uma plataforma de e-commerce dinâmica. Este README contém informações detalhadas sobre as funcionalidades, recursos e instruções para a execução desta aplicação.
+
+<hr>
+
 ## Índice
 
 -   [Descrição](#descricao)
