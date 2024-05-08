@@ -104,29 +104,83 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
 
 -   `Adicionar Novo Produto`: Permite que os administradores adicionem novos produtos ao catálogo da loja, incluindo informações detalhadas como imagem, categoria, nome, preço e descrição.
 
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
+
 -   `Editar Produto`: Oferece aos administradores a capacidade de realizar alterações nos dados de produtos existentes no catálogo. Isso inclui a atualização de preços, descrições e categorias.
 
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
+
 -   `Remover Produto`: Permite que os administradores removam produtos descontinuados ou fora de estoque do catálogo da loja quando necessário.
+
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
 
 ### Login e Autenticação
 
 -   `Login de Usuário`: Permite acesso aos usuários autenticados na plataforma, o processo de login exige a inserção de credenciais, como e-mail e senha.
 
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
+
 ### Exploração de Produtos
 
 -   `Pesquisa de Produtos`: Permite que os usuários realizem buscas por produtos específicos, filtrando os resultados pelo nome do produto.
 
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
+
 -   `Lista de Produtos por Categoria`: Permite aos usuários visualizarem todos os produtos de uma categoria específica, facilitando a navegação e a busca por itens relacionados.
 
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
+
 -   `Detalhes do Produto`: Ao acessar a página de detalhes de um produto, os usuários podem visualizar informações completas e detalhadas sobre o produto selecionado.
+
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
 
 ### Comunicação
 
 -   `Contato`: Disponibiliza um formulário para que os usuários possam enviar mensagens de dúvidas, sugestões ou feedback.
 
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
+
 ### Validações
 
 -   `Validações dos Formulários`: Os formulários possuem validações, quando os campos não são preenchidos corretamente são exibidas mensagens de erro que orientam os usuários sobre como corrigi-los.
+
+    <details>
+        <summary><b>:camera: Visualizar Demonstração</b></summary>
+        <br />
+        <img src="" />
+    </details>
 
 ## :toolbox: Desenvolvimento e Implementação
 
