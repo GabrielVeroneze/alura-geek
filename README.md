@@ -107,7 +107,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/6a84a683-8c2e-436e-88cc-cd3669b46b20" />
     </details>
 
 -   `Editar Produto`: Oferece aos administradores a capacidade de realizar alterações nos dados de produtos existentes no catálogo. Isso inclui a atualização de preços, descrições e categorias.
