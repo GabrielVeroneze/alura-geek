@@ -107,7 +107,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/6a84a683-8c2e-436e-88cc-cd3669b46b20" />
+        <img src="" />
     </details>
 
 -   `Editar Produto`: Oferece aos administradores a capacidade de realizar alterações nos dados de produtos existentes no catálogo. Isso inclui a atualização de preços, descrições e categorias.
@@ -115,7 +115,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/b78d3c07-404d-4c7e-97ae-99a3d0a51614" />
     </details>
 
 -   `Remover Produto`: Permite que os administradores removam produtos descontinuados ou fora de estoque do catálogo da loja quando necessário.
@@ -133,7 +133,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/627e2024-e351-41cb-a822-e64d38b1a537" />
     </details>
 
 ### Exploração de Produtos
@@ -151,7 +151,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/76a8fcff-2ce2-4f1e-a4e0-e457a0b1e4f8" />
     </details>
 
 -   `Detalhes do Produto`: Ao acessar a página de detalhes de um produto, os usuários podem visualizar informações completas e detalhadas sobre o produto selecionado.
@@ -159,7 +159,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/130481a3-c656-401b-99b5-cb5d02e5b415" />
     </details>
 
 ### Comunicação
@@ -179,7 +179,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/64ff61f5-93ef-4ed0-89f2-5563e8c6f5b7" />
     </details>
 
 ## :toolbox: Desenvolvimento e Implementação
