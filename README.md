@@ -107,7 +107,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/04fa9d2d-276a-4967-bb03-d67acc5a885b" />
     </details>
 
 -   `Editar Produto`: Oferece aos administradores a capacidade de realizar alterações nos dados de produtos existentes no catálogo. Isso inclui a atualização de preços, descrições e categorias.
@@ -123,7 +123,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/38b8379a-ddcc-4c5f-95fc-e6d9d560e672" />
     </details>
 
 ### Login e Autenticação
@@ -143,7 +143,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/2a8203ed-9629-4518-b594-4dd709603bae" />
     </details>
 
 -   `Lista de Produtos por Categoria`: Permite aos usuários visualizarem todos os produtos de uma categoria específica, facilitando a navegação e a busca por itens relacionados.
@@ -169,7 +169,7 @@ Na página de cadastro de produto os administradores têm a possibilidade de adi
     <details>
         <summary><b>:camera: Visualizar Demonstração</b></summary>
         <br />
-        <img src="" />
+        <img src="https://github.com/GabrielVeroneze/alura-geek/assets/95183901/26e93aa6-d942-4395-83d4-8e39f1fa3582" />
     </details>
 
 ### Validações
