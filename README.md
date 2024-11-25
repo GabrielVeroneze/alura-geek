@@ -252,17 +252,17 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 ### Utilização dos Pacotes
 
--   `Servidor JSON`: Utiliza o pacote `json-server` para simular uma API RESTful localmente.
+-   `Servidor JSON`: Faz uso do pacote `json-server` para simular uma API RESTful localmente, permitindo o consumo de dados durante o desenvolvimento.
 
--   `Envio de E-mails`: Utiliza o pacote `@emailjs/browser` para enviar e-mails diretamente do navegador.
+-   `Envio de E-mails`: Usa o pacote `@emailjs/browser` para enviar e-mails diretamente do navegador, simplificando a integração de funcionalidades de envio.
 
--   `Notificações`: Utiliza o pacote `react-toastify` para exibir notificações que informam o usuário sobre operações importantes.
+-   `Notificações`: Utiliza o pacote `react-toastify` para exibir notificações visuais que informam o usuário sobre operações importantes realizadas na aplicação.
 
--   `Formatação de Números`: Utiliza o pacote `@react-input/number-format` para criar máscaras monetárias em campos de entrada.
+-   `Formatação de Números`: Usa o pacote `@react-input/number-format` para criar máscaras monetárias em campos de entrada, facilitando a formatação de valores.
 
--   `Manipulação de Arrays`: Utiliza o pacote `just-shuffle` para embaralhar aleatoriamente elementos em um array.
+-   `Manipulação de Arrays`: Utiliza o pacote `just-shuffle` para embaralhar aleatoriamente elementos em um array, facilitando a manipulação de dados.
 
--   `Identificadores Únicos`: Utiliza o pacote `nanoid` para gerar identificadores únicos de forma rápida e segura.
+-   `Identificadores Únicos`: Utiliza o pacote `nanoid` para gerar identificadores únicos de forma rápida, eficiente e com alta segurança para diversas aplicações.
 
 ## :computer: Ferramentas Utilizadas
 
