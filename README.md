@@ -234,11 +234,11 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 -   `Variáveis de Estilo`: Utiliza variáveis para armazenar valores de cores, tamanhos, fontes, entre outros. Essas variáveis são utilizadas em todo o código SCSS para facilitar a manutenção e a personalização dos estilos.
 
--   `Mixins`: Utiliza a diretiva `@mixin` para criar mixins que agrupam um conjunto de estilos que podem ser reutilizados em diversos elementos. Os mixins são inseridos no código utilizando `@include`, permitindo aplicar estilos específicos em vários elementos sem repetição de código.
+-   `Mixins`: Utiliza a diretiva `@mixin` para criar estilos reutilizáveis, que são aplicados com `@include`, permitindo reaproveitar conjuntos de estilos em diferentes elementos sem repetição.
 
 -   `Extensão de Estilos`: Utiliza placeholder selectors para criar estilos pré-definidos que podem ser estendidos com o `@extend`. Isso para reutilizar os estilos em diferentes elementos de forma eficiente.
 
--   `Lógica Condicional`: Utiliza lógica condicional com `@if`e `@else` para aplicar estilos com base em condições específicas. Permitindo criar estilos dinâmicos e responsivos que se adaptam de acordo com o contexto da aplicação, como diferentes tamanhos de tela.
+-   `Lógica Condicional`: Utiliza lógica condicional com `@if` e `@else` para aplicar estilos baseados em condições, criando estilos dinâmicos e responsivos que se ajustam ao contexto, como tamanhos de tela.
 
 ### Estilização e Layout Responsivo
 
