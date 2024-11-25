@@ -208,15 +208,15 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 ### Roteamento com React Router
 
--   `Gerenciamento de Rotas`: Utiliza o `BrowserRouter` para definir o roteamento principal da aplicação, o `Routes` é usado para definir as diferentes rotas da aplicação e o `Route` para mapear um componente a uma rota específica.
+-   `Gerenciamento de Rotas`: Utiliza `BrowserRouter` para o roteamento principal, `Routes` para definir rotas e `Route` para mapear componentes a rotas específicas.
 
 -   `Layout Routes`: Implementa rotas aninhadas para organizar o layout da aplicação, utilizando o componente `Outlet` para renderizar o conteúdo das rotas aninhadas dentro do layout principal.
 
 -   `Navegação`: Utiliza o componente `Link` para criar links de navegação entre as diferentes páginas da aplicação. Além disso, usa o `useNavigate` para realizar navegação programaticamente dentro dos componentes.
 
--   `Parâmetros de Rota`: Utiliza parâmetros de rota para criar rotas dinâmicas que aceitam valores variáveis. Esses parâmetros são acessados e utilizados através do `useParams`, para a criação de páginas com conteúdo variável baseado nos parâmetros fornecidos na URL.
+-   `Parâmetros de Rota`: Utiliza parâmetros de rota para criar rotas dinâmicas, acessados pelo hook `useParams`, permitindo conteúdo variável com base nos valores da URL.
 
--   `Acesso à Localização`: Utiliza o `useLocation` para acessar informações sobre a localização atual da aplicação, como o pathname. Com o objetivo de criar funcionalidades que dependem da localização do usuário, como a renderização de componentes com base na URL.
+-   `Acesso à Localização`: Utiliza o `useLocation` para acessar informações da localização atual, como o pathname, permitindo funcionalidades baseadas na URL, como renderização condicional de componentes.
 
 ### Gerenciamento de Estado com Recoil
 
