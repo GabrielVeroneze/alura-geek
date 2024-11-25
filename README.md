@@ -226,7 +226,7 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 ### Comunicação com API via Axios
 
--   `Instância Personalizada`: Utiliza o `create()` para criar uma instância personalizada do Axios com configurações específicas, com baseURL e headers padrão para aceitar e enviar dados no formato JSON. Isso para organizar as requisições HTTP em diferentes partes da aplicação.
+-   `Instância Personalizada`: Utiliza o `create()` para criar uma instância personalizada do Axios com baseURL e headers para enviar e receber dados em JSON, organizando as requisições HTTP na aplicação.
 
 -   `Métodos HTTP`: Utiliza os métodos HTTP do Axios, como `get`, `post`, `put` e `delete`, para realizar requisições e interagir com a API RESTful. Como as requisições de login, cadastro de produto, validação de token, entre outros.
 
