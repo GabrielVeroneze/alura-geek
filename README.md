@@ -242,9 +242,9 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 ### Construção de Layout
 
--   `Flexbox`: Utiliza alguns dos principais atributos do Flexbox, como `flex-direction`, `flex-wrap`, `order`, entre outros, para criar layouts flexíveis e responsivos. Como na exibição dos produtos na lista flexível da página de categoria.
+-   `Flexbox`: Utiliza atributos do Flexbox, como `flex-direction`, `flex-wrap`, `order`, entre outros, para criar layouts flexíveis e responsivos, como na lista de produtos da página de categoria.
 
--   `Grid Layout`: Utiliza vários atributos do Grid Layout, como `grid-template-columns`, `grid-template-rows`, `grid-template-areas`, entre outros, para criar layouts mais complexos e organizados. Como o layout do rodapé com áreas definidas para logo, links úteis e formulário de contato.
+-   `Grid Layout`: Utiliza atributos do Grid Layout, como `grid-template-columns`, `grid-template-rows` e `grid-template-areas`, para criar layouts organizados, como o rodapé com logo, links e formulário de contato.
 
 -   `Alinhamento e Posicionamento`: Utiliza propriedades como `align-items`, `justify-content`, `position`, entre outros, para alinhar e posicionar elementos de forma precisa na página.
 
