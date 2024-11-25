@@ -240,7 +240,7 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 -   `Lógica Condicional`: Utiliza lógica condicional com `@if` e `@else` para aplicar estilos baseados em condições, criando estilos dinâmicos e responsivos que se ajustam ao contexto, como tamanhos de tela.
 
-### Estilização e Layout Responsivo
+### Construção de Layout
 
 -   `Flexbox`: Utiliza alguns dos principais atributos do Flexbox, como `flex-direction`, `flex-wrap`, `order`, entre outros, para criar layouts flexíveis e responsivos. Como na exibição dos produtos na lista flexível da página de categoria.
 
