@@ -194,7 +194,7 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 -   `Armazenamento Local`: Utiliza a API localStorage para armazenar dados no navegador do usuário, como os tokens de autenticação.
 
-### Desenvolvimento com TypeScript
+### Tipagem com TypeScript
 
 -   `Definições de Tipos`: Utiliza `interfaces` e `type aliases` para definir a estrutura e os tipos de dados, auxiliando a evitar erros e garantir a integridade dos dados ao longo do código.
 
