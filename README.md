@@ -184,13 +184,13 @@ Na página de cadastro, os administradores podem adicionar novos produtos ao cat
 
 -   `Hooks`: Utiliza os Hooks do React, como `useState` e `useEffect`, para gerenciar o estado local dos componentes, realizar efeitos colaterais e interagir com o ciclo de vida dos componentes.
 
--   `Hooks Customizados`: Implementa hooks customizados para encapsular lógicas específicas e reutilizáveis em componentes. Eles são criados para abstrair funcionalidades, como gerenciamento de estado, efeitos colaterais e integração com APIs externas.
+-   `Hooks Customizados`: Implementa hooks customizados para encapsular lógicas específicas e reutilizáveis. Eles abstraem funcionalidades como gerenciamento de estado, efeitos colaterais e integração com APIs externas.
 
--   `Renderização Condicional e Mapeamento de Listas`: Utiliza renderização condicional e mapeamento de listas para exibir conteúdos de forma dinâmica com base em condições e dados de fontes externas, como listas de produtos e resultados de pesquisa.
+-   `Renderização Condicional e Mapeamento de Listas`: Utiliza renderização condicional e mapeamento de listas para exibir conteúdos dinamicamente, com base em condições e dados externos, como produtos e resultados de pesquisa.
 
 -   `Eventos`: Implementa diversos eventos, como onChange, onKeyDown, onInvalid e onSubmit, para interagir com elementos da interface e responder às ações do usuário de forma dinâmica.
 
--   `Validação de Formulários`: Utiliza funcionalidades nativas de validação de formulários, como validation attributes para validar e garantir a integridade dos dados inseridos pelo usuário. Também utiliza o ValidityState para realizar validações programaticamente e fornecer feedback aos usuários sobre possíveis erros.
+-   `Validação de Formulários`: Emprega validações nativas de formulários com validation attributes para garantir a integridade dos dados. Utiliza ValidityState para validações programáticas e feedback de erros aos usuários.
 
 -   `Armazenamento Local`: Utiliza a API localStorage para armazenar dados no navegador do usuário, como os tokens de autenticação.
 
