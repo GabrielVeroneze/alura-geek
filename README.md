@@ -336,7 +336,7 @@ A empresa AluraGeek está buscando expandir suas vendas criando um site para ven
 
 ### Desenvolvimento Ágil com Trello
 
-Durante o período de seis semanas, o projeto foi desenvolvido seguindo uma abordagem ágil, com o auxílio do Trello. Ele é utilizado para gerenciar as tarefas, desde o início até a conclusão do projeto.
+Durante o período de quatro semanas, o projeto foi desenvolvido seguindo uma abordagem ágil, com o auxílio do Trello. Ele é utilizado para gerenciar as tarefas, desde o início até a conclusão do projeto.
 
 Ao longo de cada semana, foram estabelecidas metas específicas, direcionando o foco e o esforço em diferentes áreas do projeto. Abaixo, estão listadas as principais tarefas de cada semana:
 
