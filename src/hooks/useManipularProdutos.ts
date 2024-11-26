@@ -1,65 +1,71 @@
 import { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
 import { produtosAtom } from '@/state/atoms'
+import { atualizarProduto, buscarProdutos, criarProduto, removerProduto } from '@/services/produtos'
 import { exibirAlerta } from '@/utils/mensagensDeAlerta'
 import { IProduto } from '@/interfaces/IProduto'
-import api from '@/services/api'
 
 export const useManipularProdutos = () => {
     const [produtos, setProdutos] = useRecoilState(produtosAtom)
 
     useEffect(() => {
-        const carregarProdutos = () => {
-            api
-                .get<IProduto[]>('produtos')
-                .then(resposta => {
-                    setProdutos(resposta.data)
-                })
-        }
         carregarProdutos()
-    }, [setProdutos])
+    }, [])
 
-    const cadastrarProduto = (produto: IProduto) => {
-        api
-            .post<IProduto>('produtos', produto)
-            .then(() => {
-                exibirAlerta('success', 'Produto adicionado com sucesso!')
-            })
-            .catch(() => {
-                exibirAlerta('error', 'Erro ao adicionar o produto.')
-            })
+    const carregarProdutos = async () => {
+        try {
+            const produtosCarregados = await buscarProdutos()
+
+            setProdutos(produtosCarregados)
+        } catch (erro) {
+            console.log(erro)
+        }
     }
 
-    const editarProduto = (produtoId: string, produto: IProduto) => {
-        api
-            .put<IProduto>(`produtos/${produtoId}`, produto)
-            .then(() => {
-                exibirAlerta('success', 'Produto atualizado com sucesso!')
-            })
-            .catch(() => {
-                exibirAlerta('error', 'Erro ao editar o produto.')
-            })
+    const cadastrarProduto = async (produto: IProduto) => {
+        try {
+            await criarProduto(produto)
+
+            exibirAlerta('success', 'Produto adicionado com sucesso!')
+        } catch (erro) {
+            if (erro instanceof Error) {
+                exibirAlerta('error', erro.message)
+            }
+        }
     }
 
-    const removerProduto = (produtoId: string) => {
-        api
-            .delete(`produtos/${produtoId}`)
-            .then(() => {
-                setProdutos(
-                    produtos.filter(produto => produto.id !== produtoId)
-                )
+    const editarProduto = async (produtoId: string, produto: IProduto) => {
+        try {
+            await atualizarProduto(produtoId, produto)
 
-                exibirAlerta('success', 'Produto removido com sucesso!')
-            })
-            .catch(() => {
-                exibirAlerta('error', 'Erro ao remover o produto.')
-            })
+            exibirAlerta('success', 'Produto atualizado com sucesso!')
+        } catch (erro) {
+            if (erro instanceof Error) {
+                exibirAlerta('error', erro.message)
+            }
+        }
+    }
+
+    const excluirProduto = async (produtoId: string) => {
+        try {
+            await removerProduto(produtoId)
+
+            setProdutos(
+                produtos.filter(produto => produto.id !== produtoId)
+            )
+
+            exibirAlerta('success', 'Produto removido com sucesso!')
+        } catch (erro) {
+            if (erro instanceof Error) {
+                exibirAlerta('error', erro.message)
+            }
+        }
     }
 
     return {
         produtos,
         cadastrarProduto,
         editarProduto,
-        removerProduto,
+        excluirProduto,
     }
 }
