@@ -1,16 +1,16 @@
 import { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
 import { produtosAtom } from '@/state/atoms'
-import { jsonServerApi } from '@/services/api'
 import { exibirAlerta } from '@/utils/mensagensDeAlerta'
 import { IProduto } from '@/interfaces/IProduto'
+import api from '@/services/api'
 
 export const useManipularProdutos = () => {
     const [produtos, setProdutos] = useRecoilState(produtosAtom)
 
     useEffect(() => {
         const carregarProdutos = () => {
-            jsonServerApi
+            api
                 .get<IProduto[]>('produtos')
                 .then(resposta => {
                     setProdutos(resposta.data)
@@ -20,7 +20,7 @@ export const useManipularProdutos = () => {
     }, [setProdutos])
 
     const cadastrarProduto = (produto: IProduto) => {
-        jsonServerApi
+        api
             .post<IProduto>('produtos', produto)
             .then(() => {
                 exibirAlerta('success', 'Produto adicionado com sucesso!')
@@ -31,7 +31,7 @@ export const useManipularProdutos = () => {
     }
 
     const editarProduto = (produtoId: string, produto: IProduto) => {
-        jsonServerApi
+        api
             .put<IProduto>(`produtos/${produtoId}`, produto)
             .then(() => {
                 exibirAlerta('success', 'Produto atualizado com sucesso!')
@@ -42,7 +42,7 @@ export const useManipularProdutos = () => {
     }
 
     const removerProduto = (produtoId: string) => {
-        jsonServerApi
+        api
             .delete(`produtos/${produtoId}`)
             .then(() => {
                 setProdutos(
