@@ -1,14 +1,4 @@
-export type Erro =
-    | 'badInput'
-    | 'customError'
-    | 'patternMismatch'
-    | 'rangeOverflow'
-    | 'rangeUnderflow'
-    | 'stepMismatch'
-    | 'tooLong'
-    | 'tooShort'
-    | 'typeMismatch'
-    | 'valueMissing'
+import { Erro } from '@/types/Erro'
 
 export interface IMensagensDeErro {
     [campo: string]: Partial<Record<Erro, string>>
