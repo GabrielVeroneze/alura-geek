@@ -9,18 +9,16 @@ export const useManipularProdutos = () => {
     const [produtos, setProdutos] = useRecoilState(produtosAtom)
 
     useEffect(() => {
-        carregarProdutos()
-    }, [])
-
-    const carregarProdutos = async () => {
-        try {
-            const produtosCarregados = await buscarProdutos()
-
-            setProdutos(produtosCarregados)
-        } catch (erro) {
-            console.log(erro)
+        const carregarProdutos = async () => {
+            try {
+                const produtosCarregados = await buscarProdutos()
+                setProdutos(produtosCarregados)
+            } catch (erro) {
+                console.log(erro)
+            }
         }
-    }
+        carregarProdutos()
+    }, [setProdutos])
 
     const cadastrarProduto = async (produto: IProduto) => {
         try {
