@@ -14,8 +14,6 @@ export const useObterProduto = () => {
     }, [id])
 
     const carregarProduto = (id: string) => {
-        api
-            .get<IProduto>(`produtos/${id}`)
             .then(resposta => {
                 setProduto(resposta.data)
             })

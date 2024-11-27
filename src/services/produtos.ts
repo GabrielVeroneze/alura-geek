@@ -10,6 +10,15 @@ export async function buscarProdutos(): Promise<IProduto[]> {
     }
 }
 
+export async function buscarProdutoPorId(produtoId: string): Promise<IProduto> {
+    try {
+        const resposta = await api.get<IProduto>(`produtos/${produtoId}`)
+        return resposta.data
+    } catch (error) {
+        throw new Error('Erro ao carregar o produto.')
+    }
+}
+
 export async function criarProduto(produto: IProduto): Promise<void> {
     try {
         await api.post<IProduto>('produtos', produto)
