@@ -28,7 +28,7 @@ export async function atualizarProduto(produtoId: string, produto: IProduto): Pr
 
 export async function removerProduto(produtoId: string): Promise<void> {
     try {
-        await api.delete(`produtos/${produtoId}`)
+        await api.delete<IProduto>(`produtos/${produtoId}`)
     } catch {
         throw new Error('Erro ao remover o produto.')
     }
