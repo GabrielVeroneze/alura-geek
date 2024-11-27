@@ -1,5 +1,5 @@
 import { Erro } from '@/types/Erro'
 
-export interface IMensagensDeErro {
+export interface MensagensDeErro {
     [campo: string]: Partial<Record<Erro, string>>
 }

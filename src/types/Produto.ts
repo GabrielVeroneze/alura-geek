@@ -1,4 +1,4 @@
-export interface IProduto {
+export interface Produto {
     id?: string
     imagem: string
     categoria: string
