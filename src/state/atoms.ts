@@ -1,6 +1,6 @@
 import { atom } from 'recoil'
-import { IUsuario } from '@/interfaces/IUsuario'
 import { Produto } from '@/types/Produto'
+import { Usuario } from '@/types/Usuario'
 
 export const produtosAtom = atom<Produto[]>({
     key: 'produtosAtom',
@@ -12,7 +12,7 @@ export const termoDePesquisaAtom = atom<string>({
     default: '',
 })
 
-export const usuarioAtom = atom<IUsuario | null>({
+export const usuarioAtom = atom<Usuario | null>({
     key: 'usuarioAtom',
     default: null,
 })
