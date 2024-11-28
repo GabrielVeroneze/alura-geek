@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { IProduto } from '@/interfaces/IProduto'
-import Produto from '@/components/Produto'
+import ProdutoCard from '@/components/ProdutoCard'
 import styles from './GrupoProdutosDestaque.module.scss'
 
 interface GrupoProdutosDestaqueProps {
@@ -20,7 +20,7 @@ const GrupoProdutosDestaque = memo(({ categoria, produtos }: GrupoProdutosDestaq
             </div>
             <ul className={styles.lista}>
                 {produtos.map(produto => (
-                    <Produto
+                    <ProdutoCard
                         key={produto.id}
                         modelo="visualizar"
                         produto={produto}

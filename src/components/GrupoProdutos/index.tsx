@@ -1,5 +1,5 @@
 import { IProduto } from '@/interfaces/IProduto'
-import Produto from '@/components/Produto'
+import ProdutoCard from '@/components/ProdutoCard'
 import styles from './GrupoProdutos.module.scss'
 
 interface GrupoProdutosProps {
@@ -15,7 +15,7 @@ const GrupoProdutos = ({ categoria, produtos }: GrupoProdutosProps) => {
             </div>
             <ul className={styles.lista}>
                 {produtos.map(produto => (
-                    <Produto
+                    <ProdutoCard
                         key={produto.id}
                         modelo="visualizar"
                         produto={produto}

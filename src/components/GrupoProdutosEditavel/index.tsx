@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { IProduto } from '@/interfaces/IProduto'
-import Produto from '@/components/Produto'
+import ProdutoCard from '@/components/ProdutoCard'
 import styles from './GrupoProdutosEditavel.module.scss'
 
 interface GrupoProdutosEditavelProps {
@@ -20,7 +20,7 @@ const GrupoProdutosEditavel = ({ categoria, produtos, removerProduto }: GrupoPro
             </div>
             <ul className={styles.lista}>
                 {produtos.map(produto => (
-                    <Produto
+                    <ProdutoCard
                         key={produto.id}
                         modelo="editar"
                         produto={produto}
