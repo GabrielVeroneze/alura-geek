@@ -1,6 +1,6 @@
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 
-export const obterCategoriasUnicas = (produtos: IProduto[]) => {
+export const obterCategoriasUnicas = (produtos: Produto[]) => {
     const todasCategorias = produtos.map(produto => produto.categoria)
 
     const categoriasUnicas = new Set(todasCategorias)
@@ -9,7 +9,7 @@ export const obterCategoriasUnicas = (produtos: IProduto[]) => {
 }
 
 export const filtrarProdutosPorCategoria = (
-    produtos: IProduto[],
+    produtos: Produto[],
     categoria: string,
     quantidade: number
 ) => {

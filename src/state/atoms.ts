@@ -1,8 +1,8 @@
 import { atom } from 'recoil'
-import { IProduto } from '@/interfaces/IProduto'
 import { IUsuario } from '@/interfaces/IUsuario'
+import { Produto } from '@/types/Produto'
 
-export const produtosAtom = atom<IProduto[]>({
+export const produtosAtom = atom<Produto[]>({
     key: 'produtosAtom',
     default: [],
 })

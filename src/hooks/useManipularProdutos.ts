@@ -3,7 +3,7 @@ import { useRecoilState } from 'recoil'
 import { produtosAtom } from '@/state/atoms'
 import { atualizarProduto, buscarProdutos, criarProduto, removerProduto } from '@/services/produtos'
 import { exibirAlerta } from '@/utils/mensagensDeAlerta'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 
 export const useManipularProdutos = () => {
     const [produtos, setProdutos] = useRecoilState(produtosAtom)
@@ -20,7 +20,7 @@ export const useManipularProdutos = () => {
         carregarProdutos()
     }, [setProdutos])
 
-    const cadastrarProduto = async (produto: IProduto) => {
+    const cadastrarProduto = async (produto: Produto) => {
         try {
             await criarProduto(produto)
 
@@ -32,7 +32,7 @@ export const useManipularProdutos = () => {
         }
     }
 
-    const editarProduto = async (produtoId: string, produto: IProduto) => {
+    const editarProduto = async (produtoId: string, produto: Produto) => {
         try {
             await atualizarProduto(produtoId, produto)
 

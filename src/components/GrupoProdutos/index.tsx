@@ -1,10 +1,10 @@
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 import ProdutoCard from '@/components/ProdutoCard'
 import styles from './GrupoProdutos.module.scss'
 
 interface GrupoProdutosProps {
     categoria: string
-    produtos: IProduto[]
+    produtos: Produto[]
 }
 
 const GrupoProdutos = ({ categoria, produtos }: GrupoProdutosProps) => {

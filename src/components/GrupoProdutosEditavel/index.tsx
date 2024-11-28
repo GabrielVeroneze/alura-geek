@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 import ProdutoCard from '@/components/ProdutoCard'
 import styles from './GrupoProdutosEditavel.module.scss'
 
 interface GrupoProdutosEditavelProps {
     categoria: string
-    produtos: IProduto[]
+    produtos: Produto[]
     removerProduto: (id: string) => void
 }
 

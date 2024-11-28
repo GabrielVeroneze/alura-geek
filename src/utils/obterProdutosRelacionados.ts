@@ -1,8 +1,8 @@
 import shuffle from 'just-shuffle'
 import { filtrarProdutosPorCategoria } from '@/utils/operacoesCategorias'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 
-export const obterProdutosRelacionados = (produtos: IProduto[], produtoSelecionado: IProduto) => {
+export const obterProdutosRelacionados = (produtos: Produto[], produtoSelecionado: Produto) => {
     const produtosSemSelecionado = produtos.filter(produto =>
         produto.id !== produtoSelecionado.id
     )

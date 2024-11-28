@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { buscarProdutoPorId } from '@/services/produtos'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 
 export const useObterProduto = () => {
     const { id } = useParams()
-    const [produto, setProduto] = useState<IProduto | null>(null)
+    const [produto, setProduto] = useState<Produto | null>(null)
 
     useEffect(() => {
         if (id) {

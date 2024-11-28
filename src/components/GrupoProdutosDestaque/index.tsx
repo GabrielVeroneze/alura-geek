@@ -1,12 +1,12 @@
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 import ProdutoCard from '@/components/ProdutoCard'
 import styles from './GrupoProdutosDestaque.module.scss'
 
 interface GrupoProdutosDestaqueProps {
     categoria: string
-    produtos: IProduto[]
+    produtos: Produto[]
 }
 
 const GrupoProdutosDestaque = memo(({ categoria, produtos }: GrupoProdutosDestaqueProps) => {

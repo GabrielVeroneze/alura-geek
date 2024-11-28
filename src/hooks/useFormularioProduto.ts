@@ -5,7 +5,7 @@ import { useObterProduto } from '@/hooks/useObterProduto'
 import { useManipularProdutos } from '@/hooks/useManipularProdutos'
 import { converterPrecoEmNumero, formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import { obterId } from '@/utils/gerarIdProduto'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 
 export const useFormularioProduto = () => {
     const { id } = useParams()
@@ -68,7 +68,7 @@ export const useFormularioProduto = () => {
         }
     }
 
-    const processarProdutoEmEdicao = (produto: IProduto) => {
+    const processarProdutoEmEdicao = (produto: Produto) => {
         setProdutoDados({
             imagem: produto.imagem,
             categoria: produto.categoria,

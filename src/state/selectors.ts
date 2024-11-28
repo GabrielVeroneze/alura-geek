@@ -1,8 +1,8 @@
 import { selector } from 'recoil'
 import { produtosAtom, termoDePesquisaAtom } from '@/state/atoms'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 
-export const produtosPesquisadosSelector = selector<IProduto[]>({
+export const produtosPesquisadosSelector = selector<Produto[]>({
     key: 'produtosPesquisadosSelector',
     get: ({ get }) => {
         const produtos = get(produtosAtom)
