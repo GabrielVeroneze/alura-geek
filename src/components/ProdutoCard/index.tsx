@@ -2,7 +2,7 @@ import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
 import { Produto } from '@/types/Produto'
-import styles from './Produto.module.scss'
+import styles from './ProdutoCard.module.scss'
 
 interface ProdutoCardProps {
     modelo: 'visualizar' | 'editar'
