@@ -1,5 +1,6 @@
 import { useValidarFormulario } from '@/hooks/useValidarFormulario'
-import { Erro, IMensagensDeErro } from '@/interfaces/IMensagensDeErro'
+import { MensagensDeErro } from '@/types/MensagensDeErro'
+import { Erro } from '@/types/Erro'
 
 export const useValidarFormularioProduto = () => {
     const campos = {
@@ -20,7 +21,7 @@ export const useValidarFormularioProduto = () => {
         'valueMissing',
     ]
 
-    const mensagensDeErro: IMensagensDeErro = {
+    const mensagensDeErro: MensagensDeErro = {
         imagem: {
             patternMismatch: 'A URL da imagem deve conter uma extensão válida, como .png ou .jpg.',
             typeMismatch: 'Por favor, insira uma URL válida para a imagem.',

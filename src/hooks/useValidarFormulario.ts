@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Erro, IMensagensDeErro } from '@/interfaces/IMensagensDeErro'
+import { MensagensDeErro } from '@/types/MensagensDeErro'
+import { Erro } from '@/types/Erro'
 
 interface ICampos {
     [chave: string]: string
@@ -8,7 +9,7 @@ interface ICampos {
 interface IFormulario {
     campos: ICampos
     tiposDeErro: Erro[]
-    mensagensDeErro: IMensagensDeErro
+    mensagensDeErro: MensagensDeErro
 }
 
 export const useValidarFormulario = (formulario: IFormulario) => {

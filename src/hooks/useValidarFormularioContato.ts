@@ -1,5 +1,6 @@
 import { useValidarFormulario } from '@/hooks/useValidarFormulario'
-import { Erro, IMensagensDeErro } from '@/interfaces/IMensagensDeErro'
+import { MensagensDeErro } from '@/types/MensagensDeErro'
+import { Erro } from '@/types/Erro'
 
 export const useValidarFormularioContato = () => {
     const campos = {
@@ -9,7 +10,7 @@ export const useValidarFormularioContato = () => {
 
     const tiposDeErro: Erro[] = ['tooLong', 'tooShort', 'valueMissing']
 
-    const mensagensDeErro: IMensagensDeErro = {
+    const mensagensDeErro: MensagensDeErro = {
         nome: {
             valueMissing: 'O campo de nome não pode estar vazio.',
             tooShort: 'O campo de nome não tem caractéres suficientes.',

@@ -1,5 +1,6 @@
 import { useValidarFormulario } from '@/hooks/useValidarFormulario'
-import { Erro, IMensagensDeErro } from '@/interfaces/IMensagensDeErro'
+import { MensagensDeErro } from '@/types/MensagensDeErro'
+import { Erro } from '@/types/Erro'
 
 export const useValidarFormularioLogin = () => {
     const campos = {
@@ -9,7 +10,7 @@ export const useValidarFormularioLogin = () => {
 
     const tiposDeErro: Erro[] = ['patternMismatch', 'valueMissing']
 
-    const mensagensDeErro: IMensagensDeErro = {
+    const mensagensDeErro: MensagensDeErro = {
         email: {
             patternMismatch: 'O email deve estar no formato correto, por exemplo: exemplo@email.com.',
             valueMissing: 'Por favor, preencha o campo de email.',
