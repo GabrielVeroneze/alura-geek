@@ -1,16 +1,16 @@
 import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { formatarPrecoEmReal } from '@/utils/formatarPrecoProduto'
-import { IProduto } from '@/interfaces/IProduto'
+import { Produto } from '@/types/Produto'
 import styles from './Produto.module.scss'
 
-interface ProdutoProps {
+interface ProdutoCardProps {
     modelo: 'visualizar' | 'editar'
-    produto: IProduto
+    produto: Produto
     removerProduto?: (id: string) => void
 }
 
-const Produto = memo(({ modelo, produto, removerProduto }: ProdutoProps) => {
+const ProdutoCard = memo(({ modelo, produto, removerProduto }: ProdutoCardProps) => {
     return (
         <li className={styles.card}>
             <div className={styles.wrapper}>
@@ -54,4 +54,4 @@ const Produto = memo(({ modelo, produto, removerProduto }: ProdutoProps) => {
     )
 })
 
-export default Produto
+export default ProdutoCard
