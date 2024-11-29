@@ -1,12 +1,12 @@
 import { useFormularioContato } from '@/hooks/useFormularioContato'
-import { useValidarFormularioContato } from '@/hooks/useValidarFormularioContato'
+import { useValidacaoContato } from '@/hooks/useValidacaoContato'
 import CampoTextoFloatLabel from '@/components/CampoTextoFloatLabel'
 import MensagemErro from '@/components/MensagemErro'
 import styles from './Contato.module.scss'
 
 const Contato = () => {
     const { contatoDados, handleDadosChange, handleSubmit } = useFormularioContato()
-    const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioContato()
+    const { erros, validarCampo, validarFormulario } = useValidacaoContato()
 
     return (
         <form
@@ -31,8 +31,8 @@ const Contato = () => {
                         required: true,
                     }}
                 />
-                {errosValidacao.nome && (
-                    <MensagemErro>{errosValidacao.nome}</MensagemErro>
+                {erros.nome && (
+                    <MensagemErro>{erros.nome}</MensagemErro>
                 )}
             </fieldset>
             <fieldset>
@@ -50,8 +50,8 @@ const Contato = () => {
                     maxLength={120}
                     required
                 ></textarea>
-                {errosValidacao.mensagem && (
-                    <MensagemErro>{errosValidacao.mensagem}</MensagemErro>
+                {erros.mensagem && (
+                    <MensagemErro>{erros.mensagem}</MensagemErro>
                 )}
             </fieldset>
             <button className={styles.botao} type="submit">
