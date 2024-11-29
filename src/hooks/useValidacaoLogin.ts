@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { validarMensagemErro } from '@/utils/validacaoErro'
 import { MensagensDeErro } from '@/types/MensagensDeErro'
 import { Erro } from '@/types/Erro'
+import { Campo } from '@/types/Campo'
 
 export const useValidacaoLogin = () => {
     const [erros, setErros] = useState({
@@ -21,26 +23,17 @@ export const useValidacaoLogin = () => {
         },
     }
 
-    const validarCampo = (campo: HTMLInputElement | HTMLTextAreaElement) => {
-        tiposDeErro.forEach(erro => {
-            if (campo.validity[erro]) {
-                setErros({
-                    ...erros,
-                    [campo.name]: mensagensDeErro[campo.name][erro]!,
-                })
-            }
-        })
+    const validarCampo = (campo: Campo) => {
+        const erro = validarMensagemErro(campo, tiposDeErro, mensagensDeErro)
 
-        if (campo.validity.valid) {
-            setErros({
-                ...erros,
-                [campo.name]: '',
-            })
-        }
+        setErros({
+            ...erros,
+            [campo.name]: erro,
+        })
     }
 
     const validarFormulario = (campo: EventTarget) => {
-        const campoValidavel = campo as HTMLInputElement | HTMLTextAreaElement
+        const campoValidavel = campo as Campo
 
         validarCampo(campoValidavel)
     }
