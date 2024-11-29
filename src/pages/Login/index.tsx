@@ -1,12 +1,12 @@
 import { useFormularioLogin } from '@/hooks/useFormularioLogin'
-import { useValidarFormularioLogin } from '@/hooks/useValidarFormularioLogin'
+import { useValidacaoLogin } from '@/hooks/useValidacaoLogin'
 import CampoTexto from '@/components/CampoTexto'
 import MensagemErro from '@/components/MensagemErro'
 import styles from './Login.module.scss'
 
 const Login = () => {
     const { loginDados, handleDadosChange, handleSubmit } = useFormularioLogin()
-    const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioLogin()
+    const { erros, validarCampo, validarFormulario } = useValidacaoLogin()
 
     return (
         <main className={styles.principal}>
@@ -30,8 +30,8 @@ const Login = () => {
                             required: true,
                         }}
                     />
-                    {errosValidacao.email && (
-                        <MensagemErro>{errosValidacao.email}</MensagemErro>
+                    {erros.email && (
+                        <MensagemErro>{erros.email}</MensagemErro>
                     )}
                 </fieldset>
                 <fieldset className={styles.campo}>
@@ -48,8 +48,8 @@ const Login = () => {
                             required: true,
                         }}
                     />
-                    {errosValidacao.senha && (
-                        <MensagemErro>{errosValidacao.senha}</MensagemErro>
+                    {erros.senha && (
+                        <MensagemErro>{erros.senha}</MensagemErro>
                     )}
                 </fieldset>
                 <button className={styles.botao}>Entrar</button>
