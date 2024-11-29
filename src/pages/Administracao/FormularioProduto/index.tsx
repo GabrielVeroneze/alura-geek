@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useFormularioProduto } from '@/hooks/useFormularioProduto'
-import { useValidarFormularioProduto } from '@/hooks/useValidarFormularioProduto'
+import { useValidacaoProduto } from '@/hooks/useValidacaoProduto'
 import CampoTextoFloatLabel from '@/components/CampoTextoFloatLabel'
 import MensagemErro from '@/components/MensagemErro'
 import styles from './FormularioProduto.module.scss'
@@ -8,7 +8,7 @@ import styles from './FormularioProduto.module.scss'
 const FormularioProduto = () => {
     const { id } = useParams()
     const { produtoDados, handleDadosChange, handleSubmit, mascaraMonetaria } = useFormularioProduto()
-    const { errosValidacao, validarCampo, validarFormulario } = useValidarFormularioProduto()
+    const { erros, validarCampo, validarFormulario } = useValidacaoProduto()
 
     return (
         <form
@@ -34,8 +34,8 @@ const FormularioProduto = () => {
                         required: true,
                     }}
                 />
-                {errosValidacao.imagem && (
-                    <MensagemErro>{errosValidacao.imagem}</MensagemErro>
+                {erros.imagem && (
+                    <MensagemErro>{erros.imagem}</MensagemErro>
                 )}
             </fieldset>
             <fieldset>
@@ -52,8 +52,8 @@ const FormularioProduto = () => {
                         required: true,
                     }}
                 />
-                {errosValidacao.categoria && (
-                    <MensagemErro>{errosValidacao.categoria}</MensagemErro>
+                {erros.categoria && (
+                    <MensagemErro>{erros.categoria}</MensagemErro>
                 )}
             </fieldset>
             <fieldset>
@@ -72,8 +72,8 @@ const FormularioProduto = () => {
                         required: true,
                     }}
                 />
-                {errosValidacao.nome && (
-                    <MensagemErro>{errosValidacao.nome}</MensagemErro>
+                {erros.nome && (
+                    <MensagemErro>{erros.nome}</MensagemErro>
                 )}
             </fieldset>
             <fieldset>
@@ -92,8 +92,8 @@ const FormularioProduto = () => {
                         required: true,
                     }}
                 />
-                {errosValidacao.preco && (
-                    <MensagemErro>{errosValidacao.preco}</MensagemErro>
+                {erros.preco && (
+                    <MensagemErro>{erros.preco}</MensagemErro>
                 )}
             </fieldset>
             <fieldset>
@@ -109,8 +109,8 @@ const FormularioProduto = () => {
                     minLength={10}
                     required
                 ></textarea>
-                {errosValidacao.descricao && (
-                    <MensagemErro>{errosValidacao.descricao}</MensagemErro>
+                {erros.descricao && (
+                    <MensagemErro>{erros.descricao}</MensagemErro>
                 )}
             </fieldset>
             <button className={styles.botao}>
