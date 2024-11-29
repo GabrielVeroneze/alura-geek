@@ -1,15 +1,15 @@
-import { useValidarFormulario } from '@/hooks/useValidarFormulario'
+import { useState } from 'react'
 import { MensagensDeErro } from '@/types/MensagensDeErro'
 import { Erro } from '@/types/Erro'
 
-export const useValidarFormularioProduto = () => {
-    const campos = {
+export const useValidacaoProduto = () => {
+    const [erros, setErros] = useState({
         imagem: '',
         categoria: '',
         nome: '',
         preco: '',
         descricao: '',
-    }
+    })
 
     const tiposDeErro: Erro[] = [
         'badInput',
@@ -47,5 +47,33 @@ export const useValidarFormularioProduto = () => {
         },
     }
 
-    return useValidarFormulario({ campos, tiposDeErro, mensagensDeErro })
+    const validarCampo = (campo: HTMLInputElement | HTMLTextAreaElement) => {
+        tiposDeErro.forEach(erro => {
+            if (campo.validity[erro]) {
+                setErros({
+                    ...erros,
+                    [campo.name]: mensagensDeErro[campo.name][erro]!,
+                })
+            }
+        })
+
+        if (campo.validity.valid) {
+            setErros({
+                ...erros,
+                [campo.name]: '',
+            })
+        }
+    }
+
+    const validarFormulario = (campo: EventTarget) => {
+        const campoValidavel = campo as HTMLInputElement | HTMLTextAreaElement
+
+        validarCampo(campoValidavel)
+    }
+
+    return {
+        erros,
+        validarCampo,
+        validarFormulario,
+    }
 }
