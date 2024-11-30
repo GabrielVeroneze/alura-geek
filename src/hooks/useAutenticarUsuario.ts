@@ -1,33 +1,28 @@
 import { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
 import { usuarioAtom } from '@/state/atoms'
-import { useAPIAutenticacao } from '@/hooks/useAPIAutenticacao'
-import { setTokenLocalStorage } from '@/utils/tokenLocalStorage'
+import { login } from '@/services/autenticacao'
+import { clearUsuarioLocalStorage, getUsuarioLocalStorage, setUsuarioLocalStorage } from '@/utils/usuarioLocalStorage'
 
 export const useAutenticarUsuario = () => {
     const [usuario, setUsuario] = useRecoilState(usuarioAtom)
-    const { login, logout, validarToken } = useAPIAutenticacao()
 
     useEffect(() => {
         (async () => {
-            const storageToken = localStorage.getItem('token')
+            const usuarioStorage = getUsuarioLocalStorage()
 
-            if (storageToken) {
-                const dados = await validarToken(storageToken)
-
-                if (dados.usuario) {
-                    setUsuario(dados.usuario)
-                }
+            if (usuarioStorage) {
+                setUsuario(usuarioStorage)
             }
         })()
-    }, [setUsuario, validarToken])
+    }, [setUsuario])
 
     const fazerLogin = async (email: string, senha: string) => {
         const dados = await login(email, senha)
 
-        if (dados.usuario && dados.token) {
-            setUsuario(dados.usuario)
-            setTokenLocalStorage(dados.token)
+        if (dados) {
+            setUsuario(dados)
+            setUsuarioLocalStorage(dados.id, dados.email)
 
             return true
         }
@@ -36,10 +31,8 @@ export const useAutenticarUsuario = () => {
     }
 
     const fazerLogout = async () => {
-        await logout()
-
         setUsuario(null)
-        setTokenLocalStorage('')
+        clearUsuarioLocalStorage()
     }
 
     return {
