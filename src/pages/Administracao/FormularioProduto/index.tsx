@@ -22,17 +22,15 @@ const FormularioProduto = () => {
             <fieldset>
                 <CampoTextoFloatLabel
                     label="URL da imagem"
-                    inputConfig={{
-                        type: 'url',
-                        id: 'imagem',
-                        name: 'imagem',
-                        value: produtoDados.imagem,
-                        onChange: evento => handleDadosChange(evento),
-                        onInvalid: evento => evento.preventDefault(),
-                        onBlur: evento => validarCampo(evento.target),
-                        pattern: '.+\\.(png|jpg)',
-                        required: true,
-                    }}
+                    type="url"
+                    id="imagem"
+                    name="imagem"
+                    value={produtoDados.imagem}
+                    onChange={evento => handleDadosChange(evento)}
+                    onInvalid={evento => evento.preventDefault()}
+                    onBlur={evento => validarCampo(evento.target)}
+                    pattern=".+\\.(png|jpg)"
+                    required={true}
                 />
                 {erros.imagem && (
                     <MensagemErro>{erros.imagem}</MensagemErro>
@@ -41,16 +39,14 @@ const FormularioProduto = () => {
             <fieldset>
                 <CampoTextoFloatLabel
                     label="Categoria"
-                    inputConfig={{
-                        type: 'text',
-                        id: 'categoria',
-                        name: 'categoria',
-                        value: produtoDados.categoria,
-                        onChange: evento => handleDadosChange(evento),
-                        onInvalid: evento => evento.preventDefault(),
-                        onBlur: evento => validarCampo(evento.target),
-                        required: true,
-                    }}
+                    type="text"
+                    id="categoria"
+                    name="categoria"
+                    value={produtoDados.categoria}
+                    onChange={evento => handleDadosChange(evento)}
+                    onInvalid={evento => evento.preventDefault()}
+                    onBlur={evento => validarCampo(evento.target)}
+                    required={true}
                 />
                 {erros.categoria && (
                     <MensagemErro>{erros.categoria}</MensagemErro>
@@ -59,18 +55,16 @@ const FormularioProduto = () => {
             <fieldset>
                 <CampoTextoFloatLabel
                     label="Nome do produto"
-                    inputConfig={{
-                        type: 'text',
-                        id: 'nome',
-                        name: 'nome',
-                        value: produtoDados.nome,
-                        onChange: evento => handleDadosChange(evento),
-                        onInvalid: evento => evento.preventDefault(),
-                        onBlur: evento => validarCampo(evento.target),
-                        maxLength: 20,
-                        minLength: 3,
-                        required: true,
-                    }}
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    value={produtoDados.nome}
+                    onChange={evento => handleDadosChange(evento)}
+                    onInvalid={evento => evento.preventDefault()}
+                    onBlur={evento => validarCampo(evento.target)}
+                    maxLength={20}
+                    minLength={3}
+                    required={true}
                 />
                 {erros.nome && (
                     <MensagemErro>{erros.nome}</MensagemErro>
@@ -80,17 +74,15 @@ const FormularioProduto = () => {
                 <CampoTextoFloatLabel
                     label="Preço do produto"
                     mask={mascaraMonetaria}
-                    inputConfig={{
-                        type: 'text',
-                        id: 'preco',
-                        name: 'preco',
-                        value: produtoDados.preco,
-                        onChange: evento => handleDadosChange(evento),
-                        onInvalid: evento => evento.preventDefault(),
-                        onBlur: evento => validarCampo(evento.target),
-                        min: 0,
-                        required: true,
-                    }}
+                    type="text"
+                    id="preco"
+                    name="preco"
+                    value={produtoDados.preco}
+                    onChange={evento => handleDadosChange(evento)}
+                    onInvalid={evento => evento.preventDefault()}
+                    onBlur={evento => validarCampo(evento.target)}
+                    min={0}
+                    required={true}
                 />
                 {erros.preco && (
                     <MensagemErro>{erros.preco}</MensagemErro>
