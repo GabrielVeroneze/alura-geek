@@ -1,30 +1,15 @@
 import styles from './CampoTextoFloatLabel.module.scss'
 
-interface CampoTextoFloatLabelProps {
+interface CampoTextoFloatLabelProps extends React.InputHTMLAttributes<HTMLInputElement> {
     label: string
     mask?: React.MutableRefObject<HTMLInputElement | null>
-    inputConfig: {
-        type: 'text' | 'number' | 'email' | 'password' | 'url'
-        id: string
-        name: string
-        value: string | number
-        onChange: (evento: React.ChangeEvent<HTMLInputElement>) => void
-        onInvalid: (evento: React.FormEvent<HTMLInputElement>) => void
-        onBlur: (evento: React.FocusEvent<HTMLInputElement, Element>) => void
-        max?: number
-        maxLength?: number
-        min?: number
-        minLength?: number
-        pattern?: string
-        required?: boolean
-    }
 }
 
-const CampoTextoFloatLabel = ({ label, mask, inputConfig }: CampoTextoFloatLabelProps) => {
+const CampoTextoFloatLabel = ({ label, mask, id, ...atributos }: CampoTextoFloatLabelProps) => {
     return (
         <div className={styles.campo}>
-            <label htmlFor={inputConfig.id}>{label}</label>
-            <input ref={mask} {...inputConfig} />
+            <label htmlFor={id}>{label}</label>
+            <input ref={mask} {...atributos} />
         </div>
     )
 }
