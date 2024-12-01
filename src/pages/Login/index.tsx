@@ -19,16 +19,14 @@ const Login = () => {
                 <fieldset className={styles.campo}>
                     <CampoTexto
                         placeholder="Escreva seu email"
-                        inputConfig={{
-                            type: 'email',
-                            name: 'email',
-                            value: loginDados.email,
-                            onChange: evento => handleDadosChange(evento),
-                            onInvalid: evento => evento.preventDefault(),
-                            onBlur: evento => validarCampo(evento.target),
-                            pattern: '^[a-zA-Z0-9._+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}$',
-                            required: true,
-                        }}
+                        type="email"
+                        name="email"
+                        value={loginDados.email}
+                        onChange={evento => handleDadosChange(evento)}
+                        onInvalid={evento => evento.preventDefault()}
+                        onBlur={evento => validarCampo(evento.target)}
+                        pattern="^[a-zA-Z0-9._+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}$"
+                        required={true}
                     />
                     {erros.email && (
                         <MensagemErro>{erros.email}</MensagemErro>
@@ -37,16 +35,14 @@ const Login = () => {
                 <fieldset className={styles.campo}>
                     <CampoTexto
                         placeholder="Escreva sua senha"
-                        inputConfig={{
-                            type: 'password',
-                            name: 'senha',
-                            value: loginDados.senha,
-                            onChange: evento => handleDadosChange(evento),
-                            onInvalid: evento => evento.preventDefault(),
-                            onBlur: evento => validarCampo(evento.target),
-                            pattern: '^(?=.*[A-Z])(?=.*[0-9]).{8,}$',
-                            required: true,
-                        }}
+                        type="password"
+                        name="senha"
+                        value={loginDados.senha}
+                        onChange={evento => handleDadosChange(evento)}
+                        onInvalid={evento => evento.preventDefault()}
+                        onBlur={evento => validarCampo(evento.target)}
+                        pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,}$"
+                        required={true}
                     />
                     {erros.senha && (
                         <MensagemErro>{erros.senha}</MensagemErro>
