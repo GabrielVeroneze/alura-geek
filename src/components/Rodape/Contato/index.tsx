@@ -18,18 +18,18 @@ const Contato = () => {
             <fieldset>
                 <CampoTextoFloatLabel
                     label="Nome"
-                    inputConfig={{
-                        type: 'text',
-                        id: 'nome',
-                        name: 'nome',
-                        value: contatoDados.nome,
-                        onChange: evento => handleDadosChange('nome', evento.target.value),
-                        onInvalid: evento => evento.preventDefault(),
-                        onBlur: evento => validarCampo(evento.target),
-                        minLength: 3,
-                        maxLength: 40,
-                        required: true,
-                    }}
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    value={contatoDados.nome}
+                    onChange={evento =>
+                        handleDadosChange('nome', evento.target.value)
+                    }
+                    onInvalid={evento => evento.preventDefault()}
+                    onBlur={evento => validarCampo(evento.target)}
+                    minLength={3}
+                    maxLength={40}
+                    required={true}
                 />
                 {erros.nome && (
                     <MensagemErro>{erros.nome}</MensagemErro>
