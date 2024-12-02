@@ -25,7 +25,7 @@ const Login = () => {
                         onChange={evento => handleDadosChange(evento)}
                         onInvalid={evento => evento.preventDefault()}
                         onBlur={evento => validarCampo(evento.target)}
-                        pattern="^[a-zA-Z0-9._+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}$"
+                        pattern="^[a-zA-Z0-9._+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
                         required={true}
                     />
                     {erros.email && (
