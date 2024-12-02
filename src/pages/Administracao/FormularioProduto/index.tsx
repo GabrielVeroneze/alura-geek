@@ -29,7 +29,7 @@ const FormularioProduto = () => {
                     onChange={evento => handleDadosChange(evento)}
                     onInvalid={evento => evento.preventDefault()}
                     onBlur={evento => validarCampo(evento.target)}
-                    pattern=".+\\.(png|jpg)"
+                    pattern=".+\.(png|jpg)"
                     required={true}
                 />
                 {erros.imagem && (
